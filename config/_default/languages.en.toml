@@ -1,0 +1,29 @@
+languageCode = "en-au"
+languageName = "English (Australia)"
+displayName = ":flag-au:"
+isoCode = "en-AU"
+weight = 1
+rtl = false
+
+title = "PyMCon'22 Web Series"
+logo = "images/pymcon-logo.png"
+heading = "PYMCON'22 Web Series"
+subHeading = "An Asynchronous-first virtual conference for the Bayesian community"
+description = "We believe in building a community as much as we believe in building code. Come and join with us!"
+copyright = "&copy; 2022 PyMC Team"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "PyMC Team"
+  #image = "img/author.svg"
+  contact = "9090909090"
+  email = "pymconference@gmail.com"
+  headline = ""
+  bio = ""
+  twitter = "https://twitter.com/pymc_devs"
+  linkedin = "https://www.linkedin.com/company/pymc"
+  discourse = "https://discourse.pymc.io/c/events/pymcon-web-series/23"
+  youtube = "https://www.youtube.com/c/PyMCDevelopers"
+  github = "https://github.com/pymc-devs/pymc"
+  meetup = "https://www.meetup.com/pymc-online-meetup/"

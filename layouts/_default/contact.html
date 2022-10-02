@@ -1,0 +1,117 @@
+{{ define "customCSS" }}
+    {{ $baseURL := .Site.BaseURL }}
+    <link rel="stylesheet" href="{{ $baseURL }}css/contact.css">
+    <style>
+        body {
+            background-image: url("{{ $baseURL }}images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+
+{{ define "customSection" }}
+<!-- ============================= START OF CONTACT =========================== -->
+<section class="section contact" id="contact">
+    <div class="container contact__container">
+        <aside class="contact__aside">
+            <div class="aside__image">
+                <img src="{{ .Site.BaseURL }}images/contact.svg" alt="">
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+                Have any comments or questions? We'd be delighted to hear from you.
+            </p>
+            <ul class="contact__details">
+                <li>
+                    <i class="uil uil-comment-alt-lines"></i>
+                    <h5><a href="{{ .Site.Author.discourse }}">discourse.pymc.io</a></h5>
+                </li>
+                <li>
+                    <i class="uil uil-chat-bubble-user"></i>
+                    <h5><a href="{{ .Site.Author.meetup }}">pymc online meetup</a></h5>
+                </li>
+                <li>
+                    <i class="uil uil-envelope"></i>
+                    <h5><a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.email }}</a></h5>
+                </li>
+            </ul>
+            <ul class="contact__socials">
+                <li>
+                    <a href="{{ .Site.Author.twitter }}">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ .Site.Author.linkedin }}">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ .Site.Author.youtube }}">
+                        <i class="uil uil-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ .Site.Author.github }}">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <form class="contact__form" id="contact_form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSezTTpai5ekaWKz2y3xEclTZm9yV1zPOtkTszp4t-JMHG27Uw/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true">
+            <div class="form__name">
+                <input type="text" name="entry.1807272406" placeholder="First Name" required>
+                <input type="text" name="entry.1167870814" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="entry.313650237" placeholder="Your Email Address" required>
+            <textarea name="entry.54971026" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+<!-- ============================= END OF CONTACT =========================== -->
+
+
+
+<!-- ============================= START OF POPUP =========================== -->
+<div class="overlay" id="popup_overlay"></div>
+<div class="container popup__container">
+    <div class="popup" id="popup">
+        <img src="{{ .Site.BaseURL }}images/contact_popup.svg" alt="">
+        <h2>Thank You</h2>
+        <p>Thanks for sending us a note. We'll get back to you soon.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+<!-- ============================= END OF POPUP =========================== -->
+{{ end }}
+
+
+{{ define "customJS" }}
+<script>
+    var submitted = false;
+    document.getElementById("hidden_iframe").onload = function () {
+        if(submitted) { 
+            openPopup(); 
+        } 
+    };
+
+    const popup = document.getElementById("popup");
+
+    function openPopup() {
+        document.getElementById("popup_overlay").style.display = "block";
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+        document.getElementById("contact_form").reset();
+        document.getElementById("popup_overlay").style.display = "none";
+        popup.classList.remove("open-popup");
+    }
+</script>
+{{ end }}

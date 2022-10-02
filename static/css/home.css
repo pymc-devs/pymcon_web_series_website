@@ -1,0 +1,451 @@
+/* ============================ HEADER ======================== */
+.header {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+
+.header__left h5 {
+    margin: 1rem 0 2.4rem;
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+
+/* ============================ ROCKET =============================== */
+.header_right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right star {
+    position: absolute;
+    top: -150px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: animateStar linear infinite;
+}
+
+@keyframes animateStar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.header_right .rocket {
+    margin-top: -5rem;
+    position: relative;
+    animation: animate 0.2s ease infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translatey(2px);
+    }
+}
+
+.header_right .rocket::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 200px;
+    background: linear-gradient(#00d0ff, transparent);
+}
+
+.header_right .rocket::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 200px;
+    background: linear-gradient(#00d0ff, transparent);
+    filter: blur(20px);
+}
+
+
+/* =========================== PULSE ANIMATION ====================== */
+.pulse {
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: var(--color-bg1);
+    border-radius: 50%;
+}
+
+.pulse span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-bg1);
+    border-radius: 50%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    animation: animatePulse 2.5s linear infinite;
+    animation-delay: calc(-0.5s * var(--delay));
+}
+
+@keyframes animatePulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
+
+/* ============================= GOALS ========================== */
+.golas {
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.golas h1 {
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.golas__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.golas__left {
+    margin-right: 4rem;
+}
+
+.golas__left p {
+    margin: 1rem 0 2rem;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.golas__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.goal {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    color: var(--color-primary);
+
+}
+
+.goal:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.goal:nth-child(2) .goal__icon {
+    background: var(--color-danger);
+}
+
+.goal:nth-child(3) .goal__icon {
+    background: var(--color-success);
+}
+
+.goal:nth-child(4) .goal__icon {
+    background: var(--color-warning);
+}
+
+.goal__icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.goal h5 {
+    margin: 2rem 0 1rem;
+}
+
+.goal p {
+    font-size: 0.85rem;
+}
+
+
+/* ======================== KEYNOTE SPEAKERS ====================== */
+.speakers {
+    margin-top: 8rem;
+}
+
+.speaker {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.speaker:hover,
+.speaker:focus-within {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+
+.speaker__info {
+    padding: 2rem;
+}
+
+.speaker__description {
+    height: 6.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.speaker__description p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.8rem;
+}
+
+.swiper-pagination {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+
+/* ======================== SPONSORS ====================== */
+.sponsors {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.sponsors__container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.sponsor {
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background: var(--color-bg2);
+    transition: var(--transition);
+    position: relative;
+
+}
+
+.sponsor:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.sponsor-logo {
+    padding: 1rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+.sponsor-logo img {
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.sponsor-logo:focus-within img {
+    outline: 5px solid var(--color-danger);
+    transform: scale(0.8);
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+
+.sponsor:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* ======================== SUBSCRIBE ====================== */
+.subscribe__container {
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 2rem;
+    z-index: 1;
+    border: 2px solid;
+    border-color: var(--color-light);
+    margin-top: 8rem;
+}
+
+.subscribe__container:hover {
+    box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.subscribe__text p {
+    margin-top: 1rem;
+}
+
+.subscribe__text h1 {
+    font-size: 2rem;
+}
+
+.subscribe__btn {
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+
+
+/* =================== MEDIA QUERIES (TABLETS) ========================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* =========================== HEADER ========================== */
+    .header {
+        height: 65vh;
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 2rem;
+    }
+
+    /* ============================ GOALS ============================== */
+
+    .golas {
+        height: auto;
+    }
+
+    .golas__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .golas__left {
+        margin-right: 0;
+    }
+
+    /* ============================ KEYNOTE SPEAKERS ============================== */
+    .speakers {
+        margin-top: 0;
+    }
+
+
+    /* ========================== SUBSCRIBE =========================== */
+    .subscribe__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+}
+
+
+
+/* =================== MEDIA QUERIES (PHONES) ========================= */
+@media screen and (max-width: 600px) {
+
+    /* ======================= HEADER ======================== */
+    .header {
+        margin-top: 4rem;
+        height: 100vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .header__left p {
+        margin-bottom: 1.3rem;
+    }
+
+    .header_right star {
+        top: 0;
+    }
+
+    .header_right .rocket {
+        margin-top: 0;
+    }
+
+    /* ======================= GOALS ======================== */
+    .golas__right {
+        gap: 0.5rem;
+    }
+
+    .goal {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .goal__icon {
+        margin-top: 2px;
+        padding: 8px 10px;
+        display: inline-block;
+    }
+
+    .goal h5 {
+        font-size: 0.85rem;
+        margin: 1rem 0 0.5rem;
+    }
+
+    .goal p {
+        font-size: 0.8rem;
+    }
+
+
+    /* ================================ SPONSORS =================== */
+    .sponsor-logo {
+        padding: 5px;
+    }
+
+    .sponsor-logo img {
+        border-radius: 10px;
+    }
+
+
+    /* ======================= SUBSCRIBE ======================== */
+    .subscribe__container {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,233 @@
+.contact {
+    padding: 1.5rem 0 5rem;
+}
+
+.contact__container {
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+}
+
+
+/* ======================== ASIDE =========================== */
+.contact__aside {
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.aside__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact__aside h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact__aside p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.4rem;
+}
+
+.contact__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.contact__socials a {
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-bg2);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact__socials a:hover {
+    background: transparent;
+}
+
+
+
+/* ================== CONTACT FORM ========================== */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+.contact__form input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.contact__form .btn {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* ================== POPUP ====================== */
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.popup {
+    width: 25rem;
+    background: var(--color-white);
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 2rem 2rem;
+    color: var(--color-bg2);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 6rem;
+    margin-top: -3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+
+.popup h2 {
+    margin: 1.5rem 0 0.8rem;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.6rem 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.popup button:hover {
+    background: var(--color-bg2);
+}
+
+.popup button:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 5px;
+}
+
+
+/* ================== MEDIA QUERIES (TABLATES) ====================== */
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+
+
+/* ================== MEDIA QUERIES (MOBILE) ====================== */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+    .popup {
+        width: 20rem;
+    }
+}

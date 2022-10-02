@@ -1,0 +1,206 @@
+{{ define "customCSS" }}
+    {{ $baseURL := .Site.BaseURL }}
+    <link rel="stylesheet" href="{{ $baseURL }}css/home.css">
+    <style>
+        body {
+            /* background-image: url("{{ $baseURL }}images/bg-texture.png"); */
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+    <!-- ============================== START OF HEADER ===================== -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>{{.Site.Params.heading}}</h1>
+                <h5>{{ .Site.Params.subHeading }}</h5>
+                <p>{{ .Site.Params.description }}</p>
+                <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+
+            <div class="header_right">
+                <div class="rocket">
+                    <img src="./images/pymc-logo-350.png" alt="">
+                </div>
+                <div class="pulse">
+                    <span style="--delay:1;"></span>
+                    <span style="--delay:2;"></span>
+                    <span style="--delay:3;"></span>
+                    <span style="--delay:4;"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============================== END OF HEADER ===================== -->
+
+
+
+    <!-- ========================== START OF GOALS ========================== -->
+    <section class="section golas">
+        <div class="container golas__container">
+            {{ $goals := .Site.Data.goals }}
+            <div class="golas__left">
+                <h1> {{$goals.title}} </h1>
+                <p>  {{$goals.description}} </p>
+                <a href="{{ $goals.buttonURL }}" class="btn"> {{ $goals.buttonText }}</a>
+            </div>
+
+            <div class="golas__right">
+                {{ range $goals.goal }}
+                    <article class="goal">
+                        <span class="goal__icon"><i class="uil uil-users-alt"></i></span>
+                        <h5> {{ .title }} </h5>
+                        <p> {{ .description }} </p>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    <!-- ========================== END OF GOALS ========================== -->
+
+
+
+
+    <!-- ================================== START OF KEYNOTE SPEAKERS ============================== -->
+    <!--
+    <section class="section speakers">
+        {{ $speakers := .Site.Data.incoming_talks}}
+        <h2> {{ $speakers.title}} </h2>
+        <div class="container speakers__container">
+            <div class="swiper speakerSlider">
+                <div class="swiper-wrapper">
+                    {{ range $speakers.incoming_talk }}
+                        <article class="speaker swiper-slide">
+                            <div class="iframe__container">
+                                <img src="{{ .imgPath }}" alt="">
+                            </div>
+                            <div class="speaker__info">
+                                <h4> {{ .title }} </h4>
+                                <div class="speaker__description">
+                                    <p> {{ .shortDescription }} </p>
+                                </div>
+                                <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
+                            </div>
+                        </article>
+                    {{ end }}
+                </div>
+                <div class="swiper-pagination speaker-pagination"></div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- ================================== END OF KEYNOTE SPEAKERS ============================== -->
+
+
+
+    <!-- ================================== START OF SPONSORS ============================== -->
+    {{ if .Site.Params.enableSponsors | default false }}
+    <section class="section sponsors" id="sponsors">
+        {{ $sponsors := .Site.Data.sponsors}}
+        <h2>{{ $sponsors.title }}</h2>
+        <div class="container sponsors__container">
+            <div class="swiper logoSlider">
+                <div class="swiper-wrapper">
+                    {{ range $sponsor := $sponsors.sponsor}}
+                        <div class="sponsor swiper-slide" id="{{ replace $sponsor.name " " "_" }}">
+                            <div class="sponsor-logo">
+                                <a href="{{ $sponsor.url }}">
+                                    <img src="{{ $sponsor.logoPath }}" alt="logo of {{ $sponsor.name }}">
+                                </a>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination logo-pagination"></div>
+    </section>
+    {{ end }}
+    <!-- ================================== END OF SPONSORS ============================== -->
+
+
+
+    <!-- ================================== START OF SUBSCRIBE ============================== -->
+    <section class="section subscribe">
+        <div class="container subscribe__container">
+            <div class="subscribe__text">
+                <h1>Join the PyMC Discourse to stay updated</h1>
+                <p> Other than this website the place to stay updated is the PyMC Discourse.
+                    All the latest annoncements will be shared there
+                </p>
+            </div>
+            <a href="{{ .Site.Author.discourse }}" class="btn subscribe__btn">Take me to the Discourse</a>
+        </div>
+    </section>
+    <!-- ================================== END OF SUBSCRIBE ============================== -->
+
+{{ end }}
+
+
+{{ define "customJS" }}
+    <!-- ================== ANIMATION ==================== -->
+    <script src="./js/animation_script.js"></script>
+
+    <!-- =============== SWIPER SLIDER =============== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- =============== SPONSORS SLIDER LOGIC ================ -->
+    <script>
+        var swiper = new Swiper(".speakerSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: false,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".speaker-pagination",
+                clickable: true,
+            },
+
+            // when windows width is >= 600px
+            breakpoints: {
+                // for Tablate
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // for Desktop
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+
+        var swiper = new Swiper(".logoSlider", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: false,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".logo-pagination",
+                clickable: true,
+            },
+
+            // when windows width is >= 800px
+            breakpoints: {
+                // for Tablate
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                // for Desktop
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+{{ end }}

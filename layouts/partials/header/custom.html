@@ -1,0 +1,36 @@
+<header class="py-6 sm:py-10">
+  <nav class="nav">
+    <div class="container nav__container">
+      {{/* Site logo/title */}}
+      {{ if .Site.Params.Logo -}}
+        <div class="pymcon__logo">
+          <a href="{{ "" | relLangURL }}">
+            {{ $baseURL := .Site.BaseURL }}
+            <img src="{{ $baseURL }}{{ .Site.Params.Logo }}" alt="PyMCon'22 Logo">
+          </a>
+        </div>
+      {{ else }}
+        <div>
+          <h4><a
+              class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+              rel="me"
+              href="{{ "" | relLangURL }}"
+              >{{ .Site.Title | markdownify | emojify }}</a
+            ></h4>
+        </div>
+      {{- end }}
+      {{ partial "translations.html" . }}
+      
+      {{/* Main menu */}}
+      {{ if .Site.Menus.main }}
+        <ul class="nav__menu">
+            {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}"> {{ .Name }} </a></li>
+            {{ end }}
+        </ul>
+      {{ end }}
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+  </nav>
+</header>

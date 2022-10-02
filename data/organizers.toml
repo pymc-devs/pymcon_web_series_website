@@ -1,0 +1,65 @@
+title = "Meet Our Organizers"
+description = "We hope to contribute towards a vibrant and inclusive community around bayesian computation."
+
+[[organizer]]
+    name = "Meenal Jhajharia"
+    committee = "Website Team (Lead)"
+    imgPath = "images/organizers/meenal.jpeg"
+    github = "https://github.com/mjhajharia"
+    twitter = "https://twitter.com/meenaljhajharia"
+    website = "https://mjhajharia.com"
+
+[[organizer]]
+    name = "Purna Chandra Mansingh"
+    committee = "Website Team"
+    imgPath = "images/organizers/purna.jpg"
+    github = "https://github.com/purna135"
+    twitter = "https://twitter.com/purna_mansingh"
+    linkedin = "https://www.linkedin.com/in/purna135"
+    website = "https://purna135.github.io/"
+
+[[organizer]]
+    name = "Christian Luhmann"
+    committee = "Contributor Experience (Lead)"
+    imgPath = "images/organizers/christian.jpg"
+    github = "https://github.com/cluhmann"
+    twitter = "https://twitter.com/1010is10"
+    linkedin = "https://www.linkedin.com/in/christian-luhmann-224591242/"
+    website = "https://cluhmann.github.io/"
+
+
+[[organizer]]
+    name = "Oriol Abril Pla"
+    committee = "Advisor"
+    imgPath = "images/organizers/oriol_profile_min.png"
+    github = "https://github.com/oriolabril"
+    twitter = "https://twitter.com/oriolabril"
+    linkedin = ""
+    website = "https://oriolabrilpla.cat"
+
+ [[organizer]]
+    name = "Nicoleta Spînu"
+    committee = "Contributor Experience Team"
+    imgPath = "images/organizers/nicoleta.jpg"
+    github = "https://github.com/nicospinu"
+    twitter = "https://twitter.com/nicospinu"
+    linkedin = "https://www.linkedin.com/in/nicoleta-spinu/"
+    website=""
+
+ [[organizer]]
+    name = "Ravin Kumar"
+    committee = "Executive Team (Lead)"
+    imgPath = "images/organizers/ravin.png"
+    github = "https://github.com/canyon289"
+    twitter = "https://twitter.com/canyon289"
+    linkedin = "https://www.linkedin.com/in/ravinakumar/"
+    website="https://ravinkumar.com"
+
+[[organizer]]
+    name = "Fernando Irarrázaval"
+    committee = "Marketing Team (lead)"
+    imgPath = "images/organizers/fernando.png"
+    github = "https://github.com/cuchoi"
+    twitter = "https://twitter.com/cucho"
+    linkedin = "https://www.linkedin.com/in/fernando-irarrazaval"
+    website = "http://fernandoi.cl/blog/"

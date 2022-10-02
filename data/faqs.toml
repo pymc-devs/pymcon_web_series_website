@@ -1,0 +1,11 @@
+title = "Frequently Asked Questions"
+description = "Can't find the answer you're looking for? We've shared some of our most Frequently asked questions to help you out!"
+
+[[faq]]
+    question = "When is the next round of web series events?"
+    answer = "Were not sure yet, our focus is on having a very successful first cohort"
+
+[[faq]]
+    question = "Is there a cost to this event?"
+    answer = "Currently no. However we always appreciate donations to support the project "
+

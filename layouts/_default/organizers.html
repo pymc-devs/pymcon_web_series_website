@@ -1,0 +1,67 @@
+{{ define "customCSS" }}
+    {{ $baseURL := .Site.BaseURL }}
+    <link rel="stylesheet" href="{{ $baseURL }}css/organizer.css">
+    <style>
+        body {
+            background-image: url("{{ $baseURL }}images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+<!-- ============================== START OF HEADER ===================== -->
+{{ $organizers := .Site.Data.organizers}}
+{{ $baseURL := .Site.BaseURL }}
+<header class="small__header">
+    <div class="container small__header__container">
+        <div class="small__header__left">
+            <h1>{{ $organizers.title }}</h1>
+            <p>{{ $organizers.description }}</p>
+        </div>
+
+        <div class="small__header__right">
+            <div class="small__header__right-image">
+                <img src="{{ $baseURL }}images/organizers.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ============================== END OF HEADER ===================== -->
+
+<!-- ================================== START OF TEAM ============================== -->
+<section class="section team" id="organizers">
+    <h2>Our Organizers</h2>
+    <div class="container team__container">
+        {{ range $organizer := $organizers.organizer }}
+            <article class="team__member" id="{{ replace $organizer.name " " "_" }}">
+                <div class="team__member-image">
+                    <img src="{{ $baseURL }}{{ $organizer.imgPath }}" alt="">
+                </div>
+                <div class="team__member-info">
+                    <h4>{{ $organizer.name }}</h4>
+                    <p>{{ $organizer.committee }}</p>
+                </div>
+                <div class="team__member-socials">
+                    {{ with $organizer.github }}
+                        <a href="{{ $organizer.github }}" target="_blank"><i class="uil uil-github"></i></a>
+                    {{ end }}
+
+                    {{ with $organizer.twitter }}
+                        <a href="{{ $organizer.twitter }}" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                    {{ end }}
+
+                    {{ with $organizer.linkedin }}
+                        <a href="{{ $organizer.linkedin }}" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                    {{ end }}
+
+                    {{ with $organizer.website }}
+                        <a href="{{ $organizer.website }}" target="_blank"><i class="uil uil-link-alt"></i></a>
+                    {{ end }}
+                </div>
+            </article>
+        {{ end }}
+    </div>
+</section>
+<!-- ================================== END OF TEAM ============================== -->
+
+{{ end }}

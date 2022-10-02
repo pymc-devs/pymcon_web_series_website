@@ -1,0 +1,46 @@
+{{ define "customCSS" }}
+    {{ $baseURL := .Site.BaseURL }}
+    <link rel="stylesheet" href="{{ $baseURL }}css/faq.css">
+    <style>
+        body {
+            background-image: url("{{ $baseURL }}images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+<!-- ============================== START OF HEADER ===================== -->
+{{ $faqs := .Site.Data.faqs}}
+<header class="small__header">
+    <div class="container small__header__container">
+        <div class="small__header__left">
+            <h1>{{ $faqs.title }}</h1>
+            <p>{{ $faqs.description }}</p>
+        </div>
+
+        <div class="small__header__right">
+            <div class="small__header__right-image">
+                <img src="{{ .Site.BaseURL }}images/faq.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ============================== END OF HEADER ===================== -->
+
+<!-- ================================== START OF FAQs ============================== -->
+<section class="section faqs" id="faqs">
+    <h2>FAQs</h2>
+    <div class="container faqs__container">
+        {{ range $faq := $faqs.faq}}
+            <article class="faq" tabindex="0" id="{{ replace $faq.question " " "_" }}">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4> {{ $faq.question }} </h4>
+                    <p> {{ $faq.answer }} </p>
+                </div>
+            </article>
+        {{ end }}
+    </div>
+</section>
+<!-- ================================== END OF FAQs ============================== -->
+{{ end }}

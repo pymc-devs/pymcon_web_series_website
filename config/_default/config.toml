@@ -1,0 +1,27 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = 'https://pymcon.netlify.app/'
+theme = "congo"
+relativeURLs = true
+uglyURLs = true
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+paginate = 15
+summaryLength = 0
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+    customcss = ["css/main.css"]
+    customjs = ["js/main.js"]
+    customjscssraw = [
+      "<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.5/css/unicons.css'>",
+      "<link rel='preconnect' href='https://fonts.googleapis.com'>",
+      "<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>",
+      "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap'>",
+      "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />",
+    ] 

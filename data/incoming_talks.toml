@@ -1,0 +1,19 @@
+title = "Incoming Talks"
+
+[[incoming_talk]]
+    imgPath = "images/incoming_talks/talk1.jpg"
+    title = "PyMCon 2020 Welcome by Ravin Kumar"
+    shortDescription = "Ravin is a data scientist at Google where he uses data to inform decisions. He has previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships."
+    readMoreURL = "speakers"
+
+[[incoming_talk]]
+    imgPath = "images/incoming_talks/talk2.jpg"
+    title = "The Bayesian Workflow: building a covid19 model"
+    shortDescription = "In this tutorial we will build a COVID-19 model from scratch. Thomas is the founder of PyMC Labs, a Bayesian consulting firm, PyMC author, PhD on computational cognitive neuroscience from Brown University."
+    readMoreURL = "speakers"
+
+[[incoming_talk]]
+    imgPath = "images/incoming_talks/talk3.jpg"
+    title = "PyMC: Past, Present, and Future by Chris"
+    shortDescription = "To kick off PyMCon 2020, I will provide some of the back-story of the PyMC project: where we’ve been, where we are, and where we might go. Chris Fonnesback is a Senior Quantitative Analyst in Baseball Operations for the New York Yankees."
+    readMoreURL = "speakers"
