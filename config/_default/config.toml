@@ -3,6 +3,7 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 baseURL = 'https://pymc-devs.github.io/pymcon_2022_website'
+publishDir = "docs"
 theme = "congo"
 relativeURLs = true
 uglyURLs = true
