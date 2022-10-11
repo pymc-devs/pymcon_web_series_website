@@ -1,0 +1,110 @@
+/* ======================== TEAM ====================== */
+.team {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover,
+.team__member:focus-within {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team__member-image img {
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.team__member:focus-within img,
+.team__member:hover img {
+    filter: saturate(1);
+    transform: scale(1.1);
+}
+
+.team__member-info * {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.team__member-info p {
+    color: var(--color-light);
+}
+
+.team__member-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.team__member:hover .team__member-socials {
+    right: 0;
+}
+
+.team__member-socials:focus-within {
+    right: 0;
+    transition: none;
+}
+
+.team__member-socials a {
+    padding: 0.8rem;
+}
+
+
+
+/* =================== MEDIA QUERIES (TABLETS) ========================= */
+
+@media screen and (max-width: 1024px) {
+    /* ================================ TEAM =================== */
+    .team__container {
+        gap: 1rem;
+    }
+
+    .team__member {
+        padding: 1rem;
+    }
+
+    .team__member-socials a {
+        padding: 0.5rem;
+    }
+}
+
+
+
+/* =================== MEDIA QUERIES (PHONES) ========================= */
+@media screen and (max-width: 600px) {
+    /* ================================ TEAM =================== */
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team__member {
+        padding: 0.7rem;
+    }
+
+    .team__member-socials a {
+        padding: 0.5rem;
+    }
+}
