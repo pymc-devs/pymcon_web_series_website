@@ -15,8 +15,8 @@ summaryLength = 0
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-    customcss = ["css/main.css"]
-    customjs = ["js/main.js"]
+    customcss = ["/css/main.css"]
+    customjs = ["/js/main.js"]
     customjscssraw = [
       "<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.5/css/unicons.css'>",
       "<link rel='preconnect' href='https://fonts.googleapis.com'>",
