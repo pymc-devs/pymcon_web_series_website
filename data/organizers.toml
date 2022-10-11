@@ -4,7 +4,7 @@ description = "We hope to contribute towards a vibrant and inclusive community a
 [[organizer]]
     name = "Meenal Jhajharia"
     committee = "Website Team (Lead)"
-    imgPath = "images/organizers/meenal.jpeg"
+    imgPath = "images/organizers/meenal.jpg"
     github = "https://github.com/mjhajharia"
     twitter = "https://twitter.com/meenaljhajharia"
     website = "https://mjhajharia.com"
@@ -31,7 +31,7 @@ description = "We hope to contribute towards a vibrant and inclusive community a
 [[organizer]]
     name = "Oriol Abril Pla"
     committee = "Advisor"
-    imgPath = "images/organizers/oriol_profile_min.png"
+    imgPath = "images/organizers/oriol.jpg"
     github = "https://github.com/oriolabril"
     twitter = "https://twitter.com/oriolabril"
     linkedin = ""
@@ -49,7 +49,7 @@ description = "We hope to contribute towards a vibrant and inclusive community a
  [[organizer]]
     name = "Ravin Kumar"
     committee = "Executive Team (Lead)"
-    imgPath = "images/organizers/ravin.png"
+    imgPath = "images/organizers/ravin.jpg"
     github = "https://github.com/canyon289"
     twitter = "https://twitter.com/canyon289"
     linkedin = "https://www.linkedin.com/in/ravinakumar/"
@@ -58,7 +58,7 @@ description = "We hope to contribute towards a vibrant and inclusive community a
 [[organizer]]
     name = "Fernando Irarrázaval"
     committee = "Marketing Team (lead)"
-    imgPath = "images/organizers/fernando.png"
+    imgPath = "images/organizers/fernando.jpg"
     github = "https://github.com/cuchoi"
     twitter = "https://twitter.com/cucho"
     linkedin = "https://www.linkedin.com/in/fernando-irarrazaval"
