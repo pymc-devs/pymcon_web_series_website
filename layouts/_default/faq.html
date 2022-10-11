@@ -1,9 +1,8 @@
 {{ define "customCSS" }}
-    {{ $baseURL := .Site.BaseURL }}
-    <link rel="stylesheet" href="{{ $baseURL }}css/faq.css">
+    <link rel="stylesheet" href="/css/faq.css">
     <style>
         body {
-            background-image: url("{{ $baseURL }}images/bg-texture.png");
+            background-image: url("/images/bg-texture.png");
         }
     </style>
 {{ end }}
@@ -20,7 +19,7 @@
 
         <div class="small__header__right">
             <div class="small__header__right-image">
-                <img src="{{ .Site.BaseURL }}images/faq.svg" alt="">
+                <img src="/images/faq.svg" alt="">
             </div>
         </div>
     </div>

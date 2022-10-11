@@ -1,9 +1,8 @@
 {{ define "customCSS" }}
-    {{ $baseURL := .Site.BaseURL }}
-    <link rel="stylesheet" href="{{ $baseURL }}css/organizer.css">
+    <link rel="stylesheet" href="/css/organizer.css">
     <style>
         body {
-            background-image: url("{{ $baseURL }}images/bg-texture.png");
+            background-image: url("/images/bg-texture.png");
         }
     </style>
 {{ end }}
@@ -11,7 +10,6 @@
 {{ define "customSection" }}
 <!-- ============================== START OF HEADER ===================== -->
 {{ $organizers := .Site.Data.organizers}}
-{{ $baseURL := .Site.BaseURL }}
 <header class="small__header">
     <div class="container small__header__container">
         <div class="small__header__left">
@@ -21,7 +19,7 @@
 
         <div class="small__header__right">
             <div class="small__header__right-image">
-                <img src="{{ $baseURL }}images/organizers.svg" alt="">
+                <img src="/images/organizers.svg" alt="">
             </div>
         </div>
     </div>
@@ -35,7 +33,7 @@
         {{ range $organizer := $organizers.organizer }}
             <article class="team__member" id="{{ replace $organizer.name " " "_" }}">
                 <div class="team__member-image">
-                    <img src="{{ $baseURL }}{{ $organizer.imgPath }}" alt="">
+                    <img src="/{{ $organizer.imgPath }}" alt="">
                 </div>
                 <div class="team__member-info">
                     <h4>{{ $organizer.name }}</h4>
