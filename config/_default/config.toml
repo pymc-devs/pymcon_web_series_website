@@ -2,10 +2,9 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = 'https://pymc-devs.github.io/pymcon_2022_website'
+# baseURL = 'https://pymc-devs.github.io/pymcon_2022_website'
 theme = "congo"
 relativeURLs = true
-uglyURLs = true
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
@@ -16,8 +15,8 @@ summaryLength = 0
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-    customcss = ["css/main.css"]
-    customjs = ["js/main.js"]
+    customcss = ["/css/main.css"]
+    customjs = ["/js/main.js"]
     customjscssraw = [
       "<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.5/css/unicons.css'>",
       "<link rel='preconnect' href='https://fonts.googleapis.com'>",
