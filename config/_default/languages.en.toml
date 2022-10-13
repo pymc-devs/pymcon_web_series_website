@@ -7,7 +7,7 @@ rtl = false
 
 title = "PyMCon'22 Web Series"
 logo = "images/pymcon-logo.png"
-heading = "PYMCON'22 Web Series"
+heading = "PyMCon'22 Web Series"
 subHeading = "An Asynchronous-first virtual conference for the Bayesian community"
 description = "We believe in building a community as much as we believe in building code. Come and join with us!"
 copyright = "&copy; 2022 PyMC Team"
