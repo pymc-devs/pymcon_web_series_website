@@ -2,6 +2,7 @@
 title: "PyMCon Code of Conduct"
 description: ""
 slug: "codeofconduct"
+weight: 80
 ---
 
 PyMCon abides by the NumFOCUS Code of Conduct.

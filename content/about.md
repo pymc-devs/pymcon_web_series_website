@@ -1,7 +1,8 @@
 ---
-title: "About"
+title: "About PyMCon"
 description: ""
 slug: "about"
+weight: 20
 ---
 
 ## PyMCon Web Series
