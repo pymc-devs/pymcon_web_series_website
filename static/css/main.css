@@ -218,11 +218,11 @@ img {
 /* ======================== FOOTER ====================== */
 .footer {
     background: var(--color-bg1);
-    padding-top: 5rem;
     font-size: 0.9rem;
 }
 
 .footer__container {
+    padding-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
@@ -249,6 +249,12 @@ img {
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
+}
+
+.footer__socials li a:hover {
+    color: var(--color-bg1);
+    border-radius: 15%;
+    background: var(--color-white);
 }
 
 .footer__copyright {

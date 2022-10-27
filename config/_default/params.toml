@@ -24,7 +24,7 @@ mainSections = [""]
   showCopyright = true
   showThemeAttribution = true
   showAppearanceSwitcher = true
-  showScrollToTop = true
+  showScrollToTop = false
 
 [homepage]
   layout = "custom" # valid options: page, profile, custom
@@ -41,7 +41,7 @@ mainSections = [""]
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
-  invertPagination = false
+  invertPagination = true
   showReadingTime = false
   showTableOfContents = true
   showTaxonomies = false

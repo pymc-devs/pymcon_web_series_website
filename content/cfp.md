@@ -2,6 +2,7 @@
 title: "Call for Proposals"
 description: "Call for Proposals"
 slug: "CFP"
+weight: 30
 ---
 
 ## PyMCon Web Series Summary
