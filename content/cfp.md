@@ -1,6 +1,6 @@
 ---
 title: "Call for Proposals"
-description: "Call for Proposals"
+description: "We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community"
 slug: "CFP"
 weight: 30
 ---
@@ -21,10 +21,10 @@ Submitted proposals will be reviewed and each contributor whose proposal is acce
 
 ## Event Format
 
-The PyMCon Web Series encourages community members to be creative when proposing events. 
-One community member may propose a hackathon focusing on Bayesian models in a particular application or using a particular data set.  
-Another might propose a poster to visualize a new Arviz functionality.  
-Traditional presentations are welcome too! 
+The PyMCon Web Series encourages community members to be creative when proposing events.
+One community member may propose a hackathon focusing on Bayesian models in a particular application or using a particular data set.
+Another might propose a poster to visualize a new Arviz functionality.
+Traditional presentations are welcome too!
 These are the tried and true formats such as talks, and tutorials as we saw in [PyMCon 2020](https://pymc-devs.github.io/pymcon//schedule).
 Regardless of the format, we will work with contributors to craft an event that is accessible asynchronously,
 but which presents different opportunities for audience members to engage.
@@ -40,7 +40,7 @@ For example, events focusing on new sampling diagnostics or Bayesian workflow wo
 **Originality**. Proposals should be original on some dimension.  This can be originality in the event's approach, the visuals, the math, whatever! Be creative and show it off! Proposals that are already publicly available or similar to published videos have a low probability of being accepted.
 
 **Relevance to PyMC community**. This doesn't mean you need to give a talk *about* PyMC. But it does mean that you should think about the broad, diverse PyMC community and how your event would elevate them.
-  
+
 
 **What to avoid**
 
