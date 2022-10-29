@@ -1,6 +1,6 @@
 ---
 title: "Call for Proposals"
-description: "We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community"
+description: "Be a part of the PyMCon Web Series!"
 slug: "CFP"
 weight: 30
 ---
