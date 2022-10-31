@@ -35,6 +35,10 @@
     display: none;
 }
 
+.faq p a {
+    text-decoration: underline;
+}
+
 .faq.open p {
     display: block;
 }

@@ -35,7 +35,7 @@
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
                     <h4> {{ $faq.question }} </h4>
-                    <p> {{ $faq.answer }} </p>
+                    <p> {{ $faq.answer | markdownify }} </p>
                 </div>
             </article>
         {{ end }}

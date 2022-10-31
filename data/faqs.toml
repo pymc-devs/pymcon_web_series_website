@@ -9,3 +9,6 @@ description = "Can't find the answer you're looking for? We've shared some of ou
     question = "Is there a cost to this event?"
     answer = "Currently no. However we always appreciate donations to support the project "
 
+[[faq]]
+    question = "What is the branding guide for PyMCon?"
+    answer = "The branding guide can be found 👉 <a href='https://github.com/pymc-devs/brand' target='_blank'> here </a>"
