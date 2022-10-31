@@ -3,7 +3,7 @@
 }
 
 .contact__container {
-    background: var(--color-bg1);
+    background: var(--color-bg2);
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -21,6 +21,7 @@
     border-radius: 1rem;
     position: relative;
     bottom: 7rem;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .aside__image {
@@ -57,7 +58,7 @@
 }
 
 .contact__socials a {
-    background: var(--color-bg2);
+    background: var(--color-bg1);
     padding: 0.5rem;
     border-radius: 50%;
     border: 2px solid var(--color-bg2);
@@ -67,6 +68,7 @@
 
 .contact__socials a:hover {
     background: transparent;
+    border: 2px solid var(--color-bg1);
 }
 
 

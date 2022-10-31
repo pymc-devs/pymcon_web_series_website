@@ -12,7 +12,7 @@
 
 .team__member {
     background: var(--color-bg2);
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid transparent;
     transition: var(--transition);
     position: relative;
@@ -38,11 +38,16 @@
 
 .team__member-info * {
     text-align: center;
+}
+
+.team__member-info h4 {
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 
 .team__member-info p {
     color: var(--color-light);
+    margin-top: 0.3rem;
 }
 
 .team__member-socials {
