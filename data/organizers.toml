@@ -37,15 +37,6 @@ description = "We hope to contribute towards a vibrant and inclusive community a
     website = "http://fernandoi.cl/blog/"
 
 [[organizer]]
-    name = "Purna Chandra Mansingh"
-    committee = "Website Team"
-    imgPath = "images/organizers/purna.jpg"
-    github = "https://github.com/purna135"
-    twitter = "https://twitter.com/purna_mansingh"
-    linkedin = "https://www.linkedin.com/in/purna135"
-    website = "https://purna135.github.io/"
-
-[[organizer]]
     name = "Oriol Abril Pla"
     committee = "Advisor"
     imgPath = "images/organizers/oriol.jpg"
@@ -53,6 +44,15 @@ description = "We hope to contribute towards a vibrant and inclusive community a
     twitter = "https://twitter.com/oriolabril"
     linkedin = ""
     website = "https://oriolabrilpla.cat"
+
+[[organizer]]
+    name = "Purna Chandra Mansingh"
+    committee = "Website Team"
+    imgPath = "images/organizers/purna.jpg"
+    github = "https://github.com/purna135"
+    twitter = "https://twitter.com/purna_mansingh"
+    linkedin = "https://www.linkedin.com/in/purna135"
+    website = "https://purna135.github.io/"
 
  [[organizer]]
     name = "Nicoleta Spînu"
