@@ -12,6 +12,7 @@
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #23929E;
+    --color-red: #f88d68;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #FFFFFF;
     --color-light: rgba(255, 255, 255, 0.7);
@@ -110,7 +111,7 @@ img {
 }
 
 .btn:focus-visible {
-    outline: 4px solid var(--color-danger);
+    outline: 3px solid var(--color-red);
     outline-offset: 4px;
 }
 
@@ -238,6 +239,12 @@ img {
 
 .footer__logo {
     width: 65%;
+}
+
+.footer__logo>a:focus-visible img {
+    outline: 2px solid var(--color-white);
+    border-radius: 5px;
+    outline-offset: 3px;
 }
 
 .footer ul li a:hover {
