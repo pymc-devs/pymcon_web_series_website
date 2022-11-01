@@ -410,7 +410,7 @@
 }
 
 .support .support__info {
-    color: var(--color-warning);
+    color: var(--color-white);
     font-weight: 600;
     font-size: 0.95rem;
 }
