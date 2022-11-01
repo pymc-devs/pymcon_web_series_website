@@ -225,7 +225,7 @@ img {
 .footer__container {
     padding-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
 
@@ -235,10 +235,6 @@ img {
 
 .footer__1 p {
     margin: 1rem 0 2rem;
-}
-
-.footer__logo {
-    width: 65%;
 }
 
 .footer__logo>a:focus-visible img {
@@ -403,6 +399,7 @@ img {
 
     /* ======================= FOOTER ======================== */
     .footer__container {
+        grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
 }

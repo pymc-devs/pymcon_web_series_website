@@ -1,5 +1,5 @@
 <!-- ================================== START OF FOOTER ============================== -->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         {{ partial "article-pagination.html" . }}
     </div>
@@ -7,7 +7,7 @@
         <div class="footer__1">
             <div class="footer__logo">
                 <a href="{{ "" | relLangURL }}">
-                    <img src="/images/pymcon_logo_white.png" alt="">
+                    <img src="/images/pymcon_logo_white.png" alt="PyMCon logo">
                 </a>
             </div>
             <p>
@@ -17,7 +17,7 @@
 
         <div class="footer__2">
             {{/* Footer menu */}}
-            {{ if .Site.Menus.main }}
+            {{ if .Site.Menus.footer }}
                 <h4>Permalinks</h4>
                 <ul class="permalinks">
                     {{ range .Site.Menus.footer }}
@@ -28,6 +28,15 @@
         </div>
 
         <div class="footer__3">
+            <h4>Useful Links</h4>
+            <ul class="permalinks">
+                <li><a href="https://pymc-devs.github.io/pymcon" target="_blank"> PyMCon 2020 events </a></li>
+                <li><a href="https://github.com/pymc-devs/pymcon_2022_website" target="_blank"> Github repository</a></li>
+                <li><a href="https://github.com/pymc-devs/brand" target="_blank"> Logo & Branding guide </a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
             <h4>Follow Us</h4>
             <ul class="footer__socials">
                 <li><a href="{{ .Site.Author.discourse }}" target="_blank"><i class="uil uil-comment-alt-lines"></i></a></li>
