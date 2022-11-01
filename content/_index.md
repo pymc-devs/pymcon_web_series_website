@@ -1,5 +1,5 @@
 ---
-title: "PyMCon'22 - Web Series"
+title: "PyMCon - Web Series"
 description: ""
 date: ""
 layout: "index"
