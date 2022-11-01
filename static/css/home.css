@@ -384,7 +384,7 @@
 }
 
 .support:nth-child(1) .support__icon {
-    background: #f88d68;
+    background: var(--color-red);
 }
 
 .support:nth-child(2) .support__icon {
@@ -431,6 +431,11 @@
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+}
+
+.donate__btn:focus-visible {
+    outline: 3px solid var(--color-red);
+    outline-offset: 3px;
 }
 
 
