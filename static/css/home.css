@@ -302,7 +302,7 @@
     background: var(--color-primary);
     color: var(--color-white);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
     gap: 2rem;
     align-items: center;
     padding: 4rem;
@@ -322,10 +322,11 @@
 }
 
 .subscribe__text h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .subscribe__btn {
+    font-size: 0.9rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
