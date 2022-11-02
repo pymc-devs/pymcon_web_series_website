@@ -82,7 +82,7 @@ Each submission will be reviewed by multiple committee members.  The review proc
 
 **Submission outcomes**
 
-The review process will ultimately determine whether each submitted proposal meets the goals of the PyMCon Web Series.  Contributors whose submissions are determined to be acceptable will be contacted.  Subject to scheduling constraints, these contributors will immediately be paired with a PyMCon Web Series lead and together will work to turn the proposal into a full-blown PyMCon Web Series event (or given a rough timeline for doing so).
+The review process will ultimately determine whether each submitted proposal meets the goals of the PyMCon Web Series.  Contributors whose submissions are accepted will be contacted.  Subject to scheduling constraints, these contributors will immediately be paired with a PyMCon Web Series Event lead and together will work to turn the proposal into a full-blown PyMCon Web Series event (or given a rough timeline for doing so).
 
 **What if my proposal is not accepted?**
 
