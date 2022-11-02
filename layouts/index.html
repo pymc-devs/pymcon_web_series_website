@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/home.css">
     <style>
         body {
-            /* background-image: url("/images/bg-texture.png"); */
+            background-image: url("/images/bg-texture.png");
         }
     </style>
 {{ end }}
@@ -48,7 +48,7 @@
             <div class="golas__right">
                 {{ range $goals.goal }}
                     <article class="goal">
-                        <span class="goal__icon"><i class="uil uil-users-alt"></i></span>
+                        <span class="goal__icon"><i class="uil uil-crosshair"></i></span>
                         <h5> {{ .title }} </h5>
                         <p> {{ .description }} </p>
                     </article>
