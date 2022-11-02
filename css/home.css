@@ -172,7 +172,7 @@
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
-    color: var(--color-primary);
+    color: var(--color-white);
 
 }
 
@@ -181,8 +181,12 @@
     z-index: 1;
 }
 
+.goal:nth-child(1) .goal__icon {
+    background: var(--color-red);
+}
+
 .goal:nth-child(2) .goal__icon {
-    background: var(--color-danger);
+    background: #688bf8;
 }
 
 .goal:nth-child(3) .goal__icon {
@@ -195,12 +199,13 @@
 
 .goal__icon {
     background: var(--color-primary);
-    padding: 0.7rem;
+    font-size: 1.5rem;
+    padding: 0.4rem;
     border-radius: 0.9rem;
 }
 
 .goal h5 {
-    margin: 2rem 0 1rem;
+    margin: 1.5rem 0 1rem;
 }
 
 .goal p {
@@ -405,7 +410,7 @@
 }
 
 .support .support__info {
-    color: var(--color-warning);
+    color: var(--color-white);
     font-weight: 600;
     font-size: 0.95rem;
 }

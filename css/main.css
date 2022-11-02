@@ -8,18 +8,19 @@
 }
 
 :root {
-    --color-primary: #333333;
+    --color-primary: #1d7996;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #23929E;
+    --color-red: #f88d68;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #FFFFFF;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-dark: #333;
     --color-black: #000;
     --color-bg: #0F3B49;
-    --color-bg1:  #0F3B49;
-    --color-bg2: #FFFFFF;
+    --color-bg1:  #12495a;
+    --color-bg2: #18637a;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -110,7 +111,7 @@ img {
 }
 
 .btn:focus-visible {
-    outline: 4px solid var(--color-danger);
+    outline: 3px solid var(--color-red);
     outline-offset: 4px;
 }
 
@@ -155,7 +156,7 @@ img {
 
 /* Change navbar style on scroll using javascript */
 .window-scroll {
-    background: var(--color-primary);
+    background: var(--color-bg1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -192,7 +193,7 @@ img {
 }
 
 .nav__menu a:hover {
-    color: var(--color-bg2);
+    color: var(--color-danger);
 }
 
 
@@ -234,6 +235,12 @@ img {
 
 .footer__1 p {
     margin: 1rem 0 2rem;
+}
+
+.footer__logo>a:focus-visible img {
+    outline: 2px solid var(--color-white);
+    border-radius: 5px;
+    outline-offset: 3px;
 }
 
 .footer ul li a:hover {
