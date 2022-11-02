@@ -7,7 +7,7 @@ weight: 30
 
 ## PyMCon Web Series Summary
 
-The PyMCon Web Series consists of events proposed and led by members of the PyMC community.  We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community.  First time speakers are welcomed and encouraged. Please feel free to reach out with questions about submitting a proposal.  You can find us on the [PyMC discourse](https://discourse.pymc.io/).
+The PyMCon Web Series consists of events proposed and co-led by members of the PyMC community.  We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community.  First time speakers are welcomed and encouraged. Please feel free to reach out with questions about submitting a proposal.  You can find us on the [PyMC discourse](https://discourse.pymc.io/).
 
 ## Key Dates
 Submission deadline: November 30th.
@@ -17,7 +17,9 @@ Please fill out the submission form available [here](https://forms.gle/GWdiUAPtK
 
 ## Conference Specifics
 
-Submitted proposals will be reviewed and each contributor whose proposal is accepted will be teamed with a PyMCon Web Series lead.  Together, the contributor and the lead will work to turn the proposal into a full-blown PyMCon Web Series event, with the lead providing support and guidance along the way.
+Submitted proposals will be reviewed and each contributor whose proposal is accepted will be teamed with a PyMCon Web Series Event lead.
+Together, the contributor and the lead will work to turn the proposal into a full-blown PyMCon Web Series event.
+The Event lead will provide support and guidance along the way and ensure the event fits PyMCon Web Series guidelines.
 
 ## Event Format
 
@@ -82,7 +84,14 @@ Each submission will be reviewed by multiple committee members.  The review proc
 
 **Submission outcomes**
 
-The review process will ultimately determine whether each submitted proposal meets the goals of the PyMCon Web Series.  Contributors whose submissions are determined to be acceptable will be contacted.  Subject to scheduling constraints, they will immediately be paired with a PyMCon Web Series lead and begin the process of developing the proposal into a PyMCon Web Series event or given a rough timeline for doing so.
+The review process will ultimately determine whether each submitted proposal meets the goals of the PyMCon Web Series.
+Contributors whose submissions are accepted will be contacted.
+Subject to scheduling constraints, these contributors will immediately be paired with a PyMCon Web Series Event lead and together will work to turn the proposal into a full-blown PyMCon Web Series event (or given a rough timeline for doing so).
+
+**Who are PyMCon Event Leads**
+The event leads will be long time PyMC community members who are available to help guide and refine accepted proposals and ultimately launch them as Web Series Events.
+Their role is to be a resource to contributors to great event. 
+They will help contributors set up any infrastructure that's needed, such as Discourse topics, as well as some backend details such as defining and enforcing the Code of Conduct.
 
 **What if my proposal is not accepted?**
 
