@@ -10,7 +10,7 @@ weight: 30
 The PyMCon Web Series consists of events proposed and co-led by members of the PyMC community.  We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community.  First time speakers are welcomed and encouraged. Please feel free to reach out with questions about submitting a proposal.  You can find us on the [PyMC discourse](https://discourse.pymc.io/).
 
 ## Key Dates
-Submission deadline: November 30th.
+Submission deadline: November 30, 2022.
 
 ## How to Submit
 Please fill out the submission form available [here](https://forms.gle/GWdiUAPtKsr5mMm99).
