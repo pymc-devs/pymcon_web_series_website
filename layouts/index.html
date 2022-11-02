@@ -13,7 +13,7 @@
         <div class="container header__container">
             <div class="header__left">
                 <h1>{{.Site.Params.heading}}</h1>
-                <h5>{{ .Site.Params.subHeading }}</h5>
+                <p>{{ .Site.Params.subHeading }}</p>
                 <p>{{ .Site.Params.description }}</p>
                 <a href="#" class="btn btn-primary">Register Now</a>
             </div>
@@ -40,7 +40,7 @@
         <div class="container golas__container">
             {{ $goals := .Site.Data.goals }}
             <div class="golas__left">
-                <h1> {{$goals.title}} </h1>
+                <h2> {{$goals.title}} </h2>
                 <p>  {{$goals.description}} </p>
                 <a href="{{ ref . "about" }}" class="btn"> Learn More </a>
             </div>
@@ -49,7 +49,7 @@
                 {{ range $goals.goal }}
                     <article class="goal">
                         <span class="goal__icon"><i class="uil uil-crosshair"></i></span>
-                        <h5> {{ .title }} </h5>
+                        <h3> {{ .title }} </h3>
                         <p> {{ .description }} </p>
                     </article>
                 {{ end }}
@@ -124,7 +124,7 @@
     <section class="section subscribe">
         <div class="container subscribe__container">
             <div class="subscribe__text">
-                <h1>Join the PyMC Discourse to stay updated</h1>
+                <h2>Join the PyMC Discourse to stay updated</h2>
                 <p> Other than this website the place to stay updated is the PyMC Discourse.
                     All the latest announcements will be shared there
                 </p>
@@ -142,7 +142,7 @@
         <div class="container supports__container">
             <article class="support">
                 <span class="support__icon"><i class="fas fa-hand-holding-heart"></i></span>
-                <h5> PyMC Open Collective </h5>
+                <h3> PyMC Open Collective </h3>
                 <span class="support__info">Payment Options:</span>
                 <p> Credit Card </p>
                 <span class="support__info">Pros:</span>
@@ -152,7 +152,7 @@
 
             <article class="support">
                 <span class="support__icon"><i class="fas fa-parachute-box"></i></span>
-                <h5> NumFOCUS </h5>
+                <h3> NumFOCUS </h3>
                 <span class="support__info">Payment Options:</span>
                 <p> Credit Card, eCheck, PayPal </p>
                 <span class="support__info"> Pros: </span>
@@ -162,7 +162,7 @@
 
             <article class="support">
                 <span class="support__icon"><i class="fas fa-handshake"></i></span>
-                <h5> Benevity </h5>
+                <h3> Benevity </h3>
                 <p> If your company uses Benevity, please consider making a contribution to the PyMC project. </p>
                 
                 <p> <span class="support__info"> Note: </span> This link is viewable for registered users of Benevity </p>
@@ -171,7 +171,7 @@
 
             <article class="support">
                 <span class="support__icon"><i class="fas fa-gift"></i></span>
-                <h5> Support </h5>
+                <h3> Support </h3>
                 <p> You can also support the PyMC project by purchasing swag from our official store. All net proceeds go to the project. </p>
                 <a href="https://numfocus.myspreadshop.com/pymc+official+logo?idea=61f03c1df33f941d0307b965" target="_blank" class="donate__btn">Buy Now</a>
             </article>

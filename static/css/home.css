@@ -141,7 +141,8 @@
     height: 29rem;
 }
 
-.golas h1 {
+.golas h2 {
+    text-align: left;
     line-height: 1;
     margin-bottom: 2rem;
 }
@@ -204,7 +205,8 @@
     border-radius: 0.9rem;
 }
 
-.goal h5 {
+.goal h3 {
+    font-size: 0.97rem;
     margin: 1.5rem 0 1rem;
 }
 
@@ -326,8 +328,10 @@
     margin-top: 1rem;
 }
 
-.subscribe__text h1 {
+.subscribe__text h2 {
     font-size: 1.7rem;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .subscribe__btn {
@@ -404,7 +408,7 @@
     background: var(--color-warning);
 }
 
-.support h5 {
+.support h3 {
     margin: 1.5rem 0 1rem;
     font-size: 1.1rem;
 }

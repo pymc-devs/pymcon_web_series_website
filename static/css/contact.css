@@ -29,17 +29,18 @@
     margin-bottom: 2rem;
 }
 
-.contact__aside h2 {
+.contact__aside h1 {
     text-align: left;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.contact__aside h5 {
+.contact__details p {
     font-size: 0.9rem;
     font-weight: 600;
 }
 
-.contact__aside p {
+.contact__aside>p {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
@@ -105,6 +106,7 @@ textarea {
     margin-top: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 
