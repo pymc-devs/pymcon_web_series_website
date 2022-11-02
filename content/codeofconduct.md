@@ -33,10 +33,8 @@ If you believe someone is violating the Code of Conduct, please report this in a
 
 You can make a personal or anonymous report through any of the following channels:
 
-Email: Send a message to any or all Diversity Chairs, who can be reached at oriol.abril.pla@gmail.com and andorra.alexandre@gmail.com. Event organizers will respond promptly.
-Slack: Join the PyMCon Slack and contact the Diversity Chairs, Oriol Abril-Pla or Alex Andorra.
-Online Form: A variant of the NumFOCUS Code of Conduct Report is available for PyMCon here (your name and contact information are not required).
-During PyMCon, we recommend contacting via email or Slack so we can take immediate action if necessary. In addition to contacting directly the Diversity committee, we also encourage you to make a report using our reporting form.
+Email: Send a message to pymconference@gmail.com address
+Online Form: The NumFocus Code of Conduct reporting form is available. https://numfocus.org/code-of-conduct
 
 To file a report anonymously please use the online form
 
@@ -73,7 +71,7 @@ All reports of breaches of the code of conduct will be investigated and handled 
 
 ## The current PyMCon Diversity Committee consists of:
 
-Conflicts of Interest
+### Conflicts of Interest
 
 In the event of any conflict of interest, the committee member will immediately notify and recuse themselves if necessary.
 
