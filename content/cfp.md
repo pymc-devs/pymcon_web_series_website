@@ -12,6 +12,10 @@ The PyMCon Web Series consists of events proposed and co-led by members of the P
 ## Key Dates
 Submission deadline: November 30, 2022.
 
+Series begins: after January 1, 2023.
+
+Scheduling of individual events will be coordinated between the contributor and PyMCon Web Series Event leads and are anticipated to occur monthly (appoximately).
+
 ## How to Submit
 Please fill out the submission form available [here](https://forms.gle/GWdiUAPtKsr5mMm99).
 
