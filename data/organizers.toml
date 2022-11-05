@@ -62,3 +62,12 @@ description = "We hope to contribute towards a vibrant and inclusive community a
     twitter = "https://twitter.com/nicospinu"
     linkedin = "https://www.linkedin.com/in/nicoleta-spinu/"
     website=""
+
+ [[organizer]]
+    name = "Rob Zinkov"
+    committee = "Contributor Experience Team"
+    imgPath = "images/organizers/zinkov.jpg"
+    github = "https://github.com/zaxtax"
+    twitter = "https://twitter.com/zaxtax"
+    linkedin = "https://www.linkedin.com/in/robzinkov/"
+    website="https://zinkov.com"
