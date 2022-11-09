@@ -71,3 +71,22 @@ description = "We hope to contribute towards a vibrant and inclusive community a
     twitter = "https://twitter.com/zaxtax"
     linkedin = "https://www.linkedin.com/in/robzinkov/"
     website="https://zinkov.com"
+
+ [[organizer]]
+    name = "Reshama Shaikh"
+    committee = "Diversity, Equity, and Inclusion Team"
+    imgPath = "images/organizers/reshama.jpg"
+    github = "https://github.com/reshamas"
+    twitter = "https://twitter.com/reshamas"
+    linkedin = "https://www.linkedin.com/in/reshamas"
+    website = "https://reshamas.github.io/"
+
+ [[organizer]]
+    name = "Rowan Schaefer"
+    committee = "Marketing Team"
+    imgPath = "images/organizers/rowan.png"
+    github = "https://github.com/rowangayleschaefer"
+    twitter = "https://twitter.com/rowan_________"
+    linkedin = "https://www.linkedin.com/in/rowanschaefer/"
+    website = ""
+
