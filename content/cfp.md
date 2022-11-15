@@ -52,7 +52,7 @@ For example, events focusing on new sampling diagnostics or Bayesian workflow wo
 
 - **Sales pitches**:  We are a community of open source developers and users of open source scientific computing tools. You can reference your closed-source product or platform, but the audience will find the talk more interesting if they can utilize your techniques within the PyData ecosystem. Your problem definition, proposed techniques, broad issues you solved, and business domain might be interesting, but sales pitches and "how to use our product" talks will be of less interest.
 - **Redundant content**: We have a strong preference for new material and fresh faces.  If your submission consists of content that is already available online (e.g., at prior conferences, in the PyMC example gallery, etc.) it is less likely to be accepted.
-- **Irrelevant to the PyMC community**: PyMC represents a growing ecosystem of related packages (e.g., Aesara, Arviz, Bambi), so discussing libraries other than PyMC is expected.  That being said, submissions that move too far away from the library that unites the PyMC community (i.e., PyMC!) are less likely to be accepted.  The proposal should be interesting to the PyMC community!
+- **Relevant to the PyMC community**: PyMC represents a growing ecosystem of related packages (e.g., Aesara, Arviz, Bambi), so discussing libraries other than PyMC is expected.  That being said, submissions that move too far away from the library that unites the PyMC community (i.e., PyMC!) are less likely to be accepted.  The proposal should be interesting to the PyMC community!
 
 
 ## Submission Guidelines
