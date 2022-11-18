@@ -16,42 +16,42 @@
             <div class="aside__image">
                 <img src="/images/contact.svg" alt="">
             </div>
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
             <p>
                 Have any comments or questions? We'd be delighted to hear from you.
             </p>
             <ul class="contact__details">
                 <li>
                     <i class="uil uil-comment-alt-lines"></i>
-                    <h5><a href="{{ .Site.Author.discourse }}">discourse.pymc.io</a></h5>
+                    <p><a href="{{ .Site.Author.discourse }}">discourse.pymc.io</a></p>
                 </li>
                 <li>
                     <i class="uil uil-chat-bubble-user"></i>
-                    <h5><a href="{{ .Site.Author.meetup }}">PyMC online meetup</a></h5>
+                    <p><a href="{{ .Site.Author.meetup }}">PyMC online meetup</a></p>
                 </li>
                 <li>
                     <i class="uil uil-envelope"></i>
-                    <h5><a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.email }}</a></h5>
+                    <p><a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.email }}</a></p>
                 </li>
             </ul>
             <ul class="contact__socials">
                 <li>
-                    <a href="{{ .Site.Author.twitter }}">
+                    <a href="{{ .Site.Author.twitter }}" aria-label="PyMC twitter account">
                         <i class="uil uil-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ .Site.Author.linkedin }}">
+                    <a href="{{ .Site.Author.linkedin }}" aria-label="PyMC linkedin page">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ .Site.Author.youtube }}">
+                    <a href="{{ .Site.Author.youtube }}" aria-label="PyMC youtube channel">
                         <i class="uil uil-youtube"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ .Site.Author.github }}">
+                    <a href="{{ .Site.Author.github }}" aria-label="PyMC github">
                         <i class="uil uil-github"></i>
                     </a>
                 </li>
@@ -64,11 +64,11 @@
             action="https://docs.google.com/forms/d/e/1FAIpQLSezTTpai5ekaWKz2y3xEclTZm9yV1zPOtkTszp4t-JMHG27Uw/formResponse"
             method="post" target="hidden_iframe" onsubmit="submitted=true">
             <div class="form__name">
-                <input type="text" name="entry.1807272406" placeholder="First Name" required>
-                <input type="text" name="entry.1167870814" placeholder="Last Name" required>
+                <input type="text" name="entry.1807272406" placeholder="First Name" required aria-label="First Name">
+                <input type="text" name="entry.1167870814" placeholder="Last Name" required aria-label="Last Name">
             </div>
-            <input type="email" name="entry.313650237" placeholder="Your Email Address" required>
-            <textarea name="entry.54971026" rows="4" placeholder="Message" required></textarea>
+            <input type="email" name="entry.313650237" placeholder="Your Email Address" required aria-label="Your Email Address">
+            <textarea name="entry.54971026" rows="4" placeholder="Message" required aria-label="Message"></textarea>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </div>

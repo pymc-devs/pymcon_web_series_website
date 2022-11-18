@@ -6,9 +6,7 @@
     <div class="container footer__container">
         <div class="footer__1">
             <div class="footer__logo">
-                <a href="{{ "" | relLangURL }}">
-                    <img src="/images/pymcon_logo_white.png" alt="PyMCon logo">
-                </a>
+                <img src="/images/pymcon_logo_white.png" alt="">
             </div>
             <p>
                 PyMCon is a totally volunteer run conference with help from people like you.
@@ -18,7 +16,7 @@
         <div class="footer__2">
             {{/* Footer menu */}}
             {{ if .Site.Menus.footer }}
-                <h4>Permalinks</h4>
+                <h2>Permalinks</h2>
                 <ul class="permalinks">
                     {{ range .Site.Menus.footer }}
                         <li><a href="{{ .URL }}"> {{ .Name }} </a></li>
@@ -28,7 +26,7 @@
         </div>
 
         <div class="footer__3">
-            <h4>Useful Links</h4>
+            <h2>Useful Links</h2>
             <ul class="permalinks">
                 <li><a href="https://pymc-devs.github.io/pymcon" target="_blank"> PyMCon 2020 events </a></li>
                 <li><a href="https://github.com/pymc-devs/pymcon_2022_website" target="_blank"> Github repository</a></li>
@@ -37,14 +35,14 @@
         </div>
 
         <div class="footer__4">
-            <h4>Follow Us</h4>
+            <h2>Follow Us</h2>
             <ul class="footer__socials">
-                <li><a href="{{ .Site.Author.discourse }}" target="_blank"><i class="uil uil-comment-alt-lines"></i></a></li>
-                <li><a href="{{ .Site.Author.twitter }}" target="_blank"><i class="uil uil-twitter"></i></a></li>
-                <li><a href="{{ .Site.Author.linkedin }}" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
-                <li><a href="{{ .Site.Author.youtube }}" target="_blank"><i class="uil uil-youtube"></i></a></li>
-                <li><a href="{{ .Site.Author.github }}" target="_blank"><i class="uil uil-github"></i></a></li>
-                <li><a href="{{ .Site.Author.meetup }}" target="_blank"><i class="fa fa-meetup"></i></a></li>
+                <li><a href="{{ .Site.Author.discourse }}" target="_blank" aria-label="PyMC discourse"><i class="uil uil-comment-alt-lines"></i></a></li>
+                <li><a href="{{ .Site.Author.twitter }}" target="_blank" aria-label="PyMC twitter account"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="{{ .Site.Author.linkedin }}" target="_blank" aria-label="PyMC linkedin page"><i class="uil uil-linkedin-alt"></i></a></li>
+                <li><a href="{{ .Site.Author.youtube }}" target="_blank" aria-label="PyMC youtube channel"><i class="uil uil-youtube"></i></a></li>
+                <li><a href="{{ .Site.Author.github }}" target="_blank" aria-label="PyMC github"><i class="uil uil-github"></i></a></li>
+                <li><a href="{{ .Site.Author.meetup }}" target="_blank" aria-label="PyMC meetup group"><i class="fa fa-meetup"></i></a></li>
             </ul>
         </div>
     </div>
