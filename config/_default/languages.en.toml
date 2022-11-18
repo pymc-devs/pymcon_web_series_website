@@ -16,9 +16,7 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "PyMC Team"
-  #image = "img/author.svg"
-  contact = "9090909090"
-  email = "pymconference@gmail.com"
+  email = "pymcon@pymc-devs.org"
   headline = ""
   bio = ""
   twitter = "https://twitter.com/pymc_devs"
