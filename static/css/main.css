@@ -116,7 +116,7 @@ img {
 }
 
 .btn-primary {
-    background:  var(--color-danger);
+    background:  var(--color-primary);
     color: var(--color-white);
 }
 
