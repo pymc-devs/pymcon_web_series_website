@@ -11,6 +11,9 @@ enableRobotsTXT = true
 paginate = 15
 summaryLength = 0
 
+[social]
+  twitter = 'pymc_devs'
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
