@@ -20,9 +20,11 @@
     cursor: pointer;
 }
 
-.faq h4 {
+.faq h2 {
     font-size: 1rem;
     line-height: 2.2rem;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 .faq__icon {
