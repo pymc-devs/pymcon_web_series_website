@@ -1,6 +1,6 @@
 ---
 title: "PyMCon Code of Conduct"
-description: ""
+description: "PyMCon abides by the NumFOCUS Code of Conduct."
 slug: "codeofconduct"
 weight: 80
 ---
