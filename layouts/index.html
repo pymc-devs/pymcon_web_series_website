@@ -12,9 +12,9 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__left">
-                <h1>{{.Site.Params.heading}}</h1>
-                <p>{{ .Site.Params.subHeading }}</p>
-                <p>{{ .Site.Params.description }}</p>
+                <h1>{{.Params.Title}}</h1>
+                <p>{{ .Params.Description }}</p>
+                <p>We believe in building a community as much as we believe in building code. Come and join with us!</p>
                 <a href="{{ ref . "cfp" }}" class="btn btn-primary">Submit a Proposal</a>
             </div>
 

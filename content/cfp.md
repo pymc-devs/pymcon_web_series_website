@@ -1,6 +1,6 @@
 ---
 title: "Call for Proposals"
-description: "Be a part of the PyMCon Web Series!"
+description: "We are looking for your original proposal. Join the PyMCon Web Series today!"
 slug: "CFP"
 weight: 30
 ---
