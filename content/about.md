@@ -1,6 +1,6 @@
 ---
 title: "About PyMCon"
-description: ""
+description: "The PyMCon Web Series is a series of events led by members of the PyMC community."
 slug: "about"
 weight: 20
 ---
