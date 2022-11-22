@@ -116,7 +116,7 @@ img {
 }
 
 .btn-primary {
-    background:  var(--color-danger);
+    background:  var(--color-primary);
     color: var(--color-white);
 }
 
@@ -229,7 +229,8 @@ img {
     gap: 5rem;
 }
 
-.footer__container>div h4 {
+.footer__container>div h2 {
+    font-size: 1.3rem;
     margin-bottom: 1.2rem;
 }
 
