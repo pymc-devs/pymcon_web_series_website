@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = false
 enableCodeCopy = true
 
-enableSponsors = false
+enableSponsors = true
 
 mainSections = [""]
 # robots = ""
