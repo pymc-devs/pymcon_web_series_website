@@ -60,8 +60,6 @@ Submitting a proposal to the PyMCon Web Series will require the following inform
 
 **Contact email**. It will be confidential and only accessible to PyMCon Web Series organizers
 
-**Name and a short bio**. This will be used when advertising your event. The bio should not be longer than 100 words.
-
 **Time zone**. It will not be taken into account when reviewing the proposal. It may be used to schedule activities related to your event (depending on the format you propose) and identify a PyMCon Web Series lead best able to coordinate with you through the development process.
 
 **Other comments**. The PyMCon Web Series aims to be an inclusive conference and we are ready to cover any specific need we may have missed.
@@ -74,11 +72,6 @@ The proposal itself should include the following information:
 - Title
 - Event format. As explained above.
 - Level (e.g., beginner, intermediate, advanced)
-- A short description that will be used to advertise the event.
-  - It should be oriented as a teaser or an elevator pitch to get people interested in your event.
-  - To get the attention of potential viewers you can try to answer some of these questions "What common problems are being addressed?
-  - Will they learn any life-changing trick?
-  - Why should someone attend this event instead of reading the PyMC documentation or a Bayesian stats blog?"
 - An abstract including a detailed description of what will be covered in the event. It should provide information about the audience: "What specific concepts will be needed to follow the event? Will libraries other than PyMC and its dependencies be used?" and a detailed outline of the event: its objective and key takeaways, and the general structure of the event. Include links to relevant source code, articles, videos or other information that add context to your proposal.  To ensure the integrity of the review process, submitters are asked to avoid any information that might permit reviewers to discern the identity or affiliation of the submitter.
 
 
