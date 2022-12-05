@@ -254,55 +254,6 @@
 }
 
 
-/* ======================== SPONSORS ====================== */
-.sponsors {
-    background: var(--color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-
-.sponsors__container {
-    overflow-x: hidden;
-    position: relative;
-}
-
-.sponsor {
-    border-radius: 1rem;
-    border: 1px solid transparent;
-    background: var(--color-bg2);
-    transition: var(--transition);
-    position: relative;
-
-}
-
-.sponsor:hover {
-    background: transparent;
-    border-color: var(--color-primary);
-}
-
-.sponsor-logo {
-    padding: 1rem;
-    overflow: hidden;
-    align-items: center;
-}
-
-.sponsor-logo img {
-    border-radius: 1rem;
-    transition: var(--transition);
-}
-
-.sponsor-logo:focus-within img {
-    outline: 5px solid var(--color-danger);
-    transform: scale(0.8);
-    outline-offset: 5px;
-    border-radius: 5px;
-}
-
-.sponsor:hover img {
-    transform: scale(1.1);
-}
-
-
-
 /* ======================== SUBSCRIBE ====================== */
 .subscribe__container {
     background: var(--color-primary);
@@ -549,17 +500,6 @@
     .goal p {
         font-size: 0.8rem;
     }
-
-
-    /* ================================ SPONSORS =================== */
-    .sponsor-logo {
-        padding: 5px;
-    }
-
-    .sponsor-logo img {
-        border-radius: 10px;
-    }
-
 
     /* ======================= SUBSCRIBE ======================== */
     .subscribe__container {

@@ -12,8 +12,6 @@ autoSwitchAppearance = true
 enableSearch = false
 enableCodeCopy = true
 
-enableSponsors = false
-
 mainSections = [""]
 # robots = ""
 
