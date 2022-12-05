@@ -64,25 +64,17 @@ Submitting a proposal to the PyMCon Web Series will require the following inform
 
 **Time zone**. It will not be taken into account when reviewing the proposal. It may be used to schedule activities related to your event (depending on the format you propose) and identify a PyMCon Web Series lead best able to coordinate with you through the development process.
 
+**Title** Proposed title of your talk
+
+**Event Format** As explained above.
+
+**Level** (e.g. beginner, intermediate, advanced)
+
+**Abstract**  A detailed description of what will be covered in the event. It should provide information about the audience: "What specific concepts will be needed to follow the event? Will libraries other than PyMC and its dependencies be used?" and a detailed outline of the event: its objective and key takeaways, and the general structure of the event. Include links to relevant source code, articles, videos or other information that add context to your proposal.  To ensure the integrity of the review process, submitters are asked to avoid any information that might permit reviewers to discern the identity or affiliation of the submitter.
+
 **Other comments**. The PyMCon Web Series aims to be an inclusive conference and we are ready to cover any specific need we may have missed.
 
-The proposal itself should include the following information:
-
-- Your name
-- Your email address
-- Your time zone
-- Title
-- Event format. As explained above.
-- Level (e.g., beginner, intermediate, advanced)
-- A short description that will be used to advertise the event.
-  - It should be oriented as a teaser or an elevator pitch to get people interested in your event.
-  - To get the attention of potential viewers you can try to answer some of these questions "What common problems are being addressed?
-  - Will they learn any life-changing trick?
-  - Why should someone attend this event instead of reading the PyMC documentation or a Bayesian stats blog?"
-- An abstract including a detailed description of what will be covered in the event. It should provide information about the audience: "What specific concepts will be needed to follow the event? Will libraries other than PyMC and its dependencies be used?" and a detailed outline of the event: its objective and key takeaways, and the general structure of the event. Include links to relevant source code, articles, videos or other information that add context to your proposal.  To ensure the integrity of the review process, submitters are asked to avoid any information that might permit reviewers to discern the identity or affiliation of the submitter.
-
-
-**The review process**
+## The review process
 
 Each submission will be reviewed by multiple committee members.  The review process will be double blind: submitters will not know who the reviewers are and reviewers will not know who has written the proposals they review.  We want to make sure the selection process is as unbiased as possible so that everyone has the same chance of being selected as a speaker at PyMCon.
 
