@@ -36,6 +36,11 @@
   weight = 30
 
 [[main]]
+  name = "Sponsors"
+  pageRef = "sponsors"
+  weight = 45
+
+[[main]]
   name = "Contact"
   pageRef = "contact"
   weight = 50
