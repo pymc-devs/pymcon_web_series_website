@@ -7,11 +7,17 @@ weight: 80
 
 PyMCon abides by the NumFOCUS Code of Conduct.
 
-We value the participation of each member of the PyMC community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events, whether officially sponsored by PyMC or not.
+**[Code of Conduct Reporting Form](https://numfocus.typeform.com/to/ynjGdT?typeform-source=pymcon.com)**
 
-To make clear what is expected, all delegates, speakers, exhibitors and volunteers at PyMCon event are required to conform to the NumFOCUS Code of Conduct. Organizers will enforce this code throughout the event.
+We value the participation of each member of the PyMC community and want all attendees to have an enjoyable and fulfilling experience.
+Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the conference and at all conference events,
+whether officially sponsored by PyMC or not.
 
-We reproduce here certain portions of the NumFOCUS Code of Conduct that are specifically relevant to PyMCon. We encourage all PyMCon participants to review the complete Code of Conduct.
+To make clear what is expected, all delegates, speakers, exhibitors and volunteers at any PyMCon web series event are required to conform to the NumFOCUS Code of Conduct.
+Organizers will enforce this code throughout the event.
+
+We reproduce here certain portions of the NumFOCUS Code of Conduct that are specifically relevant to PyMCon.
+We encourage all PyMCon participants to review the complete Code of Conduct (link available below).
 
 # The Shorter Version
 
@@ -25,7 +31,8 @@ Thank you for helping make this a welcoming, friendly community for all.
 
 ## Code of Conduct Highlights Specific to PyMCon
 
-We reproduce here certain portions of the NumFOCUS Code of Conduct that are specifically relevant to PyMCon. We encourage all PyMCon participants to review the complete Code of Conduct.
+We reproduce here certain portions of the NumFOCUS Code of Conduct that are specifically relevant to PyMCon.
+We encourage all PyMCon participants to review the complete Code of Conduct.
 
 ## How to Report
 
@@ -33,76 +40,75 @@ If you believe someone is violating the Code of Conduct, please report this in a
 
 You can make a personal or anonymous report through any of the following channels:
 
-Email: Send a message to pymconference@gmail.com address
-Online Form: The NumFocus Code of Conduct reporting form is available. https://numfocus.org/code-of-conduct
+* **Online Form**: The [NumFocus Code of Conduct reporting form](https://numfocus.typeform.com/to/ynjGdT?typeform-source=pymcon.com) is available.
+* **Event specific reporting channels**: Some PyMCon events might also make some extra channels available.
+  These channels will be shared to event attendees beforehand and at the beginning of each event and
+  optimized for a rapid response.
 
-To file a report anonymously please use the online form
+To file a report anonymously please use the online form.
 
 ## What to include in a report
 
 Our ability to address any Code of Conduct breaches in a timely and effective manner is impacted by the amount of information you can provide, so our reporting form asks you to include as much of the following information as you can:
 
-Your contact info (so we can get in touch with you if we need to follow up). This will be kept confidential. If you wish to remain anonymous, your information will not be shared beyond the person receiving the initial report.
-The approximate time and location of the incident (please be as specific as possible)
-Identifying information (e.g. name, nickname, screen name, physical description) of the individual whose behavior is being reported
-Description of the behavior (if reporting harassing language, please be specific about the words used), your account of what happened, and any available supporting records (e.g. email, GitHub issue, screenshots, etc.). The online form supports attaching up to 5 files and email and Slack have not limit.
-Description of the circumstances/context surrounding the incident. Let us know if the incident is ongoing, and/or if this is part of an ongoing pattern of behavior
-Names and contact info, if possible, of anyone else who witnessed or was involved in this incident. (Did anyone else observe the incident?)
-Any other relevant information you believe we should have
-Enforcement
+* Your contact info (so we can get in touch with you if we need to follow up).
+  This will be kept confidential.
+  If you wish to remain anonymous, your information will not be shared beyond the person receiving the initial report.
+* The approximate time and location of the incident (please be as specific as possible)
+* Identifying information (e.g. name, nickname, screen name, physical description) of the individual whose behavior is being reported
+* Description of the behavior (if reporting harassing language, please be specific about the words used), your account of what happened, and any available supporting records (e.g. email, GitHub issue, screenshots, etc.). The online form supports attaching up to 5 files and email and Slack have not limit.
+* Description of the circumstances/context surrounding the incident. Let us know if the incident is ongoing, and/or if this is part of an ongoing pattern of behavior
+* Names and contact info, if possible, of anyone else who witnessed or was involved in this incident. (Did anyone else observe the incident?)
+* Any other relevant information you believe we should have
+
+## Enforcement
 
 At PyMCon, if a participant engages in behavior that violates the Code of Conduct, the conference organizers and staff may take any action they deem appropriate.
 
-## Potential consequences for violating the NumFOCUS Code of Conduct at PyMCon include:
+Potential consequences for violating the NumFOCUS Code of Conduct at PyMCon include:
 
-Warning the person to cease their behavior and that any further reports will result in sanctions
-Requiring that the person avoid any interaction with the person they are harassing for the remainder of the event
-Ending a talk that violates the policy early
-Not publishing the video or slides of a talk that violated the policy
-Not allowing a speaker who violated the policy to give (further) talks at the event now or in the future
-Immediately ending any event volunteer responsibilities and privileges the reported person holds
-Requiring that the person not volunteer for future events (either indefinitely or for a certain time period)
-Expelling the person from the event without a refund
-Banning the person from future events (either indefinitely or for a certain time period)
-Any other response that the organizing committee deems necessary and appropriate to the situation
-Person(s) Responsible for Resolving Complaints
+* Warning the person to cease their behavior and that any further reports will result in sanctions
+* Requiring that the person avoid any interaction with the person they are harassing for the remainder of the event
+* Ending a talk that violates the policy early
+* Not publishing the video or slides of a talk that violated the policy
+* Not allowing a speaker who violated the policy to give (further) talks at the event now or in the future
+* Immediately ending any event volunteer responsibilities and privileges the reported person holds
+* Requiring that the person not volunteer for future events (either indefinitely or for a certain time period)
+* Expelling the person from the event without a refund
+* Banning the person from future events (either indefinitely or for a certain time period)
+* Any other response that the organizing committee deems necessary and appropriate to the situation
 
-All reports of breaches of the code of conduct will be investigated and handled by the PyMCon Diversity Committee, consulting the NumFOCUS Code of Conduct Enforcement Team when necessary.
+## Person(s) Responsible for Resolving Complaints
 
-## The current PyMCon Diversity Committee consists of:
+Reports sent via the online report form will be handled by the [NumFOCUS Code of Conduct Enforcement
+Team](https://numfocus.org/code-of-conduct#persons-responsible).
+
+Reports sent via the additional event specific channels will be handled by members of the
+PyMCon Code of Conduct Enforcement Team, consulting the NumFOCUS team if necessary.
+
+### PyMCon Code of Conduct Enforcement Team
+Members of the PyMCon Code of Code Enforcement team are:
+
+* Oriol Abril Pla `oriol.abril.pla@gmail.com`
 
 ### Conflicts of Interest
 
-In the event of any conflict of interest, the committee member will immediately notify and recuse themselves if necessary.
+In the event of any conflict of interest, the team member will immediately notify and recuse themselves if necessary.
 
-If you are concerned about making a report that will be read by any of the above individuals, please fill NumFOCUS report form, which will submit the report to NumFOCUS Code of Conduct Enforcement Team
+If you are concerned about making a report that will be read by any of the above individuals, please fill [NumFOCUS report form](https://numfocus.typeform.com/to/ynjGdT?typeform-source=pymcon.com).
 
 ## Appealing a Decision
 
-To appeal a decision, contact Oriol Abril-Pla at oriol.abril.pla@gmail.com with your appeal and the Executive committee or the NumFOCUS Code of Conduct Enforcement Team will review the case.
+To appeal a decision, contact Oriol Abril-Pla at `oriol.abril.pla@gmail.com` with your appeal and the PyMCon or NumFOCUS Code of Conduct Enforcement Team will review the case.
 
-## Timeline Summary:
-
-### Confirming Receipt
-
-The Diversity Committee will make every effort to acknowledge receipt of a report within 24 hours (and we’ll aim for much more quickly than that).
-
-### Reviewing the Report
-
-We will make all efforts to review the incident within three days.
-
-### Consequences & Resolution
-
-We aim to respond within one week to the original reporter with either a resolution or an explanation of why the situation is not yet resolved.
-
-### Issue Log
+## Issue Log
 
 A summary of reported incidents will be provided after the event.
 
-## READ THE COMPLETE NUMFOCUS CODE OF CONDUCT
+---
+
+**[READ THE COMPLETE NUMFOCUS CODE OF CONDUCT](https://numfocus.org/code-of-conduct)**
 
 For sections that are present both in this page and in NumFOCUS complete Code of Conduct such as "how to report" or "Appealing a Decision", the directives here take precedence.
 
-This page has been adapted from numerous sources, mainly PyData Code of Conduct and JupyterCon Code of Conduct.
-
-_This page uses Google Analytics to collect statistics. You can disable it by blocking the JavaScript coming from www.google-analytics.com._
+This page has been adapted from numerous sources, mainly [PyData Code of Conduct](https://pydata.org/code-of-conduct/) and JupyterCon 2020 Code of Conduct.

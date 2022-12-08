@@ -12,3 +12,7 @@ description = "Can't find the answer you're looking for? We've shared some of ou
 [[faq]]
     question = "What is the branding guide for PyMCon?"
     answer = "The branding guide can be found 👉 <a href='https://github.com/pymc-devs/brand' target='_blank'> here </a>"
+
+[[faq]]
+    question = "What should I do if I witnessed an event that <em>might</em> have violated the code of conduct?"
+    answer = "Fill a report or contact a member of the PyMCon Code of Conduct Enforcement Team directly.<br>Include all relevant context and if possible your contact info too; we will reach out and discuss whether there was a code of conduct violation and advise on how to handle it.<br>We have a code of conduct to be triggered, not for the sake of having one. Also keep in mind that there are many possible outcomes after a code of conduct report, there should be no feeling bad about potential punishments when filling a report."
