@@ -90,6 +90,7 @@ PyMCon Code of Conduct Enforcement Team, consulting the NumFOCUS team if necessa
 Members of the PyMCon Code of Code Enforcement team are:
 
 * Oriol Abril Pla `oriol.abril.pla@gmail.com`
+* Ravin Kumar `rkumar@pymc_devs.com
 
 ### Conflicts of Interest
 
