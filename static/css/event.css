@@ -1,0 +1,122 @@
+/* ======================== schedule ====================== */
+.schedule {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.event__container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 2rem;
+}
+
+.schedule__event {
+    background: var(--color-bg2);
+    padding: 1.5rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule__event:hover,
+.schedule__event:focus-within {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.schedule__event-image img {
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.schedule__event:focus-within img,
+.schedule__event:hover img {
+    filter: saturate(1);
+    transform: scale(1.1);
+}
+
+.schedule__event-info * {
+    text-align: center;
+}
+
+.schedule__event-info h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.schedule__event-info p {
+    color: var(--color-light);
+    margin-top: 0.3rem;
+}
+
+.schedule__event-details {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.schedule__event:hover .schedule__event-details {
+    right: 0;
+}
+
+.schedule__event-details:focus-within {
+    right: 0;
+    transition: none;
+}
+
+.schedule__event-details a {
+    padding: 0.8rem;
+}
+
+
+
+/* =================== MEDIA QUERIES (TABLETS) ========================= */
+
+@media screen and (max-width: 1024px) {
+    /* ================================ schedule =================== */
+    #change length of these boxes
+    .event__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-column: 2;
+        grid-row: auto;
+        row-gap: 1rem;
+
+    }
+
+    .schedule__event {
+        padding: 1rem;
+    }
+
+    .schedule__event-details a {
+        padding: 0.5rem;
+    }
+}
+
+
+
+/* =================== MEDIA QUERIES (PHONES) ========================= */
+@media screen and (max-width: 600px) {
+    /* ================================ schedule =================== */
+    .event__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .schedule__event {
+        padding: 0.7rem;
+    }
+
+    .schedule__event-details a {
+        padding: 0.5rem;
+    }
+}

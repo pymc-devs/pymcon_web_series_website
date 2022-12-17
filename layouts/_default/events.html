@@ -1,0 +1,50 @@
+{{ define "customCSS" }}
+    <link rel="stylesheet" href="/css/event.css">
+    <style>
+        body {
+            background-image: url("/images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+<!-- ============================== START OF HEADER ===================== -->
+{{ $events := .Site.Data.events}}
+<header class="small__header">
+    <div class="container small__header__container">
+        <div class="small__header__left">
+            <h1>{{ $events.title }}</h1>
+            <p>{{ $events.description }}</p>
+        </div>
+    </div>
+</header>
+<!-- ============================== END OF HEADER ===================== -->
+
+<!-- ================================== START OF EVENTS ============================== -->
+<section class="section schedule" id="events">
+    <h2>Schedule</h2>
+    <div class="container event__container">
+        {{ range $event := $events.event }}
+        
+            <article class="schedule__event" id="{{ replace $event.name " " "_" }}">
+                <div class="schedule__event-image">
+                    <img src="/{{ $event.imgPath }}" alt="">
+                </div>
+                <div class="schedule__event-info">
+                    <h2>{{ $event.name }}</h2>
+                    <h6>{{ $event.author }}</h6>
+                    <p>{{ $event.date }}</p>
+                    <p>{{ $event.description }}</p>
+                </div>
+                <div class="schedule__event-details">
+                    {{ with $event.link }}
+                        <a href="{{ $event.link }}" target="_blank" aria-label="link"><i class="uil uil-link-alt"></i></a>
+                    {{ end }}
+                </div>
+            </article>
+        {{ end }}
+    </div>
+</section>
+<!-- ================================== END OF EVENTS ============================== -->
+
+{{ end }}
