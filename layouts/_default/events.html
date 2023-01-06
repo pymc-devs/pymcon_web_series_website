@@ -31,14 +31,14 @@
                     <img src="/{{ $event.imgPath }}" alt="">
                 </div>
                 <div class="schedule__event-info">
-                    <h2>{{ $event.name }}</h2>
+                    <h2>{{ $event.title }}</h2>
                     <h6>{{ $event.author }}</h6>
                     <p>{{ $event.date }}</p>
-                    <p>{{ $event.description }}</p>
+                    <p>{{ $event.shortDescription }}</p>
                 </div>
                 <div class="schedule__event-details">
-                    {{ with $event.link }}
-                        <a href="{{ $event.link }}" target="_blank" aria-label="link"><i class="uil uil-link-alt"></i></a>
+                    {{ with $event.readMoreURL }}
+                        <a href="{{ $event.readMoreURL }}" target="_blank" aria-label="link"><i class="uil uil-link-alt"></i></a>
                     {{ end }}
                 </div>
             </article>
