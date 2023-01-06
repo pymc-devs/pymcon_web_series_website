@@ -2,10 +2,21 @@ title = "Events"
 description = "Work in Progress"
 
 [[event]]
-    name = "Sample Event"
+    title = "Highlighted Event"
     type = "Talk"
     author = "Jane Doe"
     date= "2022-12-18"
-    description = "This is a sample event"
+    shortDescription = "This is a sample event"
     imgPath = "images/events/sample.png"
-    link = "https://pymcon.com"
+    highlighted = true
+    readMoreURL = "https://pymcon.com"
+
+[[event]]
+    title = "Not Highlighted Event"
+    type = "Talk"
+    author = "Jane Doe"
+    date= "2022-12-18"
+    shortDescription = "This is a sample event"
+    imgPath = "images/events/sample.png"
+    highlighted = false
+    readMoreURL = "https://pymcon.com"

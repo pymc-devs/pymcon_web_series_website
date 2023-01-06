@@ -214,36 +214,36 @@
 }
 
 
-/* ======================== KEYNOTE SPEAKERS ====================== */
-.speakers {
+/* ======================== HIGHLIGHTED EVENTS ====================== */
+.events {
     margin-top: 8rem;
 }
 
-.speaker {
+.event {
     background: var(--color-bg1);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
-.speaker:hover,
-.speaker:focus-within {
+.event:hover,
+.event:focus-within {
     background: transparent;
     border-color: var(--color-primary);
 }
 
 
-.speaker__info {
+.event__info {
     padding: 2rem;
 }
 
-.speaker__description {
+.event__description {
     height: 6.5rem;
     overflow: hidden;
     margin-bottom: 1rem;
 }
 
-.speaker__description p {
+.event__description p {
     margin: 1.2rem 0 2rem;
     font-size: 0.8rem;
 }
@@ -428,8 +428,8 @@
         margin-right: 0;
     }
 
-    /* ============================ KEYNOTE SPEAKERS ============================== */
-    .speakers {
+    /* ============================HIGHLIGHTED EVENTS ============================== */
+    .events {
         margin-top: 0;
     }
 
