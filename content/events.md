@@ -1,8 +1,8 @@
 ---
 title: "Events"
-description: "The series of events led by members of the PyMC community."
+description: " "
 slug: "events"
+layout: "events"
 weight: 40
 ---
 
-Coming soon!

@@ -61,35 +61,32 @@
 
 
 
-    <!-- ================================== START OF KEYNOTE SPEAKERS ============================== -->
-    <!--
-    <section class="section speakers">
-        {{ $speakers := .Site.Data.incoming_talks}}
-        <h2> {{ $speakers.title}} </h2>
-        <div class="container speakers__container">
-            <div class="swiper speakerSlider">
-                <div class="swiper-wrapper">
-                    {{ range $speakers.incoming_talk }}
-                        <article class="speaker swiper-slide">
-                            <div class="iframe__container">
-                                <img src="{{ .imgPath }}" alt="">
+    <!-- ================================== START OF HIGHLIGHTED highlighted_eventS============================== -->
+    
+    <section class="section highlighted_events">
+        {{ $highlighted_events := .Site.Data.events}}
+        <h2> {{ "Featured Events"}} </h2>
+        <div class="container highlighted_events__container">
+            {{ range $highlighted_events.event }}
+                {{if eq .highlighted true}}
+                    <article class="highlighted_event swiper-slide">
+                        <div class="iframe__container">
+                            <img src="{{ .imgPath }}" alt="">
+                        </div>
+                        <div class="highlighted_event__info">
+                            <h4> {{ .title }} </h4>
+                            <div class="highlighted_event__description">
+                                <p> {{ .shortDescription }} </p>
                             </div>
-                            <div class="speaker__info">
-                                <h4> {{ .title }} </h4>
-                                <div class="speaker__description">
-                                    <p> {{ .shortDescription }} </p>
-                                </div>
-                                <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
-                            </div>
-                        </article>
-                    {{ end }}
-                </div>
-                <div class="swiper-pagination speaker-pagination"></div>
-            </div>
+                            <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </article>
+                {{end}}
+            {{ end }}
         </div>
     </section>
-    -->
-    <!-- ================================== END OF KEYNOTE SPEAKERS ============================== -->
+   
+    <!-- ================================== END OF HIGHLIGHTED highlighted_eventS ============================== -->
 
 
 
@@ -153,12 +150,4 @@
     <!-- ================================== END OF support INFO ============================== -->
 
 
-{{ end }}
-
-
-{{ define "customJS" }}
-    <!-- ================== ANIMATION ==================== -->
-    <script src="./js/animation_script.js"></script>
-
-    <script src='https://kit.fontawesome.com/8ec3c26a24.js' crossorigin='anonymous'></script>
 {{ end }}
