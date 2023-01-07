@@ -7,7 +7,7 @@ description = "Work in Progress"
     author = "Jane Doe"
     date= "2022-12-18"
     shortDescription = "This is a sample event"
-    imgPath = "images/events/sample.png"
+    imgPath = "images/events/office_hours.png"
     highlighted = true
     readMoreURL = "https://pymcon.com"
 

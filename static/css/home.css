@@ -208,51 +208,54 @@
     font-size: 0.97rem;
     margin: 1.5rem 0 1rem;
 }
-
+e
 .goal p {
     font-size: 0.85rem;
 }
 
 
-/* ======================== HIGHLIGHTED EVENTS ====================== */
-.events {
+/* ======================== HIGHLIGHTED highlighted_eventS ====================== */
+
+
+
+.highlighted_events {
     margin-top: 8rem;
 }
 
-.event {
+.highlighted_events__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.highlighted_event {
     background: var(--color-bg1);
     text-align: center;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: var(--transition);
 }
 
-.event:hover,
-.event:focus-within {
+.highlighted_event:hover,
+.highlighted_event:focus-within {
     background: transparent;
     border-color: var(--color-primary);
 }
 
 
-.event__info {
+.highlighted_event__info {
     padding: 2rem;
 }
 
-.event__description {
+.highlighted_event__description {
     height: 6.5rem;
     overflow: hidden;
     margin-bottom: 1rem;
 }
 
-.event__description p {
+.highlighted_event__description p {
     margin: 1.2rem 0 2rem;
     font-size: 0.8rem;
 }
-
-.swiper-pagination {
-    position: relative;
-    padding-top: 1.5rem;
-}
-
 
 /* ======================== SUBSCRIBE ====================== */
 .subscribe__container {
@@ -428,8 +431,8 @@
         margin-right: 0;
     }
 
-    /* ============================HIGHLIGHTED EVENTS ============================== */
-    .events {
+    /* ============================HIGHLIGHTED highlighted_eventS ============================== */
+    .highlighted_events {
         margin-top: 0;
     }
 

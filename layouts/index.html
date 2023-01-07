@@ -61,39 +61,32 @@
 
 
 
-    <!-- ================================== START OF HIGHLIGHTED EVENTS============================== -->
+    <!-- ================================== START OF HIGHLIGHTED highlighted_eventS============================== -->
     
-    <section class="section events">
-        {{ $events := .Site.Data.events}}
+    <section class="section highlighted_events">
+        {{ $highlighted_events := .Site.Data.events}}
         <h2> {{ "Featured Events"}} </h2>
-        <div class="container events__container">
-            <div class="swiper eventSlider">
-                <div class="swiper-wrapper">
-
-                    {{ range $events.event }}
-                    {{if eq .highlighted true}}
-
-                        <article class="event swiper-slide">
-                            <div class="iframe__container">
-                                <img src="{{ .imgPath }}" alt="">
+        <div class="container highlighted_events__container">
+            {{ range $highlighted_events.event }}
+                {{if eq .highlighted true}}
+                    <article class="highlighted_event swiper-slide">
+                        <div class="iframe__container">
+                            <img src="{{ .imgPath }}" alt="">
+                        </div>
+                        <div class="highlighted_event__info">
+                            <h4> {{ .title }} </h4>
+                            <div class="highlighted_event__description">
+                                <p> {{ .shortDescription }} </p>
                             </div>
-                            <div class="event__info">
-                                <h4> {{ .title }} </h4>
-                                <div class="event__description">
-                                    <p> {{ .shortDescription }} </p>
-                                </div>
-                                <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
-                            </div>
-                        </article>
-                    {{end}}
-                    {{ end }}
-                </div>
-                <div class="swiper-pagination event-pagination"></div>
-            </div>
+                            <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </article>
+                {{end}}
+            {{ end }}
         </div>
     </section>
    
-    <!-- ================================== END OF HIGHLIGHTED EVENTS ============================== -->
+    <!-- ================================== END OF HIGHLIGHTED highlighted_eventS ============================== -->
 
 
 
@@ -158,72 +151,3 @@
 
 
 {{ end }}
-
-
-{{ define "customJS" }}
-
-    <script src='https://kit.fontawesome.com/8ec3c26a24.js' crossorigin='anonymous'></script>
-
-        <!-- =============== SWIPER SLIDER =============== -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-        <!-- =============== EVENTS SLIDER LOGIC ================ -->
-        <script>
-            var swiper = new Swiper(".eventSlider", {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                loop: false,
-                autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: true,
-                },
-                pagination: {
-                    el: ".event-pagination",
-                    clickable: true,
-                },
-    
-                // when windows width is >= 600px
-                breakpoints: {
-                    // for Tablate
-                    600: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    // for Desktop
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                }
-            });
-
-            var swiper = new Swiper(".logoSlider", {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            loop: false,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: true,
-            },
-            pagination: {
-                el: ".logo-pagination",
-                clickable: true,
-            },
-
-            // when windows width is >= 800px
-            breakpoints: {
-                // for Tablate
-                600: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                // for Desktop
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                },
-            }
-        });
-        </script>    
-{{ end }}
-
