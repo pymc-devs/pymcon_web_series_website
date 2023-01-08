@@ -59,38 +59,64 @@
     <!-- ========================== END OF GOALS ========================== -->
 
 
+    <!-- ================================== START OF FEATURED EVENT ============================== -->
+    {{ $events := sort .Site.Data.events.event "eventOrder" }}
+    {{ $count := 0 }}
+    <!-- count featured events -->
+    {{ range $event := $events }}
+        {{ if $event.featured }}
+            {{ $count = add $count 1 }}
+        {{ end }}
+    {{ end }}
 
-
-    <!-- ================================== START OF KEYNOTE SPEAKERS ============================== -->
-    <!--
-    <section class="section speakers">
-        {{ $speakers := .Site.Data.incoming_talks}}
-        <h2> {{ $speakers.title}} </h2>
-        <div class="container speakers__container">
-            <div class="swiper speakerSlider">
-                <div class="swiper-wrapper">
-                    {{ range $speakers.incoming_talk }}
-                        <article class="speaker swiper-slide">
-                            <div class="iframe__container">
-                                <img src="{{ .imgPath }}" alt="">
-                            </div>
-                            <div class="speaker__info">
-                                <h4> {{ .title }} </h4>
-                                <div class="speaker__description">
-                                    <p> {{ .shortDescription }} </p>
-                                </div>
-                                <a href="{{ .readMoreURL }}" class="btn btn-primary">Learn more</a>
-                            </div>
-                        </article>
-                    {{ end }}
+    <!-- Only display the "Featured event section" if there are more than three events to display. -->
+    {{ if gt $count 2 }}
+        <section class="section events" id="featured_events">
+            <h2>PyMCon Events</h2>
+            <div class="container events__container">
+                <div class="swiper eventCardSlider">
+                    <div class="swiper-wrapper">
+                        {{ range $event := $events }}
+                            {{ if $event.featured }}
+                                <article class="event__card swiper-slide" >
+                                    <div class="event__header">
+                                        {{ with $event.bannerImgPath }}
+                                            <img src="{{ $event.bannerImgPath }}" alt="">
+                                        {{ end }}
+                                        <div class="event__wrapper">
+                                            <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
+                                            <h3>{{ $event.title | markdownify | emojify }}</h3>
+                                            <span>
+                                                <i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="event__details">
+                                        <p>{{ $event.description | markdownify | emojify }}</p>
+                                        <div class="speaker__info">
+                                            {{ if $event.speakerImgPath }}
+                                                <img src="{{ $event.speakerImgPath }}" alt="">
+                                            {{ else }}
+                                                <img src="/images/speakers/speaker_icon.png" alt="">
+                                            {{ end }}
+                                            <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                                        </div>
+                                        <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                                    </div>
+                                </article>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="swiper-pagination event-pagination"></div>
                 </div>
-                <div class="swiper-pagination speaker-pagination"></div>
             </div>
-        </div>
-    </section>
-    -->
-    <!-- ================================== END OF KEYNOTE SPEAKERS ============================== -->
-
+        </section>
+    {{ else }}
+        <section style="height: 20rem">
+            <!-- Just a emplty div if there are no featured events -->
+        </section>
+    {{ end }}
+    <!-- ================================== END OF FEATURED EVENT ============================== -->
 
 
     <!-- ================================== START OF SUBSCRIBE ============================== -->
@@ -161,4 +187,38 @@
     <script src="./js/animation_script.js"></script>
 
     <script src='https://kit.fontawesome.com/8ec3c26a24.js' crossorigin='anonymous'></script>
+
+    <!-- =============== SWIPER SLIDER =============== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- =============== SPONSORS SLIDER LOGIC ================ -->
+    <script>
+        var swiper = new Swiper(".eventCardSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: false,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".event-pagination",
+                clickable: true,
+            },
+
+            // when windows width is >= 600px
+            breakpoints: {
+                // for Tablate
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // for Desktop
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 {{ end }}

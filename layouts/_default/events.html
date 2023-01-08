@@ -1,0 +1,122 @@
+{{ define "customCSS" }}
+    <link rel="stylesheet" href="/css/events.css">
+    <style>
+        body {
+            background-image: url("https://purna135.github.io/pymcon-test/images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+<!-- ============================== START OF HEADER ===================== -->
+<header class="small__header">
+    <div class="container small__header__container">
+        <div class="small__header__left">
+            <h1>{{.Params.Title}}</h1>
+            <p>{{ .Params.Description }}</p>
+        </div>
+
+        <div class="small__header__right">
+            <div class="small__header__right-image">
+                <img src="/images/events.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ============================== END OF HEADER ===================== -->
+
+<!-- ================================== START OF Event ============================== -->
+<section class="section events" id="pymcon_events">
+    <div class="container events__container">
+        <div class="event__cards">
+            <h2 id="upcoming_events">Upcoming Events</h2>
+            <h2 id="past_events">Past Events</h2>
+
+            {{ $events := sort .Site.Data.events.event "eventOrder" }}
+            {{ range $event := $events }}
+                <article class="event__card {{ $event.eventType }}">
+                    <div class="event__header">
+                        <div class="event__wrapper">
+                            <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
+                            <h3>{{ $event.title | markdownify | emojify }}</h3>
+                            <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
+                        </div>
+                        {{ with $event.bannerImgPath }}
+                            <img src="{{ $event.bannerImgPath }}" alt="">
+                        {{ end }}
+                    </div>
+                    <div class="event__details">
+                        <p>{{ $event.description | markdownify | emojify }}</p>
+                        <div class="speaker__info">
+                            {{ if $event.speakerImgPath }}
+                                <img src="{{ $event.speakerImgPath }}" alt="">
+                            {{ else }}
+                                <img src="/images/speakers/speaker_icon.png" alt="">
+                            {{ end }}
+                            <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                        </div>
+                        <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                    </div>
+                </article>
+            {{ end }}
+        </div>
+
+        <div class="events_btn_container" id="eventBtnContainer">
+            <button class="active" onclick="filterSelection('upcoming')">Upcoming Events</button>
+            <button class="" onclick="filterSelection('past')">Past Events</button>
+        </div>
+    </div>
+</section>
+<hr class="footer_line">
+<!-- ================================== END OF Event ============================== -->
+{{ end }}
+
+{{ define "customJS" }}
+    <!-- ================== EVENT FILTER ==================== -->
+    <script>
+        filterSelection("upcoming");
+        function show (elements, specifiedDisplay) {
+            elements = elements.length ? elements : [elements];
+            for (var index = 0; index < elements.length; index++) {
+                elements[index].style.display = specifiedDisplay || 'block';
+            }
+        }
+
+        function hide (elements) {
+            elements = elements.length ? elements : [elements];
+            for (var index = 0; index < elements.length; index++) {
+                elements[index].style.display = 'none';
+            }
+        }
+
+        function filterSelection(event_type) {
+            var upcoming_events = document.querySelectorAll('.upcoming');
+            var past_events = document.querySelectorAll('.past');
+            var upcoming_heading = document.getElementById("upcoming_events");
+            var past_heading = document.getElementById("past_events");
+
+            if(event_type == "upcoming"){
+                upcoming_heading.style.display = "block";
+                past_heading.style.display = "none";
+                show(upcoming_events);
+                hide(past_events);
+            } else {
+                upcoming_heading.style.display = "none";
+                past_heading.style.display = "block";
+                hide(upcoming_events);
+                show(past_events);
+            }
+        }
+
+        // Add active class to the current control button (highlight it)
+        var eventBtnContainer = document.getElementById("eventBtnContainer");
+        var btns = eventBtnContainer.getElementsByTagName("button");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += "active";
+            });
+        }
+    </script>
+{{ end }}
