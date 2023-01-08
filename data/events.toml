@@ -15,7 +15,7 @@
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287214141/"
     eventOrder = 2
     eventType = "upcoming"
-    featured = false
+    featured = true
 
 
 [[event]]

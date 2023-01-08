@@ -44,10 +44,6 @@
     color: var(--color-red);
 }
 
-.past {
-    background: var(--color-primary);
-}
-
 .event__header h3 {
     font-size: 1.5rem;
     margin: 0.9rem 0 0.7rem;
@@ -117,7 +113,7 @@
 
 .events_btn_container button:hover {
     background: var(--color-bg);
-    color: var(--color-red);
+    color: var(--color-danger);
 }
 
 .active {
