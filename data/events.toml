@@ -1,4 +1,4 @@
-# eventOrder : integer (used to order events ascending order)
+# eventOrder : integer (used to order events in ascending order)
 # eventType : must be "upcoming" or "past"
 # featured : boolean (if true, the event will be shown on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
