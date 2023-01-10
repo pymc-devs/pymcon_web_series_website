@@ -71,12 +71,14 @@
                                     <div class="event__details">
                                         <p>{{ $event.description | markdownify | emojify }}</p>
                                         <div class="speaker__info">
-                                            {{ if $event.speakerImgPath }}
-                                                <img src="{{ $event.speakerImgPath }}" alt="">
-                                            {{ else }}
-                                                <img src="/images/speakers/speaker_icon.png" alt="">
-                                            {{ end }}
-                                            <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                                            {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
+                                                {{ if $event.speakerImgPath }}
+                                                    <img src="{{ $event.speakerImgPath }}" alt="">
+                                                {{ else }}
+                                                    <img src="/images/speakers/speaker_icon.png" alt="">
+                                                {{ end }}
+                                                <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                                            {{ with $event.speakerSocialLink }} </a> {{ end }}
                                         </div>
                                         <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
                                     </div>

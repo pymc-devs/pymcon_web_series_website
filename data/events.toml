@@ -1,6 +1,7 @@
 # eventOrder : integer (used to order events in ascending order)
 # eventType : must be "upcoming" or "past"
 # featured : boolean (if true, the event will be shown on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
+# speakerSocialLink : author's social link (leave this property blank if it's unavailable i.e speakerSocialLink = "")
 
 
 [[event]]
@@ -12,6 +13,7 @@
     bannerImgPath = "/images/events/talk1.jpg"
     speakerName = "Ravin Kumar"
     speakerImgPath = "/images/speakers/ravin.jpg"
+    speakerSocialLink = "https://www.meetup.com"
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287214141/"
     eventOrder = 2
     eventType = "upcoming"
@@ -27,6 +29,7 @@
     bannerImgPath = "/images/events/talk2.jpg"
     speakerName = "Ricardo Vieira"
     speakerImgPath = ""
+    speakerSocialLink = "https://www.meetup.com"
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/286748916/"
     eventOrder = 4
     eventType = "past"
@@ -42,6 +45,7 @@
     bannerImgPath = "/images/events/talk3.jpg"
     speakerName = "Thomas Wiecki"
     speakerImgPath = ""
+    speakerSocialLink = "#"
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287182583/"
     eventOrder = 1
     eventType = "upcoming"
@@ -56,6 +60,7 @@
 
     bannerImgPath = "/images/events/talk1.jpg"
     speakerName = "Sheila Y."
+    speakerSocialLink = ""
     speakerImgPath = "/images/speakers/fernando.jpg"
     readMoreURL = "https://www.meetup.com/hikingoc/events/290626417/"
     eventOrder = 3
