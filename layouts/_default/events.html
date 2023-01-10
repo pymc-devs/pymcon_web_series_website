@@ -70,9 +70,9 @@
         </div>
 
         <div class="events_btn_container" id="eventBtnContainer">
-            <button class="active" onclick="filterSelection('all')">All Events</button>
-            <button class="" onclick="filterSelection('upcoming')">Upcoming Events</button>
-            <button class="" onclick="filterSelection('past')">Past Events</button>
+            <button class="active" onclick="filterSelection('all'); scrollToEventView();">All Events</button>
+            <button class="" onclick="filterSelection('upcoming'); scrollToEventView();">Upcoming Events</button>
+            <button class="" onclick="filterSelection('past'); scrollToEventView();">Past Events</button>
         </div>
     </div>
     <!-- if there is no events available to display -->
@@ -88,6 +88,11 @@
     <!-- ================== EVENT FILTER ==================== -->
     <script>
         filterSelection("all");
+        
+        function scrollToEventView() {
+            document.getElementById('pymcon_events').scrollIntoView();
+        }
+
         function show (elements, specifiedDisplay) {
             elements = elements.length ? elements : [elements];
             for (var index = 0; index < elements.length; index++) {

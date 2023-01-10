@@ -100,6 +100,8 @@
     padding: 2rem 1.5rem;
     margin-top: 5.5rem;
     border-radius: 5px;
+    position: sticky;
+    top: 7rem;
 }
 
 .events_btn_container button {
