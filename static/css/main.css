@@ -450,6 +450,11 @@ img {
         margin-bottom: 1.3rem;
     }
 
+    .small__header__right {
+        grid-row: 1;
+        z-index: -10;
+    }
+
     .footer__logo {
         margin: 0 auto;
         width: 50%;
