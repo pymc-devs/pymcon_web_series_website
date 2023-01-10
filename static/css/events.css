@@ -133,7 +133,8 @@
     .events_btn_container {
         grid-row: 1;
         margin-top: 0;
-        display: grid;grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
     
@@ -149,6 +150,11 @@
 @media screen and (max-width: 600px) {
     .events {
         box-shadow: none;
+    }
+
+    .events_btn_container {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
     .footer_line {

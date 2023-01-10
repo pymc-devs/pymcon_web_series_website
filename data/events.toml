@@ -28,7 +28,7 @@
     speakerName = "Ricardo Vieira"
     speakerImgPath = ""
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/286748916/"
-    eventOrder = 3
+    eventOrder = 4
     eventType = "past"
     featured = true
 
@@ -43,7 +43,7 @@
     speakerName = "Thomas Wiecki"
     speakerImgPath = ""
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287182583/"
-    eventOrder = 4
+    eventOrder = 1
     eventType = "upcoming"
     featured = true
 
@@ -58,6 +58,6 @@
     speakerName = "Sheila Y."
     speakerImgPath = "/images/speakers/fernando.jpg"
     readMoreURL = "https://www.meetup.com/hikingoc/events/290626417/"
-    eventOrder = 1
+    eventOrder = 3
     eventType = "past"
     featured = true

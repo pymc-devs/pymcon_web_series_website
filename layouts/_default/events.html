@@ -29,6 +29,7 @@
 <section class="section events" id="pymcon_events">
     <div class="container events__container">
         <div class="event__cards">
+            <h2 id="all_events">All Events</h2>
             <h2 id="upcoming_events">Upcoming Events</h2>
             <h2 id="past_events">Past Events</h2>
 
@@ -62,7 +63,8 @@
         </div>
 
         <div class="events_btn_container" id="eventBtnContainer">
-            <button class="active" onclick="filterSelection('upcoming')">Upcoming Events</button>
+            <button class="active" onclick="filterSelection('all')">All Events</button>
+            <button class="" onclick="filterSelection('upcoming')">Upcoming Events</button>
             <button class="" onclick="filterSelection('past')">Past Events</button>
         </div>
     </div>
@@ -74,7 +76,7 @@
 {{ define "customJS" }}
     <!-- ================== EVENT FILTER ==================== -->
     <script>
-        filterSelection("upcoming");
+        filterSelection("all");
         function show (elements, specifiedDisplay) {
             elements = elements.length ? elements : [elements];
             for (var index = 0; index < elements.length; index++) {
@@ -92,15 +94,24 @@
         function filterSelection(event_type) {
             var upcoming_events = document.querySelectorAll('.upcoming');
             var past_events = document.querySelectorAll('.past');
+            var all_heading = document.getElementById("all_events");
             var upcoming_heading = document.getElementById("upcoming_events");
             var past_heading = document.getElementById("past_events");
 
-            if(event_type == "upcoming"){
+            if(event_type == "all"){
+                all_heading.style.display = "block";
+                upcoming_heading.style.display = "none";
+                past_heading.style.display = "none";
+                show(upcoming_events);
+                show(past_events);
+            }else if(event_type == "upcoming"){
+                all_heading.style.display = "none";
                 upcoming_heading.style.display = "block";
                 past_heading.style.display = "none";
                 show(upcoming_events);
                 hide(past_events);
             } else {
+                all_heading.style.display = "none";
                 upcoming_heading.style.display = "none";
                 past_heading.style.display = "block";
                 hide(upcoming_events);
