@@ -1,6 +1,6 @@
-###############################################################
-##################### SAMPLE EVENT DATA #######################
-###############################################################
+#==============================================================
+######################## EVENT FORMAT #########################
+#==============================================================
 
 #[[event]]
 #    dataTime = "Thu Nov 17, 2022, 8:30 PM IST"      (Any data and time format)
@@ -17,6 +17,8 @@
 #    featured = true                                 (A boolean, if true, the event will be displayed on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
 
+
+#============================= REMOVE ALL THE LINES BELOW BEFOR MERGE OF THIS PR (also remove the relevant images) =========================
 [[event]]
     dataTime = "Thu Nov 17, 2022, 8:30 PM IST"
     title = "Bayesian Modeling in Biotech: Using PyMC to Analyze Agricultural Data."
