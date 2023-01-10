@@ -27,13 +27,16 @@
 
 <!-- ================================== START OF Event ============================== -->
 <section class="section events" id="pymcon_events">
+    {{ $events := .Site.Data.events }}
+    <!-- check if there is any event present or not -->
+    {{ if $events }}
     <div class="container events__container">
         <div class="event__cards">
             <h2 id="all_events">All Events</h2>
             <h2 id="upcoming_events">Upcoming Events</h2>
             <h2 id="past_events">Past Events</h2>
 
-            {{ $events := sort .Site.Data.events.event "eventOrder" }}
+            {{ $events := sort $events.event "eventOrder" }}
             {{ range $event := $events }}
                 <article class="event__card {{ $event.eventType }}">
                     <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: 100%;">
@@ -72,6 +75,10 @@
             <button class="" onclick="filterSelection('past')">Past Events</button>
         </div>
     </div>
+    <!-- if there is no events available to display -->
+    {{ else }}
+        <h2>Coming soon...</h2>
+    {{ end }}
 </section>
 <hr class="footer_line">
 <!-- ================================== END OF Event ============================== -->
