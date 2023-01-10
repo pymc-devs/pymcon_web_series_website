@@ -37,22 +37,33 @@
 
     
     <!-- ================================== START OF FEATURED EVENT ============================== -->
-    {{ $events := sort .Site.Data.events.event "eventOrder" }}
+    {{ $eventsData := .Site.Data.events }}
     {{ $count := 0 }}
-    <!-- count featured events -->
-    {{ range $event := $events }}
-        {{ if $event.featured }}
-            {{ $count = add $count 1 }}
+    {{ $showFeaturedEvent := false }}
+    <!-- check if there is any event present or not -->
+    {{ if $eventsData }}
+        {{ $events := sort $eventsData.event "eventOrder" }}
+        <!-- count featured events -->
+        {{ range $event := $events }}
+            {{ if $event.featured }}
+                {{ $count = add $count 1 }}
+            {{ end }}
+        {{ end }}
+
+        <!-- Only display the "Featured event section" if there are more than two events to display. -->
+        {{ if gt $count 2 }}
+            {{ $showFeaturedEvent = true }}
         {{ end }}
     {{ end }}
 
-    <!-- Only display the "Featured event section" if there are more than three events to display. -->
-    {{ if gt $count 2 }}
+
+    {{ if $showFeaturedEvent }}
         <section class="section events" id="featured_events">
             <h2>PyMCon Events</h2>
             <div class="container events__container">
                 <div class="swiper eventCardSlider">
                     <div class="swiper-wrapper">
+                        {{ $events := sort $eventsData.event "eventOrder" }}
                         {{ range $event := $events }}
                             {{ if $event.featured }}
                                 <article class="event__card swiper-slide" >
@@ -92,10 +103,6 @@
                 </div>
             </div>
         </section>
-    {{ else }}
-        <section style="height: 20rem">
-            <!-- Just a emplty div if there are no featured events -->
-        </section>
     {{ end }}
     <!-- ================================== END OF FEATURED EVENT ============================== -->
 
@@ -104,7 +111,7 @@
 
 
     <!-- ========================== START OF GOALS ========================== -->
-    <section class="section golas">
+    <section class="section golas" {{ if not $showFeaturedEvent }} style="background: var(--color-bg1); height: 30rem;" {{ end }}>
         <div class="container golas__container">
             {{ $goals := .Site.Data.goals }}
             <div class="golas__left">
@@ -130,7 +137,7 @@
     
 
     <!-- ================================== START OF SUBSCRIBE ============================== -->
-    <section class="section subscribe">
+    <section class="section subscribe" {{ if not $showFeaturedEvent }} style="background: transparent; margin: 8rem 0 4rem;" {{ end }}>
         <div class="container subscribe__container">
             <div class="subscribe__text">
                 <h2>Join the PyMC Discourse to stay updated</h2>
@@ -145,7 +152,7 @@
 
 
     <!-- ================================== START OF support INFO ============================== -->
-    <section class="section supports" id="donate_support">
+    <section class="section supports" id="donate_support" {{ if not $showFeaturedEvent }} style="background: var(--color-bg1); box-shadow: inset 0 0.2rem 4rem 0.2rem rgba(0, 0, 0, 0.5);" {{ end }}>
         <h2> Support/Donations </h2>
         <p> The donations will be handled by NumFOCUS which is 501(c)(3) non profit and manages all finances for PyMC </p>
         <div class="container supports__container">

@@ -1,7 +1,20 @@
-# eventOrder : integer (used to order events in ascending order)
-# eventType : must be "upcoming" or "past"
-# featured : boolean (if true, the event will be shown on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
-# speakerSocialLink : author's social link (leave this property blank if it's unavailable i.e speakerSocialLink = "")
+###############################################################
+##################### SAMPLE EVENT DATA #######################
+###############################################################
+
+#[[event]]
+#    dataTime = "Thu Nov 17, 2022, 8:30 PM IST"      (Any data and time format)
+#    title = "Bayesian Modeling in Biotech"          (Event title)
+#    place = "Online"                                (Event place)
+#    description = "In this talk..."                 (Small description of the event)
+#    bannerImgPath = "/images/events/talk1.jpg"      (Event thumnail/banner img path)
+#    speakerName = "Ravin Kumar"                     (Speaker/Author name)
+#    speakerImgPath = "/images/speakers/ravin.jpg"   (Speaker/Author img path, leave blank if unavailable i.e speakerImgPath="")
+#    speakerSocialLink = "www.github.com"            (Author's social link, leave blank if unavailable i.e speakerSocialLink = "")
+#    readMoreURL = "https://www.meetup.com"          (Event post URL i.e Discourse, Meetup etc)
+#    eventOrder = 2                                  (An integer, used to order events in ascending order)
+#    eventType = "upcoming"                          (must be "upcoming" or "past")
+#    featured = true                                 (A boolean, if true, the event will be displayed on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
 
 [[event]]
@@ -33,7 +46,7 @@
     readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/286748916/"
     eventOrder = 4
     eventType = "past"
-    featured = true
+    featured = false
 
 
 [[event]]
