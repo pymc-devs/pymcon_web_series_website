@@ -138,6 +138,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+        padding: 1.5rem;
+        top: 4rem;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
     }
     
     .events_btn_container button {
@@ -157,6 +160,9 @@
     .events_btn_container {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+        position: inherit;
+        top: 0;
+        box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
     }
 
     .footer_line {
