@@ -36,6 +36,7 @@
             {{ $events := sort .Site.Data.events.event "eventOrder" }}
             {{ range $event := $events }}
                 <article class="event__card {{ $event.eventType }}">
+                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: 100%;">
                     <div class="event__header">
                         <div class="event__wrapper">
                             <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
@@ -48,6 +49,8 @@
                     </div>
                     <div class="event__details">
                         <p>{{ $event.description | markdownify | emojify }}</p>
+                    </div>
+                    </a>
                         <div class="speaker__info">
                             {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
                                 {{ if $event.speakerImgPath }}
@@ -59,7 +62,6 @@
                             {{ with $event.speakerSocialLink }} </a> {{ end }}
                         </div>
                         <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
-                    </div>
                 </article>
             {{ end }}
         </div>
