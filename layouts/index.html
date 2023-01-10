@@ -35,30 +35,7 @@
 
 
 
-    <!-- ========================== START OF GOALS ========================== -->
-    <section class="section golas">
-        <div class="container golas__container">
-            {{ $goals := .Site.Data.goals }}
-            <div class="golas__left">
-                <h2> {{$goals.title}} </h2>
-                <p>  {{$goals.description}} </p>
-                <a href="{{ ref . "about" }}" class="btn"> Learn More </a>
-            </div>
-
-            <div class="golas__right">
-                {{ range $goals.goal }}
-                    <article class="goal">
-                        <span class="goal__icon"><i class="uil uil-crosshair"></i></span>
-                        <h3> {{ .title }} </h3>
-                        <p> {{ .description }} </p>
-                    </article>
-                {{ end }}
-            </div>
-        </div>
-    </section>
-    <!-- ========================== END OF GOALS ========================== -->
-
-
+    
     <!-- ================================== START OF FEATURED EVENT ============================== -->
     {{ $events := sort .Site.Data.events.event "eventOrder" }}
     {{ $count := 0 }}
@@ -118,6 +95,35 @@
     {{ end }}
     <!-- ================================== END OF FEATURED EVENT ============================== -->
 
+
+
+
+
+    <!-- ========================== START OF GOALS ========================== -->
+    <section class="section golas">
+        <div class="container golas__container">
+            {{ $goals := .Site.Data.goals }}
+            <div class="golas__left">
+                <h2> {{$goals.title}} </h2>
+                <p>  {{$goals.description}} </p>
+                <a href="{{ ref . "about" }}" class="btn"> Learn More </a>
+            </div>
+
+            <div class="golas__right">
+                {{ range $goals.goal }}
+                    <article class="goal">
+                        <span class="goal__icon"><i class="uil uil-crosshair"></i></span>
+                        <h3> {{ .title }} </h3>
+                        <p> {{ .description }} </p>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    <!-- ========================== END OF GOALS ========================== -->
+
+
+    
 
     <!-- ================================== START OF SUBSCRIBE ============================== -->
     <section class="section subscribe">

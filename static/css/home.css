@@ -137,8 +137,8 @@
 
 /* ============================= GOALS ========================== */
 .golas {
-    background: var(--color-bg1);
-    height: 29rem;
+    background: transparent;
+    height: 42rem;
 }
 
 .golas h2 {
@@ -216,7 +216,7 @@
 
 /* ======================== PYMCON FEATURED EVENTS ========================= */
 .events{
-    margin-top: 7rem;
+    background: var(--color-bg1);
 }
 
 .event__card {
