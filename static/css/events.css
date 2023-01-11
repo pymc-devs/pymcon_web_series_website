@@ -52,10 +52,6 @@
     overflow: hidden;
 }
 
-.event__card:hover h3 {
-    max-height: fit-content;
-}
-
 .event__header img {
     border-radius: 5px;
 }
@@ -66,10 +62,6 @@
     max-height: 4.5rem; /* height is 3x line-height, so 3 lines will display */
     overflow: hidden;
     font-size: 0.95rem;
-}
-
-.event__body:hover p {
-    max-height: fit-content;
 }
 
 .speaker__info {

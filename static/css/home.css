@@ -246,10 +246,6 @@
     overflow: hidden;
 }
 
-.event__card:hover h3 {
-    max-height: fit-content;
-}
-
 .event__header span {
     font-size: 0.9rem;
 }
