@@ -39,7 +39,7 @@
             {{ $events := sort $events.event "eventOrder" }}
             {{ range $event := $events }}
                 <article class="event__card {{ $event.eventType }}">
-                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: 100%;">
+                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: 100%;" class="event__body">
                     <div class="event__header">
                         <div class="event__wrapper">
                             <h4>{{ $event.dataTime | markdownify | emojify }}</h4>

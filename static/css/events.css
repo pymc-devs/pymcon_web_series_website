@@ -68,7 +68,7 @@
     font-size: 0.95rem;
 }
 
-.event__card:hover p {
+.event__body:hover p {
     max-height: fit-content;
 }
 
