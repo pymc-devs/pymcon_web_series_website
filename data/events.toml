@@ -3,7 +3,7 @@
 #==============================================================
 
 #[[event]]
-#    dataTime = "Thu Nov 17, 2022, 8:30 PM IST"      (Any data and time format)
+#    dataTime = "Feb 9th, 2022"          (Any data and time format)
 #    title = "Bayesian Modeling in Biotech"          (Event title)
 #    place = "Online"                                (Event place)
 #    description = "In this talk..."                 (Small description of the event)
