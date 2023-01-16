@@ -3,7 +3,7 @@
 #==============================================================
 
 #[[event]]
-#    dataTime = "Thu Nov 17, 2022, 8:30 PM IST"      (Any data and time format)
+#    dataTime = "Feb 9th, 2022"          (Any data and time format)
 #    title = "Bayesian Modeling in Biotech"          (Event title)
 #    place = "Online"                                (Event place)
 #    description = "In this talk..."                 (Small description of the event)
@@ -17,3 +17,17 @@
 #    featured = true                                 (A boolean, if true, the event will be displayed on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
 
+[[event]]
+    dataTime = "Thu Nov 17, 2022, 8:30 PM IST"
+    title = "The Power of Bayes in Industry: Your Business Model is Your Data Generating Process"
+    place = "Online"
+    description = "This talk will attempt to answer the question what is a Data Generating Process and why does it matter? While we will begin our discussion with a bit of theory, don't worry about this being too technical or inaccessible if you're new to Bayesian Statistics. Our primary goal is to focus on the second half of the question and give you tools to use for real-world applications."
+
+    bannerImgPath = "/images/events/pymcon-dante-gates.png"
+    speakerName = "Ravin Kumar"
+    speakerImgPath = "/images/speakers/ravin.jpg"
+    speakerSocialLink = "https://www.meetup.com"
+    readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287214141/"
+    eventOrder = 1
+    eventType = "upcoming"
+    featured = true
