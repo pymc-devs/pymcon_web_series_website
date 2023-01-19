@@ -5,6 +5,7 @@
     outline: 0;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -447,6 +448,11 @@ img {
 
     .small__header__left p {
         margin-bottom: 1.3rem;
+    }
+
+    .small__header__right {
+        grid-row: 1;
+        z-index: -10;
     }
 
     .footer__logo {
