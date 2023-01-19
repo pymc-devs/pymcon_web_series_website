@@ -24,10 +24,10 @@
     description = "This talk will attempt to answer the question what is a Data Generating Process and why does it matter? While we will begin our discussion with a bit of theory, don't worry about this being too technical or inaccessible if you're new to Bayesian Statistics. Our primary goal is to focus on the second half of the question and give you tools to use for real-world applications."
 
     bannerImgPath = "/images/events/pymcon-dante-gates.png"
-    speakerName = "Ravin Kumar"
-    speakerImgPath = "/images/speakers/ravin.jpg"
-    speakerSocialLink = "https://www.meetup.com"
-    readMoreURL = "https://www.meetup.com/pymc-online-meetup/events/287214141/"
+    speakerName = "Dante Gates"
+    speakerImgPath = ""
+    speakerSocialLink = ""
+    readMoreURL = ""
     eventOrder = 1
     eventType = "upcoming"
     featured = true
