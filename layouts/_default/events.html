@@ -94,6 +94,7 @@
         }
 
         function show (elements, specifiedDisplay) {
+            if(elements.length == 0) return;
             elements = elements.length ? elements : [elements];
             for (var index = 0; index < elements.length; index++) {
                 elements[index].style.display = specifiedDisplay || 'block';
@@ -101,6 +102,7 @@
         }
 
         function hide (elements) {
+            if(elements.length == 0) return;
             elements = elements.length ? elements : [elements];
             for (var index = 0; index < elements.length; index++) {
                 elements[index].style.display = 'none';
