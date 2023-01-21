@@ -51,7 +51,7 @@
         {{ end }}
 
         <!-- Only display the "Featured event section" if there are more than two events to display. -->
-        {{ if gt $count 2 }}
+        {{ if gt $count 0 }}
             {{ $showFeaturedEvent = true }}
         {{ end }}
     {{ end }}
@@ -60,14 +60,16 @@
     {{ if $showFeaturedEvent }}
         <section class="section events" id="featured_events">
             <h2>PyMCon Events</h2>
-            <div class="container events__container">
+            <div class="container events__container {{ if eq $count 1 }} event_1 {{ else if eq $count 2 }} event_2 {{ end }}">
+                {{ if gt $count 2 }}
                 <div class="swiper eventCardSlider">
                     <div class="swiper-wrapper">
+                {{ end }}
                         {{ $events := sort $eventsData.event "eventOrder" }}
                         {{ range $event := $events }}
                             {{ if $event.featured }}
                                 <article class="event__card swiper-slide" >
-                                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: 100%;">
+                                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: fit-content">
                                     <div class="event__header">
                                         {{ with $event.bannerImgPath }}
                                             <img src="{{ $event.bannerImgPath }}" alt="">
@@ -98,9 +100,11 @@
                                 </article>
                             {{ end }}
                         {{ end }}
+                {{ if gt $count 2 }}
                     </div>
                     <div class="swiper-pagination event-pagination"></div>
                 </div>
+                {{ end }}
             </div>
         </section>
     {{ end }}

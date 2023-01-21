@@ -293,6 +293,126 @@
 }
 
 
+
+
+
+/* ========================== STYLE FOR A SINGLE FEATURED EVENT ======================= */
+.event_1 {
+    padding: 0 4rem;
+}
+
+.event_1 .event__card {
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+}
+
+.event_1 .event__card:hover {
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.3);
+    background: var(--color-bg2);
+}
+
+.event_1 .event__header .event__wrapper {
+    grid-row: 1;
+}
+
+.event_1 .event__header {
+    display: grid;
+    grid-template-columns: 3fr 1.4fr;
+    gap: 1rem;
+}
+
+.event_1 .event__header h3{
+    font-size: 1.5rem;
+    margin: 0.9rem 0 0.7rem;
+    line-height: 2.1rem;
+    max-height: 4.2rem;   /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+}
+
+.event_1 .event__header h4{
+    font-size: 1rem;
+}
+
+.event_1 .event__header span {
+    font-size: 1rem;
+}
+
+.event_1 .event__details p {
+    margin: 1.2rem 0 1rem 0;
+    line-height: 1.5rem;
+    max-height: 4.5rem; /* height is 3x line-height, so 3 lines will display */
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.event_1 .speaker__info img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-red);
+    display: inline;
+}
+
+.event_1 .speaker__info em {
+    font-size: 0.95rem;
+}
+
+.event_1 .event__btn {
+    float: right;
+    padding: 0.6rem 1.1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* ========================== STYLE FOR 2 FEATURED EVENTS ======================= */
+.event_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.event_2 .event__card {
+    padding: 1.3rem;
+}
+
+.event_2 .event__card:hover {
+    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.3);
+    background: var(--color-bg2);
+}
+
+.event_2 .event__header {
+    display: grid;
+    grid-template-columns: 3fr 1.8fr;
+    gap: 0.5rem;
+}
+
+.event_2 .event__header .event__wrapper {
+    grid-row: 1;
+}
+
+.event_2 .event__header h4 {
+    margin-top: 0;
+}
+
+.event_2 .event__header h3{
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.3rem;
+    line-height: 1.5rem;
+    max-height: 4.5rem;   /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+}
+
+.event_2 .event__details p {
+    margin: 0.8rem 0 1rem 0;
+    line-height: 1.3rem;
+    max-height: 3.9rem; /* height is 3x line-height, so 3 lines will display */
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+
+
 /* ======================== SUBSCRIBE ====================== */
 .subscribe {
     padding: 6rem 0 6rem;
@@ -456,6 +576,30 @@
         padding-bottom: 2rem;
     }
 
+    /* ========================== STYLE FOR A SINGLE FEATURED EVENT ======================= */
+    .event_1 {
+        padding: 0;
+    }
+    
+    .event_1 .event__card {
+        padding: 1rem;
+    }
+
+    /* ========================== STYLE FOR 2 FEATURED EVENT ======================= */
+
+    .event_2 .event__card {
+        padding: 1rem;
+    }
+
+    .event_2 .event__header {
+        grid-template-columns: 1fr;
+    }
+    
+    .event_2 .event__header .event__wrapper {
+        grid-row: 2;
+    }
+    
+
     /* ============================ GOALS ============================== */
 
     .golas {
@@ -522,6 +666,39 @@
     .header_right .rocket {
         margin-top: 0;
     }
+
+    /* ========================== STYLE FOR A SINGLE FEATURED EVENT ======================= */
+    
+
+    .event_1 .event__header {
+        grid-template-columns: 1fr;
+    }
+    
+    .event_1 .event__header .event__wrapper {
+        grid-row: 2;
+    }
+
+    .event_1 .event__card h3,
+    .event_2 .event__card h3{
+        font-size: 1.4rem;
+        margin: 0.5rem 0 0.5rem;
+        line-height: 2rem;
+        max-height: fit-content;
+    }
+    
+    .event_1 .event__card h4{
+        margin-top: 0.8rem;
+    }
+    
+    .event_1 .event__card p {
+        margin: 0.8rem 0 1rem 0;
+    }
+
+    .event_2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
 
     /* ======================= GOALS ======================== */
     .golas__right {
