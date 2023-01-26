@@ -25,9 +25,9 @@
 
     bannerImgPath = "/images/events/pymcon-dante-gates.png"
     speakerName = "Dante Gates"
-    speakerImgPath = ""
+    speakerImgPath = "/images/events/dante-gates-hs.png"
     speakerSocialLink = ""
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
     eventOrder = 1
     eventType = "upcoming"
     featured = true
