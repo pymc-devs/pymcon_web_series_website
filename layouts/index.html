@@ -69,7 +69,9 @@
                         {{ range $event := $events }}
                             {{ if $event.featured }}
                                 <article class="event__card swiper-slide" >
-                                    <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: fit-content">
+                                    {{ with $event.readMoreURL }}
+                                        <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: fit-content">
+                                    {{ end }}
                                     <div class="event__header">
                                         {{ with $event.bannerImgPath }}
                                             <img src="{{ $event.bannerImgPath }}" alt="">
@@ -85,7 +87,9 @@
                                     <div class="event__details">
                                         <p>{{ $event.description | markdownify | emojify }}</p>
                                     </div>
-                                    </a>
+                                    {{ with $event.readMoreURL }}
+                                        </a>
+                                    {{ end }}
                                         <div class="speaker__info">
                                             {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
                                                 {{ if $event.speakerImgPath }}
@@ -96,7 +100,9 @@
                                                 <em>{{ $event.speakerName | markdownify | emojify }}</em>
                                             {{ with $event.speakerSocialLink }} </a> {{ end }}
                                         </div>
-                                        <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                                        {{ with $event.readMoreURL }}
+                                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                                        {{ end }}
                                 </article>
                             {{ end }}
                         {{ end }}
