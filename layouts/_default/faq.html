@@ -34,8 +34,8 @@
             <article class="faq" tabindex="0" id="{{ replace $faq.question " " "_" }}">
                 <div class="faq__icon"><i class="uil uil-plus"></i></div>
                 <div class="question__answer">
-                    <h2> {{ $faq.question }} </h2>
-                    <p> {{ $faq.answer | markdownify }} </p>
+                    <h2> {{ $faq.question | markdownify | emojify }} </h2>
+                    <p> {{ $faq.answer | markdownify | emojify }} </p>
                 </div>
             </article>
         {{ end }}
