@@ -40,7 +40,7 @@
 
     bannerImgPath = "/images/events/pymcon-Danh.png"
     speakerName = "Danh Phan"
-    speakerImgPath = "/images/events/danh-phan-hs.png"
+    speakerImgPath = "/images/speakers/DanhPhan.png"
     speakerSocialLink = ""
     readMoreURL = ""
     eventOrder = 2
