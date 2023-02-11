@@ -2,14 +2,15 @@
 
 PyMCon is a community led event and we encourage you to contribute in any form you demarcate suitable for yourself.
 
-Here are a few possible ways you can contribute:
+Here are a few possible ways you can contribute to PyMCon:
 
-- [Make a Pull request](###-Make-a-Pull-Request)
+- [Make a Pull request](###-Make-a-Pull-Request) to update the website.
 - [Create an Issue](###-Create-an-Issue)
 - [Personal Feedback](###-Personal-Feedback)
+- Share the events with your network
 
 
-### Make a Pull request
+### Make a Pull Request
 
 To make a Pull Request, you can follow these steps:
 - Fork the repository to your own Github Profile
@@ -33,7 +34,7 @@ Then [create an issue](https://github.com/pymc-devs/pymcon_web_series/issues/new
 
 ### Personal Feedback
 
-Is there something you want to help with, and really think it should be discussed in private? Email the organizers. 
+Is there something you want to help with, and really think it should be discussed in private? [Email the organizers](https://pymcon.com/contact/). 
 Please use your own judgement to decide what is appropriate. 
 A few examples of reasonable emails are - accessibility issues you want to discuss in detail personally.
 While this is possible, we strongly encourage opening public issues, so everybody sees them and we can act on it sooner.
@@ -53,4 +54,4 @@ If you are not familiar with git, and/or hugo:
 - For making a PR we recommend checking the [Github Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 - For Hugo, we recommend checking [Hugo Docs](https://gohugo.io/documentation/)
 
-Ofcourse you can always ask questions in the Issue or PR itself as well!
+Of course you can always ask questions in the Issue or PR itself as well!
