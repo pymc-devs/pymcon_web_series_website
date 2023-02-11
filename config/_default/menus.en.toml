@@ -21,11 +21,6 @@
   weight = 15
 
 [[main]]
-  name = "FAQs"
-  pageRef = "faq"
-  weight = 40
-
-[[main]]
   name = "Events"
   pageRef = "events"
   weight = 20
@@ -33,22 +28,27 @@
 [[main]]
   name = "Organizers"
   pageRef = "organizers"
+  weight = 25
+
+[[main]]
+  name = "FAQs"
+  pageRef = "faq"
   weight = 30
 
 [[main]]
   name = "Sponsors"
   pageRef = "sponsors"
-  weight = 45
+  weight = 35
 
 [[main]]
   name = "Contact"
   pageRef = "contact"
-  weight = 50
+  weight = 40
 
 [[main]]
   name = "Code of Conduct"
   pageRef = "codeofconduct"
-  weight = 60
+  weight = 45
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
@@ -57,14 +57,19 @@
 [[footer]]
   name = "CFP"
   pageRef = "cfp"
-  weight = 10
+  weight = 15
 
 [[footer]]
   name = "Events"
   pageRef = "events"
   weight = 20
 
+[[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 40
+
 [[footer]]
   name = "Code of Conduct"
   pageRef = "codeofconduct"
-  weight = 30
+  weight = 45
