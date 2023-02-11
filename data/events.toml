@@ -66,7 +66,7 @@
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
     bannerImgPath = "/images/events/pymcon-sandra-meneses.png"
     speakerName = "Sandra Yojana Meneses"
-    speakerImgPath = "/images/speakers/sandra.jpg"
+    speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = ""
     eventOrder = 2
