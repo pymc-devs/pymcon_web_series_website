@@ -10,9 +10,9 @@ weight: 30
 The PyMCon Web Series consists of events proposed and co-led by members of the PyMC community.  We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community.  First time speakers are welcomed and encouraged. Please feel free to reach out with questions about submitting a proposal.  You can find us on the [PyMC discourse](https://discourse.pymc.io/).
 
 ## Key Dates
-Submission deadline: November 30, 2022.
+Submission deadline: Ongoing
 
-Series begins: after January 1, 2023.
+Series begins: February 2023
 
 Scheduling of individual events will be coordinated between the contributor and PyMCon Web Series Event leads and are anticipated to occur monthly (appoximately).
 
@@ -29,7 +29,7 @@ The Event lead will provide support and guidance along the way and ensure the ev
 
 The PyMCon Web Series encourages community members to be creative when proposing events.
 One community member may propose a hackathon focusing on Bayesian models in a particular application or using a particular data set.
-Another might propose a poster to visualize a new Arviz functionality.
+Another might propose a poster to visualize a new ArviZ functionality.
 Traditional presentations are welcome too!
 These are the tried and true formats such as talks, and tutorials as we saw in [PyMCon 2020](https://pymc-devs.github.io/pymcon//schedule).
 Regardless of the format, we will work with contributors to craft an event that is accessible asynchronously,
@@ -37,7 +37,7 @@ but which presents different opportunities for audience members to engage.
 The data set for a hackathon could be posted ahead of time and participants could discuss their work on [discourse](https://discourse.pymc.io/).
 A poster or presentation could be shared with the community and accompanied by a follow-up Q&A on [discourse](https://discourse.pymc.io/).
 
-Proposals need not be specific to PyMC or the PyMC ecosystem (e.g., Aesara, Arviz, Bambi),
+Proposals need not be specific to PyMC or the PyMC ecosystem (e.g., Aesara, ArviZ, Bambi),
 but should be relevant to the PyMC community.
 For example, events focusing on new sampling diagnostics or Bayesian workflow would be acceptable.
 
@@ -52,7 +52,7 @@ For example, events focusing on new sampling diagnostics or Bayesian workflow wo
 
 - **Sales pitches**:  We are a community of open source developers and users of open source scientific computing tools. You can reference your closed-source product or platform, but the audience will find the talk more interesting if they can utilize your techniques within the PyData ecosystem. Your problem definition, proposed techniques, broad issues you solved, and business domain might be interesting, but sales pitches and "how to use our product" talks will be of less interest.
 - **Redundant content**: We have a strong preference for new material and fresh faces.  If your submission consists of content that is already available online (e.g., at prior conferences, in the PyMC example gallery, etc.) it is less likely to be accepted.
-- **Irrelevant to the PyMC community**: PyMC represents a growing ecosystem of related packages (e.g., Aesara, Arviz, Bambi), so discussing libraries other than PyMC is expected.  That being said, submissions that move too far away from the library that unites the PyMC community (i.e., PyMC!) are less likely to be accepted.  The proposal should be interesting to the PyMC community!
+- **Irrelevant to the PyMC community**: PyMC represents a growing ecosystem of related packages (e.g., Aesara, ArviZ, Bambi), so discussing libraries other than PyMC is expected.  That being said, submissions that move too far away from the library that unites the PyMC community (i.e., PyMC!) are less likely to be accepted.  The proposal should be interesting to the PyMC community!
 
 
 ## Submission Guidelines
