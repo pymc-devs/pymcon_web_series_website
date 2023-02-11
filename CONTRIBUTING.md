@@ -29,7 +29,7 @@ If there is something in the website code or the repository that you think can b
 - Corrected
 - Changed
 
-Then create an issue.
+Then [create an issue](https://github.com/pymc-devs/pymcon_web_series/issues/new/choose).
 
 ### Personal Feedback
 
