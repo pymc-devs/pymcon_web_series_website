@@ -34,7 +34,7 @@ Then [create an issue](https://github.com/pymc-devs/pymcon_web_series/issues/new
 
 ### Personal Feedback
 
-Is there something you want to help with, and really think it should be discussed in private? [Email the organizers](https://pymcon.com/contact/). 
+Is there something you want to help with, and really think it should be discussed in private? [Contact the organizers](https://pymcon.com/contact/). 
 Please use your own judgement to decide what is appropriate. 
 A few examples of reasonable emails are - accessibility issues you want to discuss in detail personally.
 While this is possible, we strongly encourage opening public issues, so everybody sees them and we can act on it sooner.
