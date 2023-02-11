@@ -38,7 +38,7 @@
     place = "Online"
     description = "The talk aims to get users quickly up and performing GPs, especially multi-output GPs using PyMC. Several examples with time-series datasets are used to illustrate different GPs features. This presentation will allow users to leverage GPs to analyze their data effectively."
 
-    bannerImgPath = "/images/events/pymcon-danh-phan.svg"
+    bannerImgPath = "/images/events/pymcon-danh-phan.png
     speakerName = "Danh Phan"
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
@@ -53,7 +53,7 @@
     place = "Online"
     description = "In this talk, Bill will introduce a PyMC Hilbert Space Gaussian Process (HSGP) implementation and show via case studies how it fills a few key gaps in the PyMC GP library: fast GPs as model subcomponents, and fast GPs with non-Gaussian likelihoods. I'll also cover tips and tricks for applying HSGPs effectively in practice."
 
-    bannerImgPath = "/images/events/pymcon-bill-engels.svg"
+    bannerImgPath = "/images/events/pymcon-bill-engels.png"
     speakerName = "Bill Engels"
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
@@ -68,7 +68,7 @@
     place = "Online"
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
 
-    bannerImgPath = "/images/events/pymcon-sandra-meneses.svg"
+    bannerImgPath = "/images/events/pymcon-sandra-meneses.png"
     speakerName = "Sandra Yojana Meneses"
     speakerImgPath = "/images/speakers/sandra.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
@@ -83,7 +83,7 @@
     place = "Online"
     description = ""
 
-    bannerImgPath = "/images/events/pymcon-hyosub-kim.svg"
+    bannerImgPath = "/images/events/pymcon-hyosub-kim.png"
     speakerName = "Hyosub Kim"
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
     speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
