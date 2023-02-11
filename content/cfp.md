@@ -10,9 +10,9 @@ weight: 30
 The PyMCon Web Series consists of events proposed and co-led by members of the PyMC community.  We are looking for folks like you to share your cool tricks, best practices, general knowledge, and methods with the wider PyMC community.  First time speakers are welcomed and encouraged. Please feel free to reach out with questions about submitting a proposal.  You can find us on the [PyMC discourse](https://discourse.pymc.io/).
 
 ## Key Dates
-Submission deadline: Ongoing
+Submission deadline: **Ongoing**
 
-Series begins: February 2023
+Series begins: **February 2023**
 
 Scheduling of individual events will be coordinated between the contributor and PyMCon Web Series Event leads and are anticipated to occur monthly (appoximately).
 
