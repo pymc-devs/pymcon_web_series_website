@@ -36,7 +36,7 @@
     title = "An Introduction To Multi-Output Gaussian Processes Using PyMC"
     place = "Online"
     description = "The talk aims to get users quickly up and performing GPs, especially multi-output GPs using PyMC. Several examples with time-series datasets are used to illustrate different GPs features. This presentation will allow users to leverage GPs to analyze their data effectively."
-    bannerImgPath = "/images/events/pymcon-danh-phan.png
+    bannerImgPath = "/images/events/pymcon-danh-phan.png"
     speakerName = "Danh Phan"
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
