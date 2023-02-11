@@ -29,7 +29,7 @@
     speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
     eventOrder = 1
-    eventType = "past_events"
+    eventType = "past"
     featured = true
 
 [[event]]
