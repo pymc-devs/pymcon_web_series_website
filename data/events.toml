@@ -18,7 +18,7 @@
 
 
 [[event]]
-    dataTime = "Feb 9th 2023, 21:00 UTC (4pm ET)"
+    dataTime = "Feb 9 2023, 21:00 UTC (4pm ET)"
     title = "The Power of Bayes in Industry: Your Business Model is Your Data Generating Process"
     place = "Online"
     description = "This talk will attempt to answer the question what is a Data Generating Process and why does it matter? While we will begin our discussion with a bit of theory, don't worry about this being too technical or inaccessible if you're new to Bayesian Statistics. Our primary goal is to focus on the second half of the question and give you tools to use for real-world applications."
@@ -26,67 +26,67 @@
     bannerImgPath = "/images/events/pymcon-Dante.jpeg"
     speakerName = "Dante Gates"
     speakerImgPath = "/images/speakers/dante-gates-hs.png"
-    speakerSocialLink = ""
+    speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
     eventOrder = 1
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "Feb 18th"
+    dataTime = "Feb 18 2023"
     title = "An Introduction To Multi-Output Gaussian Processes Using PyMC"
     place = "Online"
     description = "The talk aims to get users quickly up and performing GPs, especially multi-output GPs using PyMC. Several examples with time-series datasets are used to illustrate different GPs features. This presentation will allow users to leverage GPs to analyze their data effectively."
 
     bannerImgPath = "/images/events/pymcon-Danh.png"
     speakerName = "Danh Phan"
-    speakerImgPath = "/images/speakers/DanhPhan.png"
-    speakerSocialLink = ""
+    speakerImgPath = "/images/speakers/DanhPhan.jpg"
+    speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
     readMoreURL = ""
     eventOrder = 2
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "March 5th"
+    dataTime = "Mar 5 2023"
     title = "HSGPs in PyMC: A fast Gaussian process approximation that you can actually use"
     place = "Online"
     description = "In this talk, Bill will introduce a PyMC Hilbert Space Gaussian Process (HSGP) implementation and show via case studies how it fills a few key gaps in the PyMC GP library: fast GPs as model subcomponents, and fast GPs with non-Gaussian likelihoods. I'll also cover tips and tricks for applying HSGPs effectively in practice."
 
     bannerImgPath = "/images/events/pymcon-Bill.png"
     speakerName = "Bill Engels"
-    speakerImgPath = ""
-    speakerSocialLink = ""
+    speakerImgPath = "/images/speakers/bill-engels.jpg"
+    speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
     readMoreURL = ""
     eventOrder = 2
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "Mar 15th"
+    dataTime = "Mar 15 2023"
     title = "Scalable Bayesian Modelling: A practical comparison"
     place = "Online"
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
 
     bannerImgPath = "/images/events/pymcon-Sandra.png"
     speakerName = "Sandra Yojana Meneses"
-    speakerImgPath = ""
-    speakerSocialLink = ""
+    speakerImgPath = "/images/speakers/sandra.jpg"
+    speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = ""
     eventOrder = 2
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "April 2nd"
+    dataTime = "Apr 2 2023"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
     place = "Online"
     description = ""
 
     bannerImgPath = "/images/events/pymcon-Hyosub.png"
     speakerName = "Hyosub Kim"
-    speakerImgPath = ""
-    speakerSocialLink = ""
+    speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
+    speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
     readMoreURL = ""
     eventOrder = 2
     eventType = "upcoming"
