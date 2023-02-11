@@ -53,7 +53,7 @@
     place = "Online"
     description = "In this talk, Bill will introduce a PyMC Hilbert Space Gaussian Process (HSGP) implementation and show via case studies how it fills a few key gaps in the PyMC GP library: fast GPs as model subcomponents, and fast GPs with non-Gaussian likelihoods. I'll also cover tips and tricks for applying HSGPs effectively in practice."
 
-    bannerImgPath = "/images/events/pymcon-Bill.png"
+    bannerImgPath = "/images/events/pymcon-bill-engels.svg"
     speakerName = "Bill Engels"
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
@@ -68,7 +68,7 @@
     place = "Online"
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
 
-    bannerImgPath = "/images/events/pymcon-Sandra.png"
+    bannerImgPath = "/images/events/pymcon-sanda-meneses.svg"
     speakerName = "Sandra Yojana Meneses"
     speakerImgPath = "/images/speakers/sandra.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
@@ -83,7 +83,7 @@
     place = "Online"
     description = ""
 
-    bannerImgPath = "/images/events/pymcon-Hyosub.png"
+    bannerImgPath = "/images/events/pymcon-hyosub-kim.svg"
     speakerName = "Hyosub Kim"
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
     speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
