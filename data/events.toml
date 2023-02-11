@@ -18,14 +18,14 @@
 
 
 [[event]]
-    dataTime = "Feb 9th 2023, 4pm EST"
+    dataTime = "Feb 9th 2023, 21:00 UTC (4pm ET)"
     title = "The Power of Bayes in Industry: Your Business Model is Your Data Generating Process"
     place = "Online"
     description = "This talk will attempt to answer the question what is a Data Generating Process and why does it matter? While we will begin our discussion with a bit of theory, don't worry about this being too technical or inaccessible if you're new to Bayesian Statistics. Our primary goal is to focus on the second half of the question and give you tools to use for real-world applications."
 
     bannerImgPath = "/images/events/pymcon-Dante.jpeg"
     speakerName = "Dante Gates"
-    speakerImgPath = "/images/events/dante-gates-hs.png"
+    speakerImgPath = "/images/speakers/dante-gates-hs.png"
     speakerSocialLink = ""
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
     eventOrder = 1
