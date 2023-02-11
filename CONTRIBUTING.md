@@ -4,7 +4,7 @@ PyMCon is a community led event and we encourage you to contribute in any form y
 
 Here are a few possible ways you can contribute to PyMCon:
 
-- [Make a Pull request](###-Make-a-Pull-Request) to update the website.
+- [Make a Pull request](###-Make-a-Pull-Request) (PR) to update the website.
 - [Create an Issue](###-Create-an-Issue)
 - [Personal Feedback](###-Personal-Feedback)
 - Share the events with your network
