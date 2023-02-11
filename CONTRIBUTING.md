@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-PyMCON is a community led event and we encourage you to contribute in any form you demarcate suitable for yourself.
+PyMCon is a community led event and we encourage you to contribute in any form you demarcate suitable for yourself.
 
 Here are a few possible ways you can contribute:
 
