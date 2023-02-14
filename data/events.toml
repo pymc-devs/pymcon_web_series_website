@@ -17,6 +17,8 @@
 #    featured = true                                 (A boolean, if true, the event will be displayed on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
 
+# Past events will be += 1000 so they sort to the bottom
+
 [[event]]
     dataTime = "Feb 9 2023, 21:00 UTC (4pm ET)"
     title = "The Power of Bayes in Industry: Your Business Model is Your Data Generating Process"
@@ -27,7 +29,7 @@
     speakerImgPath = "/images/speakers/dante-gates-hs.png"
     speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
-    eventOrder = 1
+    eventOrder = 1000
     eventType = "past"
     featured = true
 
