@@ -32,7 +32,7 @@
     featured = true
 
 [[event]]
-    dataTime = "Feb 18 2023"
+    dataTime = "Feb 21 2023 23:00 UTC"
     title = "An Introduction To Multi-Output Gaussian Processes Using PyMC"
     place = "Online"
     description = "The talk aims to get users quickly up and performing GPs, especially multi-output GPs using PyMC. Several examples with time-series datasets are used to illustrate different GPs features. This presentation will allow users to leverage GPs to analyze their data effectively."
