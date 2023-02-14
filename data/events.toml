@@ -42,7 +42,7 @@
     speakerName = "Danh Phan"
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-an-introduction-to-multi-output-gaussian-processes-using-pymc-feb-21st-10-pm-utc-2023/11395"
     eventOrder = 2
     eventType = "upcoming"
     featured = true
