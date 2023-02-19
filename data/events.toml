@@ -79,7 +79,7 @@
     dataTime = "Apr 2 2023"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
     place = "Online"
-    description = ""
+    description = "Are you seriously interested in Bayesian statistics but find yourself relying on familiar frequentist tools when it comes time to present your data at a conference or in a manuscript? If this statement rings true, you are not alone, and this talk is for you! In this presentation, I will go over some new tools we’ve developed to help make running Bayesian versions of some of the most common statistical tests used in the behavioral and neural sciences intuitive and transparent."
     bannerImgPath = "/images/events/pymcon-hyosub-kim.png"
     speakerName = "Hyosub Kim"
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
