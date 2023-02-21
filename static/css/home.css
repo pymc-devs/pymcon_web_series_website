@@ -254,14 +254,6 @@
     border-radius: 5px;
 }
 
-.event__details p {
-    margin: 0.5rem 0 1rem;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    max-height: 5.2rem; /* height is 3x line-height, so 3 lines will display */
-    overflow: hidden;
-}
-
 .speaker__info {
     display: inline;
 }
@@ -293,6 +285,55 @@
 }
 
 
+/* ===================== READ MORE BTN ============= */
+.event__details {
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.event__summary p {
+    display: inline;
+}
+
+.event__summary {
+    max-height: 4.2rem;
+    overflow: hidden;
+}
+
+.event__summary.toggle {
+    max-height: fit-content;
+}
+
+.readmore__btn {
+    color: var(--color-warning);
+    background: var(--color-bg2);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.event__summary.hide__readmore~.readmore__btn {
+    display: none;
+}
+
+.readless-txt,
+.event__summary.toggle~.readmore__btn span.readmore-txt {
+    display: none;
+}
+
+.event__summary.toggle~.readmore__btn span.readless-txt {
+    display: block;
+}
+
+.event__summary.toggle~.readmore__btn {
+    position: relative;
+    align-self: flex-end;
+}
+/* ===================== READ MORE BTN END ============= */
 
 
 
@@ -335,14 +376,6 @@
 
 .event_1 .event__header span {
     font-size: 1rem;
-}
-
-.event_1 .event__details p {
-    margin: 1.2rem 0 1rem 0;
-    line-height: 1.5rem;
-    max-height: 4.5rem; /* height is 3x line-height, so 3 lines will display */
-    overflow: hidden;
-    font-size: 0.95rem;
 }
 
 .event_1 .speaker__info img {
@@ -401,14 +434,6 @@
     line-height: 1.5rem;
     max-height: 4.5rem;   /* height is 2x line-height, so two lines will display */
     overflow: hidden;
-}
-
-.event_2 .event__details p {
-    margin: 0.8rem 0 1rem 0;
-    line-height: 1.3rem;
-    max-height: 3.9rem; /* height is 3x line-height, so 3 lines will display */
-    overflow: hidden;
-    font-size: 0.9rem;
 }
 
 
@@ -688,10 +713,6 @@
     
     .event_1 .event__card h4{
         margin-top: 0.8rem;
-    }
-    
-    .event_1 .event__card p {
-        margin: 0.8rem 0 1rem 0;
     }
 
     .event_2 {

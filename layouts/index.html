@@ -69,9 +69,6 @@
                         {{ range $event := $events }}
                             {{ if $event.featured }}
                                 <article class="event__card swiper-slide" >
-                                    {{ with $event.readMoreURL }}
-                                        <a href="{{ $event.readMoreURL }}" target="_blank" style="display: block; height: fit-content">
-                                    {{ end }}
                                     <div class="event__header">
                                         {{ with $event.bannerImgPath }}
                                             <img src="{{ $event.bannerImgPath }}" alt="">
@@ -85,11 +82,14 @@
                                         </div>
                                     </div>
                                     <div class="event__details">
-                                        <p>{{ $event.description | markdownify | emojify }}</p>
+                                        <div class="event__summary">
+                                            <p>{{ $event.description | markdownify | emojify }}</p>
+                                        </div>
+                                        <button class="readmore__btn">
+                                            <span class="readmore-txt"> ....read more</span>
+                                            <span class="readless-txt">Read Less</span>
+                                        </button>
                                     </div>
-                                    {{ with $event.readMoreURL }}
-                                        </a>
-                                    {{ end }}
                                         <div class="speaker__info">
                                             {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
                                                 {{ if $event.speakerImgPath }}
@@ -247,6 +247,32 @@
                     spaceBetween: 30,
                 },
             }
+        });
+
+        // ====== Logic for readmore btn =========
+        function show_readmore_btn(){
+            const eventSummarys = document.querySelectorAll('.event__summary');
+            eventSummarys.forEach(summary => {
+                const lines = summary.firstElementChild.getClientRects().length;
+                if(lines <= 3){
+                    summary.classList.add('hide__readmore');
+                } else {
+                    summary.classList.remove('hide__readmore');
+                }
+            });
+        }
+        window.onresize = function(event) {
+            show_readmore_btn();
+        };
+        window.onload = function() {
+            setTimeout(show_readmore_btn, 1000);
+        };
+
+        const readMores = document.querySelectorAll('.readmore__btn');
+        readMores.forEach(readMore => {
+            readMore.addEventListener("click", function() {
+                readMore.previousElementSibling.classList.toggle('toggle');
+            });
         });
     </script>
 {{ end }}
