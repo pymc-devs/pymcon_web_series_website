@@ -31,7 +31,7 @@
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
     eventOrder = 1001
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Feb 21 2023, 22:00 UTC"
@@ -43,9 +43,9 @@
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-an-introduction-to-multi-output-gaussian-processes-using-pymc-feb-21st-10-pm-utc-2023/11395"
-    eventOrder = 2
-    eventType = "upcoming"
-    featured = true
+    eventOrder = 1002
+    eventType = "past"
+    featured = false
 
 [[event]]
     dataTime = "Mar 5 2023"
