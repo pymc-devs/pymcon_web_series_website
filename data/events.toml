@@ -48,7 +48,7 @@
     featured = false
 
 [[event]]
-    dataTime = "Mar 5 2023"
+    dataTime = "Mar 15 2023"
     title = "HSGPs in PyMC: A fast Gaussian process approximation that you can actually use"
     place = "Online"
     description = "In this talk, Bill will introduce a PyMC Hilbert Space Gaussian Process (HSGP) implementation and show via case studies how it fills a few key gaps in the PyMC GP library: fast GPs as model subcomponents, and fast GPs with non-Gaussian likelihoods. I'll also cover tips and tricks for applying HSGPs effectively in practice."
@@ -56,13 +56,13 @@
     speakerName = "Bill Engels"
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
     eventOrder = 2
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "Mar 15 2023"
+    dataTime = "Mar 23 2023"
     title = "Scalable Bayesian Modelling: A practical comparison"
     place = "Online"
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
