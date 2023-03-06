@@ -56,7 +56,7 @@
     speakerName = "Bill Engels"
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
     eventOrder = 2
     eventType = "upcoming"
     featured = true
