@@ -57,8 +57,8 @@
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
     readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
-    eventOrder = 2
-    eventType = "upcoming"
+    eventOrder = 1003
+    eventType = "past"
     featured = true
 
 [[event]]
@@ -70,8 +70,8 @@
     speakerName = "Sandra Yojana Meneses"
     speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
-    readMoreURL = ""
-    eventOrder = 2
+    readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-scalable-bayesian-modeling-sandra-yojana-meneses/11635"
+    eventOrder = 4
     eventType = "upcoming"
     featured = true
 
@@ -85,6 +85,6 @@
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
     speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
     readMoreURL = ""
-    eventOrder = 2
+    eventOrder = 5
     eventType = "upcoming"
     featured = true
