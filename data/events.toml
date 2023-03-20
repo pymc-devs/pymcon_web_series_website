@@ -59,7 +59,7 @@
     readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
     eventOrder = 1003
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Mar 23 2023"
