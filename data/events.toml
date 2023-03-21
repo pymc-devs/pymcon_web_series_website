@@ -62,7 +62,7 @@
     featured = false
 
 [[event]]
-    dataTime = "Mar 23 2023"
+    dataTime = "Mar 28 2023"
     title = "Scalable Bayesian Modelling: A practical comparison"
     place = "Online"
     description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
