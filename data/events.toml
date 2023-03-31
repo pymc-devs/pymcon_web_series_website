@@ -29,7 +29,7 @@
     speakerImgPath = "/images/speakers/dante-gates-hs.png"
     speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
-    eventOrder = 1001
+    eventOrder = 1004
     eventType = "past"
     featured = false
 
@@ -43,7 +43,7 @@
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-an-introduction-to-multi-output-gaussian-processes-using-pymc-feb-21st-10-pm-utc-2023/11395"
-    eventOrder = 1002
+    eventOrder = 1003
     eventType = "past"
     featured = false
 
@@ -57,7 +57,7 @@
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
     readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
-    eventOrder = 1003
+    eventOrder = 1002
     eventType = "past"
     featured = false
 
@@ -65,18 +65,18 @@
     dataTime = "Mar 28 2023"
     title = "Scalable Bayesian Modelling: A practical comparison"
     place = "Online"
-    description = "Let's dig deep into the new options that PyMC has to boost its performance comparing it with other Probabilistic programming frameworks. You will see how to get adequate performance for use cases with large datasets in production."
+    description = "PyMC has now multiple options to boost its performance (JAX support, training on GPUs, etc). The library is widely known for being easy to learn and for its great documentation, but it's not always seen as a performant tool. The goal of the blog post is to present a benchmark where we can show that PyMC can work with large datasets and different approaches to do so. The blog post will be accompanied with reproducible code so that we can add/update metrics when there are substantial changes in PyMC or other libraries. Users will be able to compare their own models using the code provided in the blog repository."
     bannerImgPath = "/images/events/pymcon-sandra-meneses.png"
     speakerName = "Sandra Yojana Meneses"
     speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-scalable-bayesian-modeling-sandra-yojana-meneses/11635"
-    eventOrder = 4
-    eventType = "upcoming"
+    eventOrder = 1001
+    eventType = "past"
     featured = true
 
 [[event]]
-    dataTime = "Apr 2 2023"
+    dataTime = "TBD (Apr 2023)"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
     place = "Online"
     description = "Are you seriously interested in Bayesian statistics but find yourself relying on familiar frequentist tools when it comes time to present your data at a conference or in a manuscript? If this statement rings true, you are not alone, and this talk is for you! In this presentation, I will go over some new tools we’ve developed to help make running Bayesian versions of some of the most common statistical tests used in the behavioral and neural sciences intuitive and transparent."
