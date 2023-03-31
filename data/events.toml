@@ -29,7 +29,7 @@
     speakerImgPath = "/images/speakers/dante-gates-hs.png"
     speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
-    eventOrder = 1001
+    eventOrder = 1004
     eventType = "past"
     featured = false
 
@@ -43,7 +43,7 @@
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-an-introduction-to-multi-output-gaussian-processes-using-pymc-feb-21st-10-pm-utc-2023/11395"
-    eventOrder = 1002
+    eventOrder = 1003
     eventType = "past"
     featured = false
 
@@ -57,7 +57,7 @@
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
     readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
-    eventOrder = 1003
+    eventOrder = 1002
     eventType = "past"
     featured = false
 
@@ -71,8 +71,8 @@
     speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-scalable-bayesian-modeling-sandra-yojana-meneses/11635"
-    eventOrder = 1004
-    eventType = "upcoming"
+    eventOrder = 1001
+    eventType = "past"
     featured = true
 
 [[event]]
