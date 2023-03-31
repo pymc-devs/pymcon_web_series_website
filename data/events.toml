@@ -71,12 +71,12 @@
     speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-scalable-bayesian-modeling-sandra-yojana-meneses/11635"
-    eventOrder = 4
+    eventOrder = 1004
     eventType = "upcoming"
     featured = true
 
 [[event]]
-    dataTime = "Apr 2 2023"
+    dataTime = "TBD (Apr 2023)"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
     place = "Online"
     description = "Are you seriously interested in Bayesian statistics but find yourself relying on familiar frequentist tools when it comes time to present your data at a conference or in a manuscript? If this statement rings true, you are not alone, and this talk is for you! In this presentation, I will go over some new tools we’ve developed to help make running Bayesian versions of some of the most common statistical tests used in the behavioral and neural sciences intuitive and transparent."
