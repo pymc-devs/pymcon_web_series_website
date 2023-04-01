@@ -218,7 +218,7 @@
     .event__btn_video {
         float: right;
         background-color: var(--color-danger);
-        color: var(--color-bg);
+        color: #b6dcdd;
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
         border-radius: 5px;
