@@ -29,6 +29,10 @@
     speakerImgPath = "/images/speakers/dante-gates-hs.png"
     speakerSocialLink = "https://www.linkedin.com/in/dante-gates/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-the-power-of-bayes-in-industry-your-business-model-is-your-data-generating-process/11264"
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/xAtkKn0It2E"
+    video2Name = "Event video"
+    video2SocialLink = "https://youtu.be/7KrspD1TZNU"
     eventOrder = 1004
     eventType = "past"
     featured = false
@@ -43,6 +47,10 @@
     speakerImgPath = "/images/speakers/DanhPhan.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/danhpt/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-an-introduction-to-multi-output-gaussian-processes-using-pymc-feb-21st-10-pm-utc-2023/11395"
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/cyJkqnCU1-I"
+    video2Name = "Event video"
+    video2SocialLink = "https://youtu.be/8YN7dLJlHIE"
     eventOrder = 1003
     eventType = "past"
     featured = false
@@ -57,6 +65,10 @@
     speakerImgPath = "/images/speakers/bill-engels.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/bill-engels-a5239a119/"
     readMoreURL = "https://discourse.pymc.io/t/introduction-to-hilbert-space-gps-hsgp-in-pymc/11533"
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/QGEBSdt8WkQ"
+    video2Name = "Event video"
+    video2SocialLink = ""
     eventOrder = 1002
     eventType = "past"
     featured = false
@@ -71,6 +83,10 @@
     speakerImgPath = "/images/speakers/sandra_meneses.jpg"
     speakerSocialLink = "https://www.linkedin.com/in/symeneses/"
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-scalable-bayesian-modeling-sandra-yojana-meneses/11635"
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/4GYuvm4MAIQ"
+    video2Name = "Event video"
+    video2SocialLink = ""
     eventOrder = 1001
     eventType = "past"
     featured = true
@@ -85,6 +101,10 @@
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
     speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
     readMoreURL = ""
+    video1Name = "Interview video"
+    video1SocialLink = ""
+    video2Name = "Event video"
+    video2SocialLink = ""
     eventOrder = 5
     eventType = "upcoming"
     featured = true

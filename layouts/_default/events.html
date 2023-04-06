@@ -67,11 +67,19 @@
                                 {{ end }}
                                 <em>{{ $event.speakerName | markdownify | emojify }}</em>
                             {{ with $event.speakerSocialLink }} </a> {{ end }}
-                        </div>
+                            {{ with $event.video1SocialLink }}
+
+                            <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> Interview Video </a>
+                            {{ end }}
+
+                            {{ with $event.video2SocialLink }}
+                            <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> Event Video </a>
+                            {{ end }} 
+                        </div>                      
                         {{ with $event.readMoreURL }}
-                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
                         {{ end }}
-                </article>
+                    </article>
             {{ end }}
         </div>
 
