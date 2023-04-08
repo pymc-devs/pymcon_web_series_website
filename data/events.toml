@@ -89,10 +89,10 @@
     video2SocialLink = ""
     eventOrder = 1001
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
-    dataTime = "TBD (Apr 2023)"
+    dataTime = "April 17th 2023"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
     place = "Online"
     description = "Are you seriously interested in Bayesian statistics but find yourself relying on familiar frequentist tools when it comes time to present your data at a conference or in a manuscript? If this statement rings true, you are not alone, and this talk is for you! In this presentation, I will go over some new tools we’ve developed to help make running Bayesian versions of some of the most common statistical tests used in the behavioral and neural sciences intuitive and transparent."
@@ -100,9 +100,9 @@
     speakerName = "Hyosub Kim"
     speakerImgPath = "/images/speakers/hyosub_kim.jpeg"
     speakerSocialLink = "https://osf.io/y75ud/wiki/home/"
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-05-the-bayesian-statistics-toolbox-april-17th-2023-hyosub-kim/11845"
     video1Name = "Interview video"
-    video1SocialLink = ""
+    video1SocialLink = "https://www.youtube.com/watch?v=acDdmyJZW-U"
     video2Name = "Event video"
     video2SocialLink = ""
     eventOrder = 5
