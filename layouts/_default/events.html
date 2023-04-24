@@ -58,6 +58,7 @@
                             <span class="readless-txt">Read Less</span>
                         </button>
                     </div>
+                    <div class="event__card__bottom">
                         <div class="speaker__info">
                             {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
                                 {{ if $event.speakerImgPath }}
@@ -67,19 +68,21 @@
                                 {{ end }}
                                 <em>{{ $event.speakerName | markdownify | emojify }}</em>
                             {{ with $event.speakerSocialLink }} </a> {{ end }}
-                            {{ with $event.video1SocialLink }}
+                        </div>
 
-                            <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> Interview Video </a>
-                            {{ end }}
+                        {{ with $event.video1SocialLink }}
+                        <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> Interview Video </a>
+                        {{ end }}
 
-                            {{ with $event.video2SocialLink }}
-                            <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> Event Video </a>
-                            {{ end }} 
-                        </div>                      
+                        {{ with $event.video2SocialLink }}
+                        <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> Event Video </a>
+                        {{ end }} 
+
                         {{ with $event.readMoreURL }}
                             <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
                         {{ end }}
-                    </article>
+                    </div>
+                </article>
             {{ end }}
         </div>
 

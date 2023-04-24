@@ -106,8 +106,14 @@
 }
 /* ===================== READ MORE BTN END ============= */
 
+.event__card__bottom {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
 .speaker__info {
-    display: inline;
+    flex-grow: 1;
 }
 
 .speaker__info img {
@@ -119,10 +125,12 @@
 }
 
 .event__btn {
-    float: right;
-    padding: 0.6rem 1.1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-danger);
 }
 
 
@@ -204,24 +212,27 @@
     }
 
     .speaker__info em {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
-    .event__btn {
-        float: right;
-        background-color: var(--color-danger);
-        color: var(--color-white);
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-        border-radius: 5px;
+    .speaker__info {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 0.3rem 0;
+        border-radius: 10px;
+        background: var(--color-bg1);
+        border-left: 3px solid var(--color-warning);
+        border-right: 3px solid var(--color-warning);
     }
-    .event__btn_video {
-        float: right;
-        background-color: var(--color-danger);
-        color: #b6dcdd;
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-        border-radius: 5px;
+
+    .event__card__bottom {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .event__btn{
+        flex-grow: 1;
+        padding: 0.7rem 1rem;
     }
 
     .footer_line {
