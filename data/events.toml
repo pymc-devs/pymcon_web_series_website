@@ -71,7 +71,7 @@
     video2SocialLink = ""
     eventOrder = 1002
     eventType = "past"
-    featured = false
+    featured = true
 
 [[event]]
     dataTime = "Mar 28 2023"
@@ -89,7 +89,7 @@
     video2SocialLink = ""
     eventOrder = 1001
     eventType = "past"
-    featured = false
+    featured = true
 
 [[event]]
     dataTime = "April 17th 2023"
@@ -106,5 +106,5 @@
     video2Name = "Event video"
     video2SocialLink = ""
     eventOrder = 5
-    eventType = "upcoming"
+    eventType = "past"
     featured = true

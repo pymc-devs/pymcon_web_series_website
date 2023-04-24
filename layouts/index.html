@@ -60,7 +60,7 @@
     {{ if $showFeaturedEvent }}
         <section class="section events" id="featured_events">
             <h2>PyMCon Events</h2>
-            <div class="container events__container {{ if eq $count 1 }} event_1 {{ else if eq $count 2 }} event_2 {{ end }}">
+            <div class="container events__container {{ if eq $count 1 }} event_1 {{ else if eq $count 2 }} event_2 {{ else }} event_3 {{ end }}">
                 {{ if gt $count 2 }}
                 <div class="swiper eventCardSlider">
                     <div class="swiper-wrapper">
@@ -90,6 +90,7 @@
                                             <span class="readless-txt">Read Less</span>
                                         </button>
                                     </div>
+                                    <div class="event__card__bottom">
                                         <div class="speaker__info">
                                             {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
                                                 {{ if $event.speakerImgPath }}
@@ -100,9 +101,19 @@
                                                 <em>{{ $event.speakerName | markdownify | emojify }}</em>
                                             {{ with $event.speakerSocialLink }} </a> {{ end }}
                                         </div>
-                                        {{ with $event.readMoreURL }}
-                                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Learn More </a>
+                
+                                        {{ with $event.video1SocialLink }}
+                                        <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> Interview Video </a>
                                         {{ end }}
+                
+                                        {{ with $event.video2SocialLink }}
+                                        <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> Event Video </a>
+                                        {{ end }} 
+                
+                                        {{ with $event.readMoreURL }}
+                                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
+                                        {{ end }}
+                                    </div>
                                 </article>
                             {{ end }}
                         {{ end }}
