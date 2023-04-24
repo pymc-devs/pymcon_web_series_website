@@ -746,9 +746,13 @@
         flex: 1 1 100%;
     }
 
-    .event__btn{
+    .event__btn,
+    .event_1 .event__btn,
+    .event_2 .event__btn,
+    .event_3 .event__btn {
         flex-grow: 1;
         font-size: 0.85rem;
+        padding: 0.7rem 1rem;
     }
 
 
