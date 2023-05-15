@@ -118,7 +118,7 @@
     speakerName = "Todd Hendricks"
     speakerImgPath = "/images/speakers/todd.png"
     speakerSocialLink = "https://www.linkedin.com/in/todd-hendricks/"
-    readMoreURL = ""
+    readMoreURL = "https://discourse.pymc.io/t/12131"
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/P3GIrgYwsTI"
     video2Name = "Event video"
