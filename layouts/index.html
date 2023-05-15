@@ -65,7 +65,7 @@
                 <div class="swiper eventCardSlider">
                     <div class="swiper-wrapper">
                 {{ end }}
-                        {{ $events := sort $eventsData.event "eventOrder" }}
+                        {{ $events := sort $eventsData.event "eventOrder" "desc" }}
                         {{ range $event := $events }}
                             {{ if $event.featured }}
                                 <article class="event__card swiper-slide" >

@@ -36,7 +36,7 @@
             <h2 id="upcoming_events">Upcoming Events</h2>
             <h2 id="past_events">Past Events</h2>
 
-            {{ $events := sort $events.event "eventOrder" }}
+            {{ $events := sort $events.event "eventOrder" "desc" }}
             {{ range $event := $events }}
                 <article class="event__card {{ $event.eventType }}">
                     <div class="event__header">

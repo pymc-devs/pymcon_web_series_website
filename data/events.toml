@@ -12,7 +12,7 @@
 #    speakerImgPath = "/images/speakers/ravin.jpg"   (Speaker/Author img path, leave blank if unavailable i.e speakerImgPath="")
 #    speakerSocialLink = "www.github.com"            (Author's social link, leave blank if unavailable i.e speakerSocialLink = "")
 #    readMoreURL = "https://www.meetup.com"          (Event post URL i.e Discourse, Meetup etc)
-#    eventOrder = 2                                  (An integer, used to order events in ascending order)
+#    eventOrder = 2                                  (An integer, used to order events in descending order)
 #    eventType = "upcoming"                          (must be "upcoming" or "past")
 #    featured = true                                 (A boolean, if true, the event will be displayed on home pade NOTE: We only display the "Featured event section" if there are more than three events to display.)
 
@@ -33,7 +33,7 @@
     video1SocialLink = "https://youtu.be/xAtkKn0It2E"
     video2Name = "Event video"
     video2SocialLink = "https://youtu.be/7KrspD1TZNU"
-    eventOrder = 1004
+    eventOrder = 1
     eventType = "past"
     featured = false
 
@@ -51,7 +51,7 @@
     video1SocialLink = "https://youtu.be/cyJkqnCU1-I"
     video2Name = "Event video"
     video2SocialLink = "https://youtu.be/8YN7dLJlHIE"
-    eventOrder = 1003
+    eventOrder = 2
     eventType = "past"
     featured = false
 
@@ -68,10 +68,10 @@
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/QGEBSdt8WkQ"
     video2Name = "Event video"
-    video2SocialLink = ""
-    eventOrder = 1002
+    video2SocialLink = "https://youtu.be/ri5sJAdcYHk"
+    eventOrder = 3
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Mar 28 2023"
@@ -86,8 +86,8 @@
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/4GYuvm4MAIQ"
     video2Name = "Event video"
-    video2SocialLink = ""
-    eventOrder = 1001
+    video2SocialLink = "https://youtu.be/WVr2vQ13WAk"
+    eventOrder = 4
     eventType = "past"
     featured = true
 
@@ -104,7 +104,25 @@
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=acDdmyJZW-U"
     video2Name = "Event video"
-    video2SocialLink = ""
+    video2SocialLink = "https://youtu.be/ElfToZ9EBpM"
     eventOrder = 5
     eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "May 24th 2023"
+    title = "Protecting Voting Rights With PyMC"
+    place = "Online"
+    description = "Voting, elections, and democracy are hot topics. In the United States, one of the most important laws in this domain, the Voting Rights Act of 1965 (VRA), calls for fairness in the design of election systems so that minorities have an equal opportunity to participate. But elections are complicated phenomena. How do we know when that opportunity has been taken away? <br> This talk describes how that question is answered with a PyMC implementation of a beta-binomial hierarchical model. In a narrower legal context, the qualitative question of opportunity is inferred by the degree to which an electorate is polarized along racial lines. As the thinking goes, if a minority group has drastically different preferences than the majority, then the minority is exposed and vulnerable to partisan actors who might implement policy designed to weaken the political power of that group. Gerrymandering is a popular example. <br>The model produces parameter estimates that speak directly to this legal question. Designed in the early 2000s, the model has matured to the point that legal doctrine has coalesced around the quality of its estimates; it forms the backbone of a critically important civil rights law. The talk will discuss the Python implementation and how the posterior is interpreted to inform litigation decisions."
+    bannerImgPath = "/images/events/pymcon_todd.png"
+    speakerName = "Todd Hendricks"
+    speakerImgPath = "/images/speakers/todd.png"
+    speakerSocialLink = "https://www.linkedin.com/in/todd-hendricks/"
+    readMoreURL = ""
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/P3GIrgYwsTI"
+    video2Name = "Event video"
+    video2SocialLink = ""
+    eventOrder = 6
+    eventType = "upcoming"
     featured = true
