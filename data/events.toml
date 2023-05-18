@@ -122,7 +122,7 @@
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/P3GIrgYwsTI"
     video2Name = "Event video"
-    video2SocialLink = ""
+    video2SocialLink = "https://youtu.be/dbkgpePWePg"
     eventOrder = 6
     eventType = "upcoming"
     featured = true
