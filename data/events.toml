@@ -89,7 +89,7 @@
     video2SocialLink = "https://youtu.be/WVr2vQ13WAk"
     eventOrder = 4
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "April 17th 2023"
@@ -113,7 +113,7 @@
     dataTime = "May 24th 2023"
     title = "Protecting Voting Rights With PyMC"
     place = "Online"
-    description = "Voting, elections, and democracy are hot topics. In the United States, one of the most important laws in this domain, the Voting Rights Act of 1965 (VRA), calls for fairness in the design of election systems so that minorities have an equal opportunity to participate. But elections are complicated phenomena. How do we know when that opportunity has been taken away? <br> This talk describes how that question is answered with a PyMC implementation of a beta-binomial hierarchical model. In a narrower legal context, the qualitative question of opportunity is inferred by the degree to which an electorate is polarized along racial lines. As the thinking goes, if a minority group has drastically different preferences than the majority, then the minority is exposed and vulnerable to partisan actors who might implement policy designed to weaken the political power of that group. Gerrymandering is a popular example. <br>The model produces parameter estimates that speak directly to this legal question. Designed in the early 2000s, the model has matured to the point that legal doctrine has coalesced around the quality of its estimates; it forms the backbone of a critically important civil rights law. The talk will discuss the Python implementation and how the posterior is interpreted to inform litigation decisions."
+    description = "Voting, elections, and democracy are hot topics. In the United States, one of the most important laws in this domain, the Voting Rights Act of 1965 (VRA), calls for fairness in the design of election systems so that minorities have an equal opportunity to participate. But elections are complicated phenomena. How do we know when that opportunity has been taken away? <br><br> This talk describes how that question is answered with a PyMC implementation of a beta-binomial hierarchical model. In a narrower legal context, the qualitative question of opportunity is inferred by the degree to which an electorate is polarized along racial lines. As the thinking goes, if a minority group has drastically different preferences than the majority, then the minority is exposed and vulnerable to partisan actors who might implement policy designed to weaken the political power of that group. Gerrymandering is a popular example. <br><br>The model produces parameter estimates that speak directly to this legal question. Designed in the early 2000s, the model has matured to the point that legal doctrine has coalesced around the quality of its estimates; it forms the backbone of a critically important civil rights law. The talk will discuss the Python implementation and how the posterior is interpreted to inform litigation decisions."
     bannerImgPath = "/images/events/pymcon_todd.png"
     speakerName = "Todd Hendricks"
     speakerImgPath = "/images/speakers/todd.png"
@@ -124,5 +124,23 @@
     video2Name = "Event video"
     video2SocialLink = "https://youtu.be/dbkgpePWePg"
     eventOrder = 6
+    eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "June 28th 2023"
+    title = "Automatic Probability with PyMC"
+    place = "Online"
+    description = "Many people have heard of (or at least used) automatic differentiation, a set of routines that allow programs to compute partial derivatives from numerical functions. This innovation allowed a large class of users to benefit from gradient-based algorithms without having to understand or manually implement their own gradient functions.<br><br>PyMC grabbed this idea and applied it to a completely novel context: automatic probability. With it, we can automatically derive and evaluate probability expressions from user-specified random functions. Similar to automatic differentiation, this allows users to create rich generative models and exploit probability-based algorithms (e.g., NUTS) without having to manually implement their own probability functions.<br><br>In this talk, we present this new foundation of PyMC and how it can (and is already) used to construct specialized classes of models, from arbitrary variable transformations to mixture distributions, censoring processes, and highly structured timeseries.<br><br>The goal is to understand what makes PyMC a true probabilistic programming language and how you can exploit it!"
+    bannerImgPath = "/images/events/pymcon_ricardo.png"
+    speakerName = "Ricardo Vieira"
+    speakerImgPath = "/images/speakers/ricardo.jpg"
+    speakerSocialLink = "https://github.com/ricardoV94"
+    readMoreURL = "https://discourse.pymc.io/t/12274"
+    video1Name = "Interview video"
+    video1SocialLink = ""
+    video2Name = "Event video"
+    video2SocialLink = ""
+    eventOrder = 7
     eventType = "upcoming"
     featured = true
