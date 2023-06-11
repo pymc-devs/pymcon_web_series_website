@@ -22,6 +22,7 @@
 [[event]]
     dataTime = "Feb 9 2023, 21:00 UTC (4pm ET)"
     title = "The Power of Bayes in Industry: Your Business Model is Your Data Generating Process"
+    subtitle = ""
     place = "Online"
     description = "This talk will attempt to answer the question what is a Data Generating Process and why does it matter? While we will begin our discussion with a bit of theory, don't worry about this being too technical or inaccessible if you're new to Bayesian Statistics. Our primary goal is to focus on the second half of the question and give you tools to use for real-world applications."
     bannerImgPath = "/images/events/pymcon-dante-gates.png"
@@ -40,6 +41,7 @@
 [[event]]
     dataTime = "Feb 21 2023, 22:00 UTC"
     title = "An Introduction To Multi-Output Gaussian Processes Using PyMC"
+    subtitle = ""
     place = "Online"
     description = "The talk aims to get users quickly up and performing GPs, especially multi-output GPs using PyMC. Several examples with time-series datasets are used to illustrate different GPs features. This presentation will allow users to leverage GPs to analyze their data effectively."
     bannerImgPath = "/images/events/pymcon-danh-phan.png"
@@ -58,6 +60,7 @@
 [[event]]
     dataTime = "Mar 15 2023"
     title = "HSGPs in PyMC: A fast Gaussian process approximation that you can actually use"
+    subtitle = ""
     place = "Online"
     description = "In this talk, Bill will introduce a PyMC Hilbert Space Gaussian Process (HSGP) implementation and show via case studies how it fills a few key gaps in the PyMC GP library: fast GPs as model subcomponents, and fast GPs with non-Gaussian likelihoods. I'll also cover tips and tricks for applying HSGPs effectively in practice."
     bannerImgPath = "/images/events/pymcon-bill-engels.png"
@@ -76,6 +79,7 @@
 [[event]]
     dataTime = "Mar 28 2023"
     title = "Scalable Bayesian Modelling: A practical comparison"
+    subtitle = ""
     place = "Online"
     description = "PyMC has now multiple options to boost its performance (JAX support, training on GPUs, etc). The library is widely known for being easy to learn and for its great documentation, but it's not always seen as a performant tool. The goal of the blog post is to present a benchmark where we can show that PyMC can work with large datasets and different approaches to do so. The blog post will be accompanied with reproducible code so that we can add/update metrics when there are substantial changes in PyMC or other libraries. Users will be able to compare their own models using the code provided in the blog repository."
     bannerImgPath = "/images/events/pymcon-sandra-meneses.png"
@@ -89,11 +93,12 @@
     video2SocialLink = "https://youtu.be/WVr2vQ13WAk"
     eventOrder = 4
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "April 17th 2023"
     title = "The Bayesian Statistics Toolbox: Building a robust, replicable Bayesian workflow for the behavioral and neural sciences"
+    subtitle = "Building a robust, replicable Bayesian workflow for the behavioral & neural sciences"
     place = "Online"
     description = "Are you seriously interested in Bayesian statistics but find yourself relying on familiar frequentist tools when it comes time to present your data at a conference or in a manuscript? If this statement rings true, you are not alone, and this talk is for you! In this presentation, I will go over some new tools we’ve developed to help make running Bayesian versions of some of the most common statistical tests used in the behavioral and neural sciences intuitive and transparent."
     bannerImgPath = "/images/events/pymcon-hyosub-kim.png"
@@ -112,8 +117,9 @@
 [[event]]
     dataTime = "May 24th 2023"
     title = "Protecting Voting Rights With PyMC"
+    subtitle = "An Overview of a Beta-Binomial Hierarchical Model and its Legal Implications"
     place = "Online"
-    description = "Voting, elections, and democracy are hot topics. In the United States, one of the most important laws in this domain, the Voting Rights Act of 1965 (VRA), calls for fairness in the design of election systems so that minorities have an equal opportunity to participate. But elections are complicated phenomena. How do we know when that opportunity has been taken away? <br> This talk describes how that question is answered with a PyMC implementation of a beta-binomial hierarchical model. In a narrower legal context, the qualitative question of opportunity is inferred by the degree to which an electorate is polarized along racial lines. As the thinking goes, if a minority group has drastically different preferences than the majority, then the minority is exposed and vulnerable to partisan actors who might implement policy designed to weaken the political power of that group. Gerrymandering is a popular example. <br>The model produces parameter estimates that speak directly to this legal question. Designed in the early 2000s, the model has matured to the point that legal doctrine has coalesced around the quality of its estimates; it forms the backbone of a critically important civil rights law. The talk will discuss the Python implementation and how the posterior is interpreted to inform litigation decisions."
+    description = "Voting, elections, and democracy are hot topics. In the United States, one of the most important laws in this domain, the Voting Rights Act of 1965 (VRA), calls for fairness in the design of election systems so that minorities have an equal opportunity to participate. But elections are complicated phenomena. How do we know when that opportunity has been taken away? <br><br> This talk describes how that question is answered with a PyMC implementation of a beta-binomial hierarchical model. In a narrower legal context, the qualitative question of opportunity is inferred by the degree to which an electorate is polarized along racial lines. As the thinking goes, if a minority group has drastically different preferences than the majority, then the minority is exposed and vulnerable to partisan actors who might implement policy designed to weaken the political power of that group. Gerrymandering is a popular example. <br><br>The model produces parameter estimates that speak directly to this legal question. Designed in the early 2000s, the model has matured to the point that legal doctrine has coalesced around the quality of its estimates; it forms the backbone of a critically important civil rights law. The talk will discuss the Python implementation and how the posterior is interpreted to inform litigation decisions."
     bannerImgPath = "/images/events/pymcon_todd.png"
     speakerName = "Todd Hendricks"
     speakerImgPath = "/images/speakers/todd.png"
@@ -124,5 +130,24 @@
     video2Name = "Event video"
     video2SocialLink = "https://youtu.be/dbkgpePWePg"
     eventOrder = 6
+    eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "June 28th 2023"
+    title = "Automatic Probability with PyMC"
+    subtitle = "How PyMC infers probabilities from random functions"
+    place = "Online"
+    description = "Many people have heard of (or at least used) automatic differentiation, a set of routines that allow programs to compute partial derivatives from numerical functions. This innovation allowed a large class of users to benefit from gradient-based algorithms without having to understand or manually implement their own gradient functions.<br><br>PyMC grabbed this idea and applied it to a completely novel context: automatic probability. With it, we can automatically derive and evaluate probability expressions from user-specified random functions. Similar to automatic differentiation, this allows users to create rich generative models and exploit probability-based algorithms (e.g., NUTS) without having to manually implement their own probability functions.<br><br>In this talk, we present this new foundation of PyMC and how it can (and is already) used to construct specialized classes of models, from arbitrary variable transformations to mixture distributions, censoring processes, and highly structured timeseries.<br><br>The goal is to understand what makes PyMC a true probabilistic programming language and how you can exploit it!"
+    bannerImgPath = "/images/events/pymcon_ricardo.png"
+    speakerName = "Ricardo Vieira"
+    speakerImgPath = "/images/speakers/ricardo.jpg"
+    speakerSocialLink = "https://github.com/ricardoV94"
+    readMoreURL = "https://discourse.pymc.io/t/12274"
+    video1Name = "Interview video"
+    video1SocialLink = "https://www.youtube.com/watch?v=xUpthL_x4k8"
+    video2Name = "Event video"
+    video2SocialLink = ""
+    eventOrder = 7
     eventType = "upcoming"
     featured = true

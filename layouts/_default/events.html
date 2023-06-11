@@ -43,6 +43,7 @@
                         <div class="event__wrapper">
                             <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
                             <h3>{{ $event.title | markdownify | emojify }}</h3>
+                            <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
                             <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
                         </div>
                         {{ with $event.bannerImgPath }}
