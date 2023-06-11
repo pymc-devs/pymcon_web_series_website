@@ -46,10 +46,22 @@
 
 .event__header h3 {
     font-size: 1.5rem;
-    margin: 0.9rem 0 0.7rem;
+    margin: 0.9rem 0 0;
     line-height: 2.1rem;
     max-height: 4.2rem;   /* height is 2x line-height, so two lines will display */
     overflow: hidden;
+}
+
+.event__header em {
+    font-size: 0.9rem;
+}
+
+.upcoming .event__header span i {
+    color: var(--color-warning);
+}
+
+.past .event__header span i {
+    color: var(--color-red);
 }
 
 .event__header img {
