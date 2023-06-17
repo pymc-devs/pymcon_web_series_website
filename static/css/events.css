@@ -137,9 +137,9 @@
 }
 
 .event__btn {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 5px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--color-white);
     text-align: center;
     background-color: var(--color-danger);

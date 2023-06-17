@@ -108,8 +108,10 @@
     readMoreURL = "https://discourse.pymc.io/t/pymcon-web-series-05-the-bayesian-statistics-toolbox-april-17th-2023-hyosub-kim/11845"
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=acDdmyJZW-U"
-    video2Name = "Event video"
+    video2Name = "Async Talk"
     video2SocialLink = "https://youtu.be/ElfToZ9EBpM"
+    video3Name = "Live Q&A"
+    video3SocialLink = "https://youtu.be/eIu4mJAYG58"
     eventOrder = 5
     eventType = "past"
     featured = true
@@ -127,8 +129,10 @@
     readMoreURL = "https://discourse.pymc.io/t/12131"
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/P3GIrgYwsTI"
-    video2Name = "Event video"
+    video2Name = "Async Talk"
     video2SocialLink = "https://youtu.be/dbkgpePWePg"
+    video3Name = "Live Q&A"
+    video3SocialLink = "https://youtu.be/aUTW4oa36lU"
     eventOrder = 6
     eventType = "past"
     featured = true
@@ -146,8 +150,10 @@
     readMoreURL = "https://discourse.pymc.io/t/12274"
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=xUpthL_x4k8"
-    video2Name = "Event video"
-    video2SocialLink = ""
+    video2Name = "Async Talk"
+    video2SocialLink = "https://www.youtube.com/watch?v=0B3xbrGHPx0"
+    video3Name = "Live Q&A"
+    video3SocialLink = ""
     eventOrder = 7
     eventType = "upcoming"
     featured = true

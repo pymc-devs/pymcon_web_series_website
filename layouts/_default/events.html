@@ -72,12 +72,16 @@
                         </div>
 
                         {{ with $event.video1SocialLink }}
-                        <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> Interview Video </a>
+                        <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video1Name }} </a>
                         {{ end }}
 
                         {{ with $event.video2SocialLink }}
-                        <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> Event Video </a>
-                        {{ end }} 
+                        <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video2Name }} </a>
+                        {{ end }}
+                        
+                        {{ with $event.video3SocialLink }}
+                        <a href="{{ $event.video3SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video3Name }} </a>
+                        {{ end }}
 
                         {{ with $event.readMoreURL }}
                             <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
