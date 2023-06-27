@@ -668,9 +668,10 @@
     background: var(--color-white);
     color: var(--color-black);
     margin-top: auto;
-    padding: .5rem 1rem;
+    padding: 0.3rem 1rem;
     border: 2px solid transparent;
     border-radius: 2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
 }
