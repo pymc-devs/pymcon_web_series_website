@@ -725,6 +725,12 @@
     .event_2 .event__header .event__wrapper {
         grid-row: 2;
     }
+
+    
+    /* ======================== PYMCON SPONSOR SLIDER ====================== */
+    .pymcon__sponsor__container > h1{
+        font-size: 2rem;
+    }
     
 
     /* ============================ GOALS ============================== */
@@ -860,6 +866,20 @@
     .goal p {
         font-size: 0.8rem;
     }
+    
+
+    /* ======================== PYMCON SPONSOR SLIDER ====================== */
+    .pymcon__sponsor__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .pymcon__sponsor__container > h1{
+        grid-row: 1;
+    }
+    .pymcon__sponsor__container .slider{
+        grid-row: 2;
+    }
+
 
     /* ======================= SUBSCRIBE ======================== */
     .subscribe__container {
