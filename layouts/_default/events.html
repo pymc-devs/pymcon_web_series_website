@@ -70,6 +70,12 @@
                                 <em>{{ $event.speakerName | markdownify | emojify }}</em>
                             {{ with $event.speakerSocialLink }} </a> {{ end }}
                         </div>
+                        
+                        {{ if eq $event.eventType "upcoming"}}
+                            {{ with $event.meetupLink }}
+                            <a href="{{ $event.meetupLink }}" target="_blank" class="btn event__btn"> Register Now </a>
+                            {{ end }}
+                        {{ end }}
 
                         {{ with $event.video1SocialLink }}
                         <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video1Name }} </a>

@@ -114,7 +114,7 @@
     video3SocialLink = "https://youtu.be/eIu4mJAYG58"
     eventOrder = 5
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "May 24th 2023"
@@ -156,4 +156,26 @@
     video3SocialLink = "https://youtu.be/IdHAST6hgds"
     eventOrder = 7
     eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "July 17th 2023"
+    title = "A Soccer-Factor-Model"
+    subtitle = "To Decipher a Soccer-Player's Inherent Skill"
+    place = "Online"
+    description = "Inspired by the asset-pricing literature, the Soccer-Factor-Model (SFM) is an attempt to determine a soccer player's `alpha`, i.e. his/her inherent skill. In this application, `skill` is defined as a player's probability to score a goal after accounting for factors that are actually to be attributed to his team's out- or under-performance vis-à-vis the opponent.<br><br> In that way, the SFM answers the question, of whether a player's observed goals are an over- or understatement of his `true` skill."
+    bannerImgPath = "/images/events/pymcon_max.png"
+    speakerName = "Maximilian Goebel"
+    speakerImgPath = "/images/speakers/Maximilian.jpg"
+    speakerSocialLink = "https://www.maximiliangoebel.com"
+    readMoreURL = "https://discourse.pymc.io/t/12453"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/294637955"
+    video1Name = "Interview video"
+    video1SocialLink = "https://youtu.be/IkVoZUfCkt4"
+    video2Name = "Async Talk"
+    video2SocialLink = ""
+    video3Name = "Live Talk"
+    video3SocialLink = ""
+    eventOrder = 8
+    eventType = "upcoming"
     featured = true
