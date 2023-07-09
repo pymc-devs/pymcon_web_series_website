@@ -257,6 +257,10 @@
     border-radius: 5px;
 }
 
+.event__header em {
+    font-size: 0.8rem;
+}
+
 .event__card__bottom {
     display: flex;
     gap: 0.4rem;
