@@ -172,10 +172,10 @@
     meetupLink = "https://www.meetup.com/pymc-online-meetup/events/294637955"
     video1Name = "Interview video"
     video1SocialLink = "https://youtu.be/IkVoZUfCkt4"
-    video2Name = "Async Talk"
-    video2SocialLink = ""
-    video3Name = "Live Talk"
+    video2Name = "Live Talk"
+    video2SocialLink = "https://youtu.be/2dGrN8JGd_w"
+    video3Name = ""
     video3SocialLink = ""
     eventOrder = 8
-    eventType = "upcoming"
+    eventType = "past"
     featured = true
