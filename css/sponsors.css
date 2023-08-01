@@ -315,12 +315,18 @@
 
 /* ======================== 2020 SPONSORS LOGO ====================== */
 .our_sponsors {
-    background: var(--color-bg);
-    box-shadow: inset 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     position: relative;
     text-align: center;
     align-items: center;
+}
+
+.our_sponsors_2023 {
+    background: var(--color-bg1);
+}
+
+.our_sponsors_2020 {
+    background: transparent;
 }
 
 .our_sponsors h1 {
