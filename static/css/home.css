@@ -464,6 +464,85 @@
 }
 
 
+/* ======================== PYMCON SPONSOR SLIDER ====================== */
+.pymcon__sponsor {
+    padding: 6rem 0 6rem;
+    background: var(--color-bg1);
+}
+
+.pymcon__sponsor__container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sponsor_logo {
+    background: var(--color-bg2);
+    width: 15rem;
+    height: auto;
+    margin: 0.6rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.sponsor_logo h2{
+    margin: 0;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.sponsor_logo:hover {
+    border-radius: 0;
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.sponsor_logo img {
+    transition: var(--transition);
+}
+
+.sponsor_logo:hover img {
+    transform: scale(1.07);
+}
+
+.sponsor_logo:focus-within img {
+    outline: 3px solid var(--color-red);
+    transform: scale(0.9);
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+
+
+/* ============= LOGO SCROLL ANIMATION ============= */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logos__container {
+    display: flex;
+    width: calc(16.2rem * 6);
+    animation: scrollLogos 10s linear infinite;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-16.2rem * 3));
+    }
+}
+
+.logos__container:hover,
+.logos__container:focus-within {
+    animation-play-state: paused;
+}
+
+
 /* ======================== SUBSCRIBE ====================== */
 .subscribe {
     padding: 6rem 0 6rem;
@@ -593,9 +672,10 @@
     background: var(--color-white);
     color: var(--color-black);
     margin-top: auto;
-    padding: .5rem 1rem;
+    padding: 0.3rem 1rem;
     border: 2px solid transparent;
     border-radius: 2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -648,6 +728,12 @@
     
     .event_2 .event__header .event__wrapper {
         grid-row: 2;
+    }
+
+    
+    /* ======================== PYMCON SPONSOR SLIDER ====================== */
+    .pymcon__sponsor__container > h1{
+        font-size: 2rem;
     }
     
 
@@ -784,6 +870,20 @@
     .goal p {
         font-size: 0.8rem;
     }
+    
+
+    /* ======================== PYMCON SPONSOR SLIDER ====================== */
+    .pymcon__sponsor__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .pymcon__sponsor__container > h1{
+        grid-row: 1;
+    }
+    .pymcon__sponsor__container .slider{
+        grid-row: 2;
+    }
+
 
     /* ======================= SUBSCRIBE ======================== */
     .subscribe__container {
