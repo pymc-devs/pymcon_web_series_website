@@ -135,7 +135,7 @@
     video3SocialLink = "https://youtu.be/aUTW4oa36lU"
     eventOrder = 6
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "June 28th 2023"
@@ -178,4 +178,26 @@
     video3SocialLink = ""
     eventOrder = 8
     eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "August 21st 2023"
+    title = "Let's Work on Your Talk Idea"
+    subtitle = "Get advice from other presenters and the community"
+    place = "Online"
+    description = "We are holding office hours to help YOU apply to PyMCon. Whether you have a finished talk and are looking for feedback, or just have an idea, we'll help you get moving. <br><br>You can participate in two ways: <ul><li>- For asynchronous discussions, join our discourse thread and share your amazing ideas: https://discourse.pymc.io/t/12689</li> <li>- For synchronous discussions, join our Meetup event: https://www.meetup.com/pymc-online-meetup/events/295283022/</li><ul> <br>Our supportive community is excited to offer feedback, guidance, and collaboration to help you bring your ideas to life. Together, let's take your contributions to the next level and make a positive impact."
+    bannerImgPath = "/images/events/pymcon_ravin.png"
+    speakerName = "Ravin Kumar"
+    speakerImgPath = "/images/speakers/ravin.png"
+    speakerSocialLink = "https://ravinkumar.com"
+    readMoreURL = "https://discourse.pymc.io/t/12689"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/295283022"
+    video1Name = ""
+    video1SocialLink = ""
+    video2Name = ""
+    video2SocialLink = ""
+    video3Name = ""
+    video3SocialLink = ""
+    eventOrder = 9
+    eventType = "upcoming"
     featured = true
