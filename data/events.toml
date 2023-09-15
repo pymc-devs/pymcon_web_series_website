@@ -156,7 +156,7 @@
     video3SocialLink = "https://youtu.be/IdHAST6hgds"
     eventOrder = 7
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "July 17th 2023"
@@ -199,5 +199,27 @@
     video3Name = ""
     video3SocialLink = ""
     eventOrder = 9
+    eventType = "past"
+    featured = true
+
+[[event]]
+    dataTime = "Sept 28th 2023"
+    title = "Bayesian Causal Modeling"
+    subtitle = "'Do' ing it with PyMC"
+    place = "Online"
+    description = "Causal analysis is rapidly gaining popularity, but why? Machine learning methods might help us predict what's going to happen with great accuracy, but what's the value of that if it doesn't tell us what to do to achieve a desirable outcome? Without a causal understanding of the world, it's often impossible to identify which actions lead to a desired outcome.<br><br>Causal analysis is often embedded in a frequentist framework, which comes with some well-documented baggage. In this talk, Thomas will present how we can super-charge PyMC for Bayesian Causal Analysis by using a powerful new feature: the do operator."
+    bannerImgPath = "/images/events/pymcon_thomas.png"
+    speakerName = "Thomas Wiecki"
+    speakerImgPath = "/images/speakers/thomas.png"
+    speakerSocialLink = "www.pymc-labs.com"
+    readMoreURL = "https://discourse.pymc.io/t/12912"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/296035699/"
+    video1Name = "Interview video"
+    video1SocialLink = ""
+    video2Name = "Async Talk"
+    video2SocialLink = "https://youtu.be/b47wmTdcICE"
+    video3Name = "Live Q&A"
+    video3SocialLink = ""
+    eventOrder = 10
     eventType = "upcoming"
     featured = true
