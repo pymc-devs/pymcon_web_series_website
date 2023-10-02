@@ -219,7 +219,7 @@
     video2Name = "Async Talk"
     video2SocialLink = "https://youtu.be/b47wmTdcICE"
     video3Name = "Live Q&A"
-    video3SocialLink = ""
+    video3SocialLink = "https://youtu.be/4Cul2rWLLhM"
     eventOrder = 10
-    eventType = "upcoming"
+    eventType = "past"
     featured = true
