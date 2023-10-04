@@ -38,11 +38,13 @@
                     {{ $upcoming_events := where $events "eventType" "upcoming"}}
                     {{ if $upcoming_events }}
                         {{ range $event := $upcoming_events }}
-                            <article class="event__card {{ $event.eventType }}">
+                            {{ $title := index (split $event.title ":") 0 }}
+                            {{ $eventID := replaceRE "[^a-zA-Z0-9_-]" "" (lower (replace $title " " "_"))}}
+                            <article class="event__card {{ $event.eventType }}" id="{{ $eventID }}">
                                 <div class="event__header">
                                     <div class="event__wrapper">
                                         <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
-                                        <h3>{{ $event.title | markdownify | emojify }}</h3>
+                                        <a href="#{{ $eventID }}"><h3>{{ $event.title | markdownify | emojify }}</h3></a>
                                         <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
                                         <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
                                     </div>
@@ -90,6 +92,10 @@
                                     {{ with $event.readMoreURL }}
                                         <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
                                     {{ end }}
+                                    <button class="btn event__btn copy_link_btn" title="Copy link to this event" onclick="copyToClipboard(this)" data-url="#{{ $eventID }}">
+                                        <span id="copyIcon"><i class="uil uil-link"></i></span> 
+                                        <span class="copy_link_btn_text">Copied</span>
+                                    </button>
                                 </div>
                             </article>
                         {{ end }}
@@ -105,11 +111,13 @@
                     {{ $past_events := where $events "eventType" "past"}}
                     {{ if $past_events }}
                         {{ range $event := $past_events }}
-                            <article class="event__card {{ $event.eventType }}">
+                            {{ $title := index (split $event.title ":") 0 }}
+                            {{ $eventID := replaceRE "[^a-zA-Z0-9_-]" "" (lower (replace $title " " "_"))}}
+                            <article class="event__card {{ $event.eventType }}" id="{{ $eventID }}">
                                 <div class="event__header">
                                     <div class="event__wrapper">
                                         <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
-                                        <h3>{{ $event.title | markdownify | emojify }}</h3>
+                                        <a href="#{{ $eventID }}"><h3>{{ $event.title | markdownify | emojify }}</h3></a>
                                         <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
                                         <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
                                     </div>
@@ -153,6 +161,10 @@
                                     {{ with $event.readMoreURL }}
                                         <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
                                     {{ end }}
+                                    <button class="btn event__btn copy_link_btn" title="Copy link to this event" onclick="copyToClipboard(this)" data-url="#{{ $eventID }}">
+                                        <span id="copyIcon"><i class="uil uil-link"></i></span> 
+                                        <span class="copy_link_btn_text">Copied</span>
+                                    </button>
                                 </div>
                             </article>
                         {{ end }}
@@ -241,4 +253,70 @@
             });
         }
     </script>
+    <script>
+        window.onload = function() {
+            // Check if the URL contains a hash
+            if (window.location.hash) {
+                var targetId = window.location.hash.substring(1);
+                var headerHeight = document.querySelector('.nav').offsetHeight + 20;
+                var targetOffset = document.getElementById(targetId).offsetTop - headerHeight;
+        
+                // Scroll to the target element with smooth behavior
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+            }
+        };
+        
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                var headerHeight = document.querySelector('.nav').offsetHeight + 20;
+                var targetOffset = document.getElementById(targetId).offsetTop - headerHeight;
+        
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+                history.pushState(null, null, '#' + targetId);
+            });
+        });
+        
+        function copyToClipboard(button) {
+            // Get the URL from the button's data-url attribute
+            var href = button.getAttribute('data-url');
+            var url = window.location.origin + window.location.pathname + href;
+
+            // Create a temporary input element
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', url);
+            document.body.appendChild(tempInput);
+        
+            // Select the input element
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+        
+            // Copy the selected text to the clipboard
+            document.execCommand('copy');
+        
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+        
+            // Change the icon to a tick symbol
+            var icon = button.querySelector('i');
+            icon.classList.remove('uil-link');
+            icon.classList.add('uil-check');
+        
+            // Set the title attribute to "Link copied"
+            button.setAttribute('title', 'Link copied');
+            button.classList.add('clicked');
+            
+            setTimeout(function() {
+                button.classList.remove('clicked');
+            }, 1000);
+        }
+    </script>
+    
 {{ end }}
