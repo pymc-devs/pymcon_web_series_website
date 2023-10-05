@@ -14,6 +14,15 @@
     margin: 0;
 }
 
+.upcoming_events {
+    margin-bottom: 5rem;
+}
+
+.no-events {
+    text-align: center;
+    margin: 2rem 0;
+}
+
 .event__card {
     background: var(--color-bg2);
     padding: 1.5rem;

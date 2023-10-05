@@ -30,79 +30,146 @@
     {{ $events := .Site.Data.events }}
     <!-- check if there is any event present or not -->
     {{ if $events }}
-    <div class="container events__container">
-        <div class="event__cards">
-            <h2 id="all_events">All Events</h2>
-            <h2 id="upcoming_events">Upcoming Events</h2>
-            <h2 id="past_events">Past Events</h2>
+        {{ $events := sort $events.event "eventOrder" "desc" }}
+        <div class="container events__container">
+            <div class="event__cards">
+                <div class="upcoming_events" id="upcoming_events">
+                    <h2>Upcoming Events</h2>
+                    {{ $upcoming_events := where $events "eventType" "upcoming"}}
+                    {{ if $upcoming_events }}
+                        {{ range $event := $upcoming_events }}
+                            <article class="event__card {{ $event.eventType }}">
+                                <div class="event__header">
+                                    <div class="event__wrapper">
+                                        <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
+                                        <h3>{{ $event.title | markdownify | emojify }}</h3>
+                                        <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
+                                        <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
+                                    </div>
+                                    {{ with $event.bannerImgPath }}
+                                        <img src="{{ $event.bannerImgPath }}" alt="">
+                                    {{ end }}
+                                </div>
+                                <div class="event__details">
+                                    <div class="event__summary">
+                                        <p>{{ $event.description | markdownify | emojify }}</p>
+                                    </div>
+                                    <button class="readmore__btn">
+                                        <span class="readmore-txt"> ....read more</span>
+                                        <span class="readless-txt">Read Less</span>
+                                    </button>
+                                </div>
+                                <div class="event__card__bottom">
+                                    <div class="speaker__info">
+                                        {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
+                                            {{ if $event.speakerImgPath }}
+                                                <img src="{{ $event.speakerImgPath }}" alt="">
+                                            {{ else }}
+                                                <img src="/images/speakers/speaker_icon.png" alt="">
+                                            {{ end }}
+                                            <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                                        {{ with $event.speakerSocialLink }} </a> {{ end }}
+                                    </div>
+                                    
+                                    {{ with $event.meetupLink }}
+                                        <a href="{{ $event.meetupLink }}" target="_blank" class="btn event__btn"> Register Now </a>
+                                    {{ end }}
 
-            {{ $events := sort $events.event "eventOrder" "desc" }}
-            {{ range $event := $events }}
-                <article class="event__card {{ $event.eventType }}">
-                    <div class="event__header">
-                        <div class="event__wrapper">
-                            <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
-                            <h3>{{ $event.title | markdownify | emojify }}</h3>
-                            <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
-                            <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
+                                    {{ with $event.video1SocialLink }}
+                                    <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video1Name }} </a>
+                                    {{ end }}
+
+                                    {{ with $event.video2SocialLink }}
+                                    <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video2Name }} </a>
+                                    {{ end }}
+                                    
+                                    {{ with $event.video3SocialLink }}
+                                    <a href="{{ $event.video3SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video3Name }} </a>
+                                    {{ end }}
+
+                                    {{ with $event.readMoreURL }}
+                                        <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
+                                    {{ end }}
+                                </div>
+                            </article>
+                        {{ end }}
+                    {{else}}
+                        <div class="no-events">
+                            <p>Coming Soon: Stay tuned for updates on upcoming events 🔔</p>
                         </div>
-                        {{ with $event.bannerImgPath }}
-                            <img src="{{ $event.bannerImgPath }}" alt="">
+                    {{ end }}
+                </div>
+
+                <div class="past_events" id="past_events">
+                    <h2>Past Events</h2>
+                    {{ $past_events := where $events "eventType" "past"}}
+                    {{ if $past_events }}
+                        {{ range $event := $past_events }}
+                            <article class="event__card {{ $event.eventType }}">
+                                <div class="event__header">
+                                    <div class="event__wrapper">
+                                        <h4>{{ $event.dataTime | markdownify | emojify }}</h4>
+                                        <h3>{{ $event.title | markdownify | emojify }}</h3>
+                                        <em>{{ $event.subtitle | markdownify | emojify }}</em><br>
+                                        <span><i class="uil uil-map-marker"></i>{{ $event.place | markdownify | emojify }}</span>
+                                    </div>
+                                    {{ with $event.bannerImgPath }}
+                                        <img src="{{ $event.bannerImgPath }}" alt="">
+                                    {{ end }}
+                                </div>
+                                <div class="event__details">
+                                    <div class="event__summary">
+                                        <p>{{ $event.description | markdownify | emojify }}</p>
+                                    </div>
+                                    <button class="readmore__btn">
+                                        <span class="readmore-txt"> ....read more</span>
+                                        <span class="readless-txt">Read Less</span>
+                                    </button>
+                                </div>
+                                <div class="event__card__bottom">
+                                    <div class="speaker__info">
+                                        {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
+                                            {{ if $event.speakerImgPath }}
+                                                <img src="{{ $event.speakerImgPath }}" alt="">
+                                            {{ else }}
+                                                <img src="/images/speakers/speaker_icon.png" alt="">
+                                            {{ end }}
+                                            <em>{{ $event.speakerName | markdownify | emojify }}</em>
+                                        {{ with $event.speakerSocialLink }} </a> {{ end }}
+                                    </div>
+
+                                    {{ with $event.video1SocialLink }}
+                                    <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video1Name }} </a>
+                                    {{ end }}
+
+                                    {{ with $event.video2SocialLink }}
+                                    <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video2Name }} </a>
+                                    {{ end }}
+                                    
+                                    {{ with $event.video3SocialLink }}
+                                    <a href="{{ $event.video3SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video3Name }} </a>
+                                    {{ end }}
+
+                                    {{ with $event.readMoreURL }}
+                                        <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
+                                    {{ end }}
+                                </div>
+                            </article>
                         {{ end }}
-                    </div>
-                    <div class="event__details">
-                        <div class="event__summary">
-                            <p>{{ $event.description | markdownify | emojify }}</p>
+                    {{ else }}
+                        <div class="no-events">
+                            <p>🚫 No Past events yet</p>
                         </div>
-                        <button class="readmore__btn">
-                            <span class="readmore-txt"> ....read more</span>
-                            <span class="readless-txt">Read Less</span>
-                        </button>
-                    </div>
-                    <div class="event__card__bottom">
-                        <div class="speaker__info">
-                            {{ with $event.speakerSocialLink }} <a href="{{ $event.speakerSocialLink }}" target="_blank"> {{ end }}
-                                {{ if $event.speakerImgPath }}
-                                    <img src="{{ $event.speakerImgPath }}" alt="">
-                                {{ else }}
-                                    <img src="/images/speakers/speaker_icon.png" alt="">
-                                {{ end }}
-                                <em>{{ $event.speakerName | markdownify | emojify }}</em>
-                            {{ with $event.speakerSocialLink }} </a> {{ end }}
-                        </div>
-                        
-                        {{ if eq $event.eventType "upcoming"}}
-                            {{ with $event.meetupLink }}
-                            <a href="{{ $event.meetupLink }}" target="_blank" class="btn event__btn"> Register Now </a>
-                            {{ end }}
-                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
 
-                        {{ with $event.video1SocialLink }}
-                        <a href="{{ $event.video1SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video1Name }} </a>
-                        {{ end }}
-
-                        {{ with $event.video2SocialLink }}
-                        <a href="{{ $event.video2SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video2Name }} </a>
-                        {{ end }}
-                        
-                        {{ with $event.video3SocialLink }}
-                        <a href="{{ $event.video3SocialLink }}" target="_blank" class="btn event__btn"> {{ $event.video3Name }} </a>
-                        {{ end }}
-
-                        {{ with $event.readMoreURL }}
-                            <a href="{{ $event.readMoreURL }}" target="_blank" class="btn event__btn"> Discourse Post </a>
-                        {{ end }}
-                    </div>
-                </article>
-            {{ end }}
+            <div class="events_btn_container" id="eventBtnContainer">
+                <button class="active" onclick="filterSelection('all'); scrollToEventView();">All Events</button>
+                <button class="" onclick="filterSelection('upcoming'); scrollToEventView();">Upcoming Events</button>
+                <button class="" onclick="filterSelection('past'); scrollToEventView();">Past Events</button>
+            </div>
         </div>
-
-        <div class="events_btn_container" id="eventBtnContainer">
-            <button class="active" onclick="filterSelection('all'); scrollToEventView();">All Events</button>
-            <button class="" onclick="filterSelection('upcoming'); scrollToEventView();">Upcoming Events</button>
-            <button class="" onclick="filterSelection('past'); scrollToEventView();">Past Events</button>
-        </div>
-    </div>
     <!-- if there is no events available to display -->
     {{ else }}
         <h2>Coming soon...</h2>
@@ -147,47 +214,19 @@
             document.getElementById('pymcon_events').scrollIntoView();
         }
 
-        function show (elements, specifiedDisplay) {
-            if(elements.length == 0) return;
-            elements = elements.length ? elements : [elements];
-            for (var index = 0; index < elements.length; index++) {
-                elements[index].style.display = specifiedDisplay || 'block';
-            }
-        }
-
-        function hide (elements) {
-            if(elements.length == 0) return;
-            elements = elements.length ? elements : [elements];
-            for (var index = 0; index < elements.length; index++) {
-                elements[index].style.display = 'none';
-            }
-        }
-
         function filterSelection(event_type) {
-            var upcoming_events = document.querySelectorAll('.upcoming');
-            var past_events = document.querySelectorAll('.past');
-            var all_heading = document.getElementById("all_events");
-            var upcoming_heading = document.getElementById("upcoming_events");
-            var past_heading = document.getElementById("past_events");
+            var upcoming_events = document.getElementById("upcoming_events");
+            var past_events = document.getElementById("past_events");
 
             if(event_type == "all"){
-                all_heading.style.display = "block";
-                upcoming_heading.style.display = "none";
-                past_heading.style.display = "none";
-                show(upcoming_events);
-                show(past_events);
+                upcoming_events.style.display = "block";
+                past_events.style.display = "block";
             }else if(event_type == "upcoming"){
-                all_heading.style.display = "none";
-                upcoming_heading.style.display = "block";
-                past_heading.style.display = "none";
-                show(upcoming_events);
-                hide(past_events);
+                upcoming_events.style.display = "block";
+                past_events.style.display = "none";
             } else {
-                all_heading.style.display = "none";
-                upcoming_heading.style.display = "none";
-                past_heading.style.display = "block";
-                hide(upcoming_events);
-                show(past_events);
+                upcoming_events.style.display = "none";
+                past_events.style.display = "block";
             }
         }
 
