@@ -524,7 +524,7 @@
 
 .logos__container {
     display: flex;
-    width: calc(16.2rem * 6);
+    width: calc(16.2rem * 8);
     animation: scrollLogos 10s linear infinite;
 }
 
@@ -533,7 +533,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-16.2rem * 3));
+        transform: translateX(calc(-16.2rem * 4));
     }
 }
 
@@ -691,6 +691,23 @@
     outline-offset: 3px;
 }
 
+@media screen and (min-width: 1800px) {
+    .header {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+    .header {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        height: 80vh;
+    }
+}
 
 
 /* =================== MEDIA QUERIES (TABLETS) ========================= */

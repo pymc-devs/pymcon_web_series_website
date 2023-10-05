@@ -48,6 +48,7 @@ body {
 
 .container {
     width: var(--container-width-lg);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
