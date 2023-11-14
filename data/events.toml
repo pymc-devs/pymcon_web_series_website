@@ -225,7 +225,7 @@
     featured = true
 
 [[event]]
-    dataTime = "Nov 20th 2023"
+    dataTime = "Nov 20th 2023 | 9-10 AM EST"
     title = "The Only Constant is Change"
     subtitle = "Bespoke Changepoint Modelling in PyMC"
     place = "Online"
@@ -239,7 +239,7 @@
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=ySF3X45XRyQ"
     video2Name = "Async Talk"
-    video2SocialLink = ""
+    video2SocialLink = "https://www.youtube.com/watch?v=iwNju1o5yQo"
     video3Name = "Live Q&A"
     video3SocialLink = ""
     eventOrder = 11
