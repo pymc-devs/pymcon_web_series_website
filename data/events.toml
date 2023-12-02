@@ -200,7 +200,7 @@
     video3SocialLink = ""
     eventOrder = 9
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Sept 28th 2023"
@@ -243,5 +243,27 @@
     video3Name = "Live Q&A"
     video3SocialLink = ""
     eventOrder = 11
+    eventType = "upcoming"
+    featured = true
+
+[[event]]
+    dataTime = "Dec 15th 2023 | 7-8 AM PST"
+    title = "Missing Value Imputation with Item Response Theory"
+    subtitle = "A Bayesian Bake-Off"
+    place = "Online"
+    description = "In many large surveys, not every respondent is asked every question, and not every respondent answers the questions they are asked. So how can we compare people who answer different sets of questions? One solution is to use item response theory (IRT) to impute missing responses -- and nothing goes better with IRT than Bayesian methods! <br><br>In this talk, we report the results of a friendly competition -- a bake-off -- between two approaches to this problem, one using grid algorithms and a simplified model, the other using PyMC and a more detailed model. We'll discuss the implementations, compare the results, and outline their pros and cons."
+    bannerImgPath = "/images/events/pymcon_allen.png"
+    speakerName = "Allen Downey & Ricardo Vieira"
+    speakerImgPath = "/images/speakers/allen.jpg"
+    speakerSocialLink = "https://allendowney.com/"
+    readMoreURL = "https://discourse.pymc.io/t/13403"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/297705345/"
+    video1Name = "Interview video"
+    video1SocialLink = ""
+    video2Name = "Async Talk"
+    video2SocialLink = ""
+    video3Name = "Live Q&A"
+    video3SocialLink = ""
+    eventOrder = 12
     eventType = "upcoming"
     featured = true
