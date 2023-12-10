@@ -259,9 +259,9 @@
     readMoreURL = "https://discourse.pymc.io/t/13403"
     meetupLink = "https://www.meetup.com/pymc-online-meetup/events/297705345/"
     video1Name = "Interview video"
-    video1SocialLink = ""
+    video1SocialLink = "https://youtu.be/rvIStfmP1NU"
     video2Name = "Async Talk"
-    video2SocialLink = ""
+    video2SocialLink = "https://youtu.be/uyznG61myy0"
     video3Name = "Live Q&A"
     video3SocialLink = ""
     eventOrder = 12
