@@ -222,7 +222,7 @@
     video3SocialLink = "https://youtu.be/4Cul2rWLLhM"
     eventOrder = 10
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Nov 20th 2023 | 9-10 AM EST"
@@ -244,7 +244,7 @@
     video3SocialLink = ""
     eventOrder = 11
     eventType = "past"
-    featured = true
+    featured = false
 
 [[event]]
     dataTime = "Dec 15th 2023 | 7-8 AM PST"
@@ -266,4 +266,50 @@
     video3SocialLink = "https://youtu.be/mNbPpTDfaws"
     eventOrder = 12
     eventType = "past"
+    eventType = "path"
+    featured = true
+
+[[event]]
+    dataTime = "Monday, January 29, 2024 at 07:00 AM PST"
+    title = "Enabling Uncertainty Quantification"
+    subtitle = "From basics to complex models"
+    place = "Online"
+    description = "Treating uncertainties is essential in the design of safe aircraft, medical decision making, and many other fields. UM-Bridge enables straightforward uncertainty quantification (UQ) on advanced models by removing technical barriers.<br><br>Complex numerical models often consist of large code bases that are difficult to integrate with UQ packages such as PyMC, holding back many interesting applications. UM-Bridge is a universal interface for linking UQ and models, greatly accelerating development from prototype to high-performance computing.<br><br>This hands-on tutorial teaches participants how to build UQ applications using PyMC and UM-Bridge. We cover a range of practical exercises ranging from basic toy examples all the way to controlling parallelized models on a live cloud cluster. Beyond that, we encourage participants to bring their own methods and problems."
+    bannerImgPath = "/images/events/pymcon_anne.png"
+    speakerName = "Anne Reinarz & Linus Seelinger"
+    speakerImgPath = "/images/speakers/anne.png"
+    speakerSocialLink = "https://annereinarz.github.io/"
+    readMoreURL = "https://discourse.pymc.io/t/13583"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/298279180/"
+    video1Name = "Interview video"
+    video1SocialLink = "https://www.youtube.com/watch?v=BdHQfn_3vjQ"
+    video2Name = "Async Talk"
+    video2SocialLink = ""
+    video3Name = "Live Q&A"
+    video3SocialLink = ""
+    eventOrder = 14
+    eventType = "upcoming"
+    featured = true
+
+
+[[event]]
+    dataTime = "Tuesday, January 30, 2024 at 10:00 AM IST"
+    title = "Enabling Uncertainty Quantification"
+    subtitle = "From basics to complex models"
+    place = "Online"
+    description = "Treating uncertainties is essential in the design of safe aircraft, medical decision making, and many other fields. UM-Bridge enables straightforward uncertainty quantification (UQ) on advanced models by removing technical barriers.<br><br>Complex numerical models often consist of large code bases that are difficult to integrate with UQ packages such as PyMC, holding back many interesting applications. UM-Bridge is a universal interface for linking UQ and models, greatly accelerating development from prototype to high-performance computing.<br><br>This hands-on tutorial teaches participants how to build UQ applications using PyMC and UM-Bridge. We cover a range of practical exercises ranging from basic toy examples all the way to controlling parallelized models on a live cloud cluster. Beyond that, we encourage participants to bring their own methods and problems."
+    bannerImgPath = "/images/events/pymcon_anne.png"
+    speakerName = "Anne Reinarz & Linus Seelinger"
+    speakerImgPath = "/images/speakers/linus.JPG"
+    speakerSocialLink = "https://www.linusseelinger.de/"
+    readMoreURL = "https://discourse.pymc.io/t/13583"
+    meetupLink = "https://www.meetup.com/pymc-online-meetup/events/298356399/"
+    video1Name = "Interview video"
+    video1SocialLink = "https://www.youtube.com/watch?v=BdHQfn_3vjQ"
+    video2Name = "Async Talk"
+    video2SocialLink = ""
+    video3Name = "Live Q&A"
+    video3SocialLink = ""
+    eventOrder = 13
+    eventType = "upcoming"
     featured = true
