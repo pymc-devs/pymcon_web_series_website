@@ -60,6 +60,7 @@
     {{ if $showFeaturedEvent }}
         <section class="section events" id="featured_events">
             <h2>PyMCon Events</h2>
+            <p>PyMCon is a series of running events; check out more <a href="{{ ref . "events" }}"> events here.</a></p>
             <div class="container events__container {{ if eq $count 1 }} event_1 {{ else if eq $count 2 }} event_2 {{ else }} event_3 {{ end }}">
                 {{ if gt $count 2 }}
                 <div class="swiper eventCardSlider">

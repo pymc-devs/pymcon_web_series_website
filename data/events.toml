@@ -266,7 +266,6 @@
     video3SocialLink = "https://youtu.be/mNbPpTDfaws"
     eventOrder = 12
     eventType = "past"
-    eventType = "path"
     featured = true
 
 [[event]]

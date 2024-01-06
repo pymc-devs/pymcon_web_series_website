@@ -219,6 +219,20 @@
     background: var(--color-bg1);
 }
 
+.events > h2{ 
+    margin-bottom: 1rem;
+}
+
+.events > p{
+    text-align: center;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.events > p a{
+    color: var(--color-warning);
+    text-decoration: underline;
+}
+
 .event__card {
     background: var(--color-bg2);
     padding: 1rem;
