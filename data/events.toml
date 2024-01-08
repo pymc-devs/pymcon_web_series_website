@@ -269,7 +269,7 @@
     featured = true
 
 [[event]]
-    dataTime = "Monday, January 29, 2024 at 07:00 AM PST (03:00 pm UTC)"
+    dataTime = "Monday, January 29, 2024 at 15:00 UTC (07:00 AM PST)"
     title = "Enabling Uncertainty Quantification"
     subtitle = "From basics to complex models"
     place = "Online"
@@ -292,7 +292,7 @@
 
 
 [[event]]
-    dataTime = "Tuesday, January 30, 2024 at 12:00 PM IST (6:30 am UTC)"
+    dataTime = "Tuesday, January 30, 2024 at 6:30 UTC (12:00 PM IST)"
     title = "Enabling Uncertainty Quantification"
     subtitle = "From basics to complex models"
     place = "Online"
