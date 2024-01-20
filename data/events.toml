@@ -283,7 +283,7 @@
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=BdHQfn_3vjQ"
     video2Name = "Async Talk"
-    video2SocialLink = ""
+    video2SocialLink = "https://www.youtube.com/playlist?list=PLD1x-BW9UdeHuoqTjioww_yoji9qTcPfE"
     video3Name = "Live Q&A"
     video3SocialLink = ""
     eventOrder = 14
@@ -306,7 +306,7 @@
     video1Name = "Interview video"
     video1SocialLink = "https://www.youtube.com/watch?v=BdHQfn_3vjQ"
     video2Name = "Async Talk"
-    video2SocialLink = ""
+    video2SocialLink = "https://www.youtube.com/playlist?list=PLD1x-BW9UdeHuoqTjioww_yoji9qTcPfE"
     video3Name = "Live Q&A"
     video3SocialLink = ""
     eventOrder = 13
