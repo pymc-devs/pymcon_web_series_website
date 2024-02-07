@@ -244,7 +244,7 @@
     video3SocialLink = ""
     eventOrder = 11
     eventType = "past"
-    featured = false
+    featured = true
 
 [[event]]
     dataTime = "Dec 15th 2023 | 7-8 AM PST"
@@ -285,10 +285,10 @@
     video2Name = "Async Talk"
     video2SocialLink = "https://www.youtube.com/playlist?list=PLD1x-BW9UdeHuoqTjioww_yoji9qTcPfE"
     video3Name = "Live Q&A"
-    video3SocialLink = ""
+    video3SocialLink = "https://youtu.be/tYJNZ-PQSEg"
     eventOrder = 14
-    eventType = "upcoming"
-    featured = true
+    eventType = "past"
+    featured = false
 
 
 [[event]]
@@ -308,7 +308,7 @@
     video2Name = "Async Talk"
     video2SocialLink = "https://www.youtube.com/playlist?list=PLD1x-BW9UdeHuoqTjioww_yoji9qTcPfE"
     video3Name = "Live Q&A"
-    video3SocialLink = ""
+    video3SocialLink = "https://youtu.be/tYJNZ-PQSEg"
     eventOrder = 13
-    eventType = "upcoming"
+    eventType = "past"
     featured = true
