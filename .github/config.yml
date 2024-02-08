@@ -10,7 +10,7 @@ newIssueWelcomeComment: >
 
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
-  ![Thank You Banner](https://raw.githubusercontent.com/pymc-devs/brand/main/welcome-bot/BannerThanks.jpg)]
+  ![Thank You Banner](https://raw.githubusercontent.com/pymc-devs/brand/main/welcome-bot/BannerThanks.jpg)
 
   :sparkling_heart: Thanks for opening this pull request! :sparkling_heart:
   The _PyMC_ community really appreciates your time and effort to contribute to the project.
